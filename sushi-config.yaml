@@ -7,15 +7,15 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
+id: medigree
+canonical: http://medigree.net/eu/fhir/medigree
+url: http://medigree.net/eu/fhir/medigree
+name: Medigree
 title: "FHIR Implementation Guide: Medigree"
 description: Example IG
 status: active
 license: CC0-1.0
-date: 2020-02-26
+date: 2022-05-26
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
