@@ -1,0 +1,20 @@
+name: ig-build
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events for any main branch
+  push:
+    branches-ignore:    
+      - 'gh-pages'
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "build"
+  call-update_readme:
+    uses: costateixeira/ig-badges/.github/workflows/add_badges.yaml@main    
+#    with:
+#      token: costateixeira
+#      repo: mynewig
+#      branch: main
