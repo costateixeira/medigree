@@ -155,13 +155,13 @@ Content-Type: application/fhir+json;fhirVersion=4.0
 
 # Add medication - Amlor
 ###
-PUT {{host}}/Medication/Med-amlor
+PUT {{host}}/Medication/med-amlor
 Accept: application/fhir+json;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
 
 {
   "resourceType": "Medication",
-  "id": "Med-amlor",
+  "id": "med-amlor",
   "code": {
     "coding": [
       {
@@ -190,4 +190,42 @@ GET {{host}}/Medication?form:below=http://medigree.net/eu/fhir/medigree/CodeSyst
 ### find parent code (this is not working)
 GET {{host}}/CodeSystem/$lookup?system=http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs&code=10220000
 
+
+
+
+# Add medicationrequest - Amlor
+###
+PUT {{host}}/MedicationRequest/MedPrescription
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+{
+  "resourceType": "MedicationRequest",
+  "id": "MedPrescription",
+  "medicationReference": {
+    "reference": "Medication/med-amlor"
+  },
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "identifier": {
+      "system": "http://patientids.org",
+      "value": "P09123873847"
+    }
+  }
+}
+
+
+
+
+### get prescription
+GET {{host}}/MedicationRequest
+
+
+
+### get prescription
+GET {{host}}/MedicationRequest?patient:identifier=http://patientids.org|P09123873847
+
+### get prescription and the medication that comes with it
+GET {{host}}/MedicationRequest?patient:identifier=P09123873847&_include=MedicationRequest:medication
 
