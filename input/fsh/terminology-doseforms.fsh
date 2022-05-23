@@ -1,6 +1,7 @@
 CodeSystem: DoseFormOntologyCS
 Id:         dose-form-ontology-cs
 Title:     "Dose Form Ontology Code System"
+* ^hierarchyMeaning = #is-a
 * #20053000
     "Oral use"
     "Oral Use"
