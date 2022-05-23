@@ -1,0 +1,722 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = errors = 37, warn = 16, info = 20, 1 -->
+<head>
+  <title>Medigree : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for Medigree</h1>
+ <p>Generated Mon May 23 13:21:08 UTC 2022, FHIR version 4.0.1 for medigree#1.0.0 (canonical = <a href="http://medigree.net/eu/fhir/medigree">http://medigree.net/eu/fhir/medigree</a> (<a href="http://medigree.net/eu/fhir/medigree/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.120</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = medigree, Canonical = http://medigree.net/eu/fhir/medigree</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>1.0.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> medigree</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://medigree.net/eu/fhir/medigree</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.fhir.be.my.template#0.0.1 -&gt; hl7.be.fhir.template#0.0.1 -&gt; fhir.base.template#0.2.2</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://medigree.net/eu/fhir/medigree (Problem #1 with package-list.json at http://medigree.net/eu/fhir/medigree: medigree.net)</td></tr>
+ <tr><td>Summary:</td><td> errors = 37, warn = 16, info = 20, broken links = 1</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-dose-form-ontology-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-prod-type-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-medigree"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-medigree</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-Med-amlor"><b>/github/workspace/fsh-generated/resources/Medication-Med-amlor</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-EPI-humalog"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-EPI-humalog</b></a></td><td><b>30</b></td><td><b>2</b></td><td><b>18</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_SearchParameter-sp-phpid"><b>/github/workspace/fsh-generated/resources/SearchParameter-sp-phpid</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_SearchParameter-sp-prod-type"><b>/github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-AMPModel"><b>/github/workspace/fsh-generated/resources/StructureDefinition-AMPModel</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-AMPPModel"><b>/github/workspace/fsh-generated/resources/StructureDefinition-AMPPModel</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PharmaceuticalProduct"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-VMPGroupModel"><b>/github/workspace/fsh-generated/resources/StructureDefinition-VMPGroupModel</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-VMPModel"><b>/github/workspace/fsh-generated/resources/StructureDefinition-VMPModel</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-VMPPModel"><b>/github/workspace/fsh-generated/resources/StructureDefinition-VMPPModel</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dose-form-ontology-cs"><b>/github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-prod-type-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-prod-type-vs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/dose-form-ontology-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/dose-form-ontology-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationKnowledge/EPI-humalog.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/Med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-EPI-humalog.html#l334">output/MedicationKnowledge-EPI-humalog.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 624</a></b></td><td><b>error</b></td><td><b>The link 'Organization/Organization-uv-epi' for &quot;Organization/Organization-uv-epi&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-dose-form-ontology-cs"> </a>
+<h2><a href="CodeSystem-dose-form-ontology-cs.html">fsh-generated/resources/CodeSystem-dose-form-ontology-cs.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-prod-type-cs"> </a>
+<h2><a href="CodeSystem-prod-type-cs.html">fsh-generated/resources/CodeSystem-prod-type-cs.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-medigree"> </a>
+<h2><a href="ImplementationGuide-medigree.html">fsh-generated/resources/ImplementationGuide-medigree.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"></div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.where(url = 'http://medigree.net/eu/fhir/medigree')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-medigree.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree) does not match the URL (http://medigree.net/eu/fhir/medigree)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated/resources/ImplementationGuide-medigree</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree vs http://medigree.net/eu/fhir/medigree</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Medication-Med-amlor"> </a>
+<h2><a href="Medication-Med-amlor.html">fsh-generated/resources/Medication-Med-amlor.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Medication: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medication.html">Medication</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code.coding[0] (l6/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationKnowledge-EPI-humalog"> </a>
+<h2><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>MedicationKnowledge: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationknowledge.html">MedicationKnowledge</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.code.coding[0] (l20/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.code.coding[1] (l24/c8)</b></td><td><b>error</b></td><td><b>Unable to find code 13884911000001102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;13884911000001102&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#13884911000001102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#13884911000001102'</b> (<a href="qa-tx.html#l15">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.manufacturer (l33/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Organization/Organization-uv-epi'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationKnowledge.productType[0].coding[0] (l54/c10)</b></td><td><b>warning</b></td><td><b>The display &quot;Chemical Medicinal Product&quot; is not a valid display for the code {http://snomed.info/sct}767102007 - should be one of ['Medicinal product categorised by chemical element', 'Medicinal product categorized by chemical element', 'Medicinal product categorized by chemical element (product)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#767102007'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationKnowledge.productType[1].coding[0] (l63/c10)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs#IDMP_MP should be one of 'IDMP Medicinal Product' instead of 'IDMPMedicinalProduct' for 'https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs#IDMP_MP'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[0].extension[0].value.ofType(CodeableConcept).coding[0] (l78/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_ValueSet2"><b>The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[0].extension[0].value.ofType(CodeableConcept).coding[0] (l78/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_ValueSet"><b>Invalid System URI: http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity - cannot use a value set URI as a system</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[0].extension[0].value.ofType(CodeableConcept).coding[0] (l78/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[0].extension[1].value.ofType(Reference) (l90/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[0].item.ofType(CodeableConcept).coding[0] (l95/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[0].strength (l103/c23)</b></td><td><b>error</b></td><td title="rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed"><b>rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[0].strength.numerator (l104/c24)</b></td><td><b>error</b></td><td><b>Error processing Unit: 'units/ml': The unit &quot;units&quot; is unknown at character 1; The code &quot;units/ml&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units/ml) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units/ml'</b> (<a href="qa-tx.html#l19">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[1].extension[0].value.ofType(CodeableConcept).coding[0] (l116/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[1].extension[0].value.ofType(CodeableConcept).coding[0].system (l118/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[1].extension[1].value.ofType(Reference) (l128/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[1].item.ofType(CodeableConcept).coding[0] (l133/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[2].extension[0].value.ofType(CodeableConcept).coding[0] (l147/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[2].extension[0].value.ofType(CodeableConcept).coding[0].system (l149/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[2].extension[1].value.ofType(Reference) (l159/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[2].item.ofType(CodeableConcept).coding[0] (l164/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[3].extension[0].value.ofType(CodeableConcept).coding[0] (l178/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[3].extension[0].value.ofType(CodeableConcept).coding[0].system (l180/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[3].extension[1].value.ofType(Reference) (l190/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[3].item.ofType(CodeableConcept).coding[0] (l195/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[4].extension[0].value.ofType(CodeableConcept).coding[0] (l209/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[4].extension[0].value.ofType(CodeableConcept).coding[0].system (l211/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[4].extension[1].value.ofType(Reference) (l221/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[4].item.ofType(CodeableConcept).coding[0] (l226/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[5].extension[0].value.ofType(CodeableConcept).coding[0] (l240/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[5].extension[0].value.ofType(CodeableConcept).coding[0].system (l242/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[5].extension[1].value.ofType(Reference) (l252/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[5].item.ofType(CodeableConcept).coding[0] (l257/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[6].extension[0].value.ofType(CodeableConcept).coding[0] (l271/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[6].extension[0].value.ofType(CodeableConcept).coding[0].system (l273/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[6].extension[1].value.ofType(Reference) (l283/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[6].item.ofType(CodeableConcept).coding[0] (l288/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[7].extension[0].value.ofType(CodeableConcept).coding[0] (l302/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[7].extension[0].value.ofType(CodeableConcept).coding[0].system (l304/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.ingredient[7].extension[1].value.ofType(Reference) (l314/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.ingredient[7].item.ofType(CodeableConcept).coding[0] (l319/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.packaging.type.coding[0] (l342/c10)</b></td><td><b>error</b></td><td><b>Unable to find code 3318611000001103 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;3318611000001103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#3318611000001103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#3318611000001103'</b> (<a href="qa-tx.html#l21">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.packaging.quantity (l350/c18)</b></td><td><b>error</b></td><td><b>Error processing Unit: 'units': The unit &quot;units&quot; is unknown at character 1; The code &quot;units&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units'</b> (<a href="qa-tx.html#l22">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[0].type.coding[0] (l359/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[1].type.coding[0] (l369/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[2].type.coding[0] (l379/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[3].type.coding[0] (l389/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[4].type.coding[0] (l399/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[5].type.coding[0] (l409/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[6].type.coding[0] (l419/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[7].type.coding[0] (l429/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_SearchParameter-sp-phpid"> </a>
+<h2><a href="SearchParameter-sp-phpid.html">fsh-generated/resources/SearchParameter-sp-phpid.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title="spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_SearchParameter-sp-prod-type"> </a>
+<h2><a href="SearchParameter-sp-prod-type.html">fsh-generated/resources/SearchParameter-sp-prod-type.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title="spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-AMPModel"> </a>
+<h2><a href="StructureDefinition-AMPModel.html">fsh-generated/resources/StructureDefinition-AMPModel.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-AMPPModel"> </a>
+<h2><a href="StructureDefinition-AMPPModel.html">fsh-generated/resources/StructureDefinition-AMPPModel.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PharmaceuticalProduct"> </a>
+<h2><a href="StructureDefinition-PharmaceuticalProduct.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-VMPGroupModel"> </a>
+<h2><a href="StructureDefinition-VMPGroupModel.html">fsh-generated/resources/StructureDefinition-VMPGroupModel.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-VMPModel"> </a>
+<h2><a href="StructureDefinition-VMPModel.html">fsh-generated/resources/StructureDefinition-VMPModel.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-VMPPModel"> </a>
+<h2><a href="StructureDefinition-VMPPModel.html">fsh-generated/resources/StructureDefinition-VMPPModel.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-dose-form-ontology-cs"> </a>
+<h2><a href="ValueSet-dose-form-ontology-cs.html">fsh-generated/resources/ValueSet-dose-form-ontology-cs.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-prod-type-vs"> </a>
+<h2><a href="ValueSet-prod-type-vs.html">fsh-generated/resources/ValueSet-prod-type-vs.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-medigree.html">fsh-generated/resources/ImplementationGuide-medigree.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-medigree.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree) does not match the URL (http://medigree.net/eu/fhir/medigree)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Organization/Organization-uv-epi'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to resolve resource 'Org1'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Medication-Med-amlor.html">fsh-generated/resources/Medication-Med-amlor.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-AMPModel.html">fsh-generated/resources/StructureDefinition-AMPModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-AMPPModel.html">fsh-generated/resources/StructureDefinition-AMPPModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-VMPGroupModel.html">fsh-generated/resources/StructureDefinition-VMPGroupModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-VMPModel.html">fsh-generated/resources/StructureDefinition-VMPModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-VMPPModel.html">fsh-generated/resources/StructureDefinition-VMPPModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to find code 13884911000001102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;13884911000001102&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#13884911000001102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#13884911000001102'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>The display &quot;Chemical Medicinal Product&quot; is not a valid display for the code {http://snomed.info/sct}767102007 - should be one of ['Medicinal product categorised by chemical element', 'Medicinal product categorized by chemical element', 'Medicinal product categorized by chemical element (product)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#767102007'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Display Name for https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs#IDMP_MP should be one of 'IDMP Medicinal Product' instead of 'IDMPMedicinalProduct' for 'https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs#IDMP_MP'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Error processing Unit: 'units/ml': The unit &quot;units&quot; is unknown at character 1; The code &quot;units/ml&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units/ml) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units/ml'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unable to find code 3318611000001103 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;3318611000001103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#3318611000001103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#3318611000001103'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Error processing Unit: 'units': The unit &quot;units&quot; is unknown at character 1; The code &quot;units&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_Unknown"> </a>
+<h2>Terminology_TX_System_Unknown</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_ValueSet"> </a>
+<h2>Terminology_TX_System_ValueSet</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>Invalid System URI: http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity - cannot use a value set URI as a system</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_ValueSet2"> </a>
+<h2>Terminology_TX_System_ValueSet2</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+</table>
+</body>
+</html>

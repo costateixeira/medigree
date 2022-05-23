@@ -1,0 +1,22 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"VMPPModel","VMPPModel","","","",0,*,"","","","","VMPP logical model","VMPP logical model","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"VMPPModel.identifier","VMPPModel.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Business identifier for this medication","Business identifier for this medication","","","","","","","","","",,,,,"",,,,"VMPPModel.identifier",0,*,"",""
+"VMPPModel.ingredient","VMPPModel.ingredient","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Ingredient(s) that are part of the product, with therapeutical usage or not","Ingredient(s) that are part of the product, with therapeutical usage or not","","","","","","","","","",,,,,"",,,,"VMPPModel.ingredient",1,*,"",""
+"VMPPModel.ingredient.substance","VMPPModel.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Codification of the substance","Codification of the substance","","","","","","","","","",,,,,"",,,,"VMPPModel.ingredient.substance",1,1,"",""
+"VMPPModel.ingredient.role","VMPPModel.ingredient.role","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Role the substance has in this product (active principle, excipient, ...)","Role the substance has in this product (active principle, excipient, ...)","","","","","","","","","",,,,,"",,,,"VMPPModel.ingredient.role",1,1,"",""
+"VMPPModel.ingredient.strength","VMPPModel.ingredient.strength","","","",1,1,"","","","Quantity {[]} {[]}
+","Strength of the substance in this product","Strength of the substance in this product","","","","","","","","","",,,,,"",,,,"VMPPModel.ingredient.strength",1,1,"",""
+"VMPPModel.routeOfAdministration","VMPPModel.routeOfAdministration","","","",1,*,"","","","CodeableConcept {[]} {[]}
+","The approved route of administration","The approved route of administration","","","","","","","","","",,,,,"",,,,"VMPPModel.routeOfAdministration",1,*,"",""
+"VMPPModel.pharmaceuticalDoseForm","VMPPModel.pharmaceuticalDoseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Dose form of the product - tablet, powder, solution...","Dose form of the product - tablet, powder, solution...","","","","","","","","","",,,,,"",,,,"VMPPModel.pharmaceuticalDoseForm",1,1,"",""
+"VMPPModel.packaging","VMPPModel.packaging","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Details about packaged medications","Details about packaged medications","","","","","","","","","",,,,,"",,,,"VMPPModel.packaging",1,1,"",""
+"VMPPModel.packaging.type","VMPPModel.packaging.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","A code that defines the specific type of packaging that the medication can be found in","A code that defines the specific type of packaging that the medication can be found in","","","","","","","","","",,,,,"",,,,"VMPPModel.packaging.type",0,1,"",""
+"VMPPModel.packaging.quantity","VMPPModel.packaging.quantity","","","",0,1,"","","","Quantity {[]} {[]}
+","The number of product units the package would contain if fully loaded","The number of product units the package would contain if fully loaded","","","","","","","","","",,,,,"",,,,"VMPPModel.packaging.quantity",0,1,"",""

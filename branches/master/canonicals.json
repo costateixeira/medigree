@@ -1,0 +1,93 @@
+[
+  {
+    "id": "medigree",
+    "type": "ImplementationGuide",
+    "url": "http://medigree.net/eu/fhir/medigree",
+    "version": "1.0.0",
+    "name": "Medigree"
+  },
+  {
+    "id": "dose-form-ontology-cs",
+    "type": "CodeSystem",
+    "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
+    "version": "1.0.0",
+    "name": "DoseFormOntologyCS"
+  },
+  {
+    "id": "AMPModel",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPModel",
+    "version": "1.0.0",
+    "name": "AMPModel"
+  },
+  {
+    "id": "AMPPModel",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPPModel",
+    "version": "1.0.0",
+    "name": "AMPPModel"
+  },
+  {
+    "id": "PharmaceuticalProduct",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
+    "version": "1.0.0",
+    "name": "PharmaceuticalProduct"
+  },
+  {
+    "id": "VMPGroupModel",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPGroupModel",
+    "version": "1.0.0",
+    "name": "VMPGroupModel"
+  },
+  {
+    "id": "VMPModel",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPModel",
+    "version": "1.0.0",
+    "name": "VMPModel"
+  },
+  {
+    "id": "VMPPModel",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPPModel",
+    "version": "1.0.0",
+    "name": "VMPPModel"
+  },
+  {
+    "id": "dose-form-ontology-cs",
+    "type": "ValueSet",
+    "url": "http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs",
+    "version": "1.0.0",
+    "name": "DoseFormOntologyCS"
+  },
+  {
+    "id": "prod-type-cs",
+    "type": "CodeSystem",
+    "url": "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+    "version": "1.0.0",
+    "name": "ProductTypeCS"
+  },
+  {
+    "id": "sp-phpid",
+    "type": "SearchParameter",
+    "url": "https://fhirbender.github.io/mpd-box/SearchParameter/sp-phpid",
+    "version": "1.0.0",
+    "name": "PhPID-SEARCH-PARAMETER"
+  },
+  {
+    "id": "sp-prod-type",
+    "type": "SearchParameter",
+    "url": "https://fhirbender.github.io/mpd-box/SearchParameter/sp-prod-type",
+    "version": "1.0.0",
+    "name": "PPRDUCT-TYPE-SEARCH-PARAMETER"
+  },
+  {
+    "id": "prod-type-vs",
+    "type": "ValueSet",
+    "url": "https://fhirbender.github.io/mpd-box/ValueSet/prod-type-cs",
+    "version": "1.0.0",
+    "name": "ProductTypeVS"
+  }
+]

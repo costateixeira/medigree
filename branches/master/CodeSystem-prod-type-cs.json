@@ -1,0 +1,92 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "prod-type-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IDMP_PhP<a name=\"prod-type-cs-IDMP_PhP\"> </a></td><td>IDMP Pharmaceutical Product</td></tr><tr><td style=\"white-space:nowrap\">IDMP_MP<a name=\"prod-type-cs-IDMP_MP\"> </a></td><td>IDMP Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">IDMP_PP<a name=\"prod-type-cs-IDMP_PP\"> </a></td><td>IDMP Packaged Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">BE_MP<a name=\"prod-type-cs-BE_MP\"> </a></td><td>Belgian Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">BE_VMP<a name=\"prod-type-cs-BE_VMP\"> </a></td><td>Belgian Virtual Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">ePI<a name=\"prod-type-cs-ePI\"> </a></td><td>ePI</td></tr></table></div>"
+  },
+  "url": "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+  "version": "1.0.0",
+  "name": "ProductTypeCS",
+  "title": "Product Types code system",
+  "status": "active",
+  "date": "2022-05-23T13:20:42+00:00",
+  "publisher": "My Organization",
+  "contact": [
+    {
+      "name": "My Organization",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Product Types",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "IDMP_PhP",
+      "display": "IDMP Pharmaceutical Product"
+    },
+    {
+      "code": "IDMP_MP",
+      "display": "IDMP Medicinal Product"
+    },
+    {
+      "code": "IDMP_PP",
+      "display": "IDMP Packaged Medicinal Product"
+    },
+    {
+      "code": "BE_MP",
+      "display": "Belgian Medicinal Product"
+    },
+    {
+      "code": "BE_VMP",
+      "display": "Belgian Virtual Medicinal Product",
+      "property": [
+        {
+          "code": "template",
+          "valueString": "{\"<>\":\"div\",\"id\":\"${synonym}\",\"html\":[{\"<>\":\"table\",\"class\":\"table table-striped table-sm\",\"html\":[{\"<>\":\"thead\",\"html\":[{\"<>\":\"tr\",\"html\":[{\"<>\":\"th\",\"scope\":\"col\",\"html\":\"${resourceType}\"},{\"<>\":\"th\",\"scope\":\"col\",\"html\":\"\"}]}]},{\"<>\":\"tbody\",\"html\":[{\"<>\":\"tr\",\"html\":[{\"<>\":\"td\",\"style\":\"width: 90px;\",\"scope\":\"row\",\"html\":\"Name\"},{\"<>\":\"td\",\"html\":\"${synonym}\"}]},{\"<>\":\"tr\",\"html\":[{\"<>\":\"td\",\"scope\":\"row\",\"html\":\"ID\"},{\"<>\":\"td\",\"html\":\"${id}\"}]},{\"<>\":\"tr\",\"html\":[{\"<>\":\"td\",\"scope\":\"row\",\"html\":\"Status\"},{\"<>\":\"td\",\"html\":\"${status}\"}]}]}]}]}"
+        }
+      ]
+    },
+    {
+      "code": "ePI",
+      "display": "ePI",
+      "property": [
+        {
+          "code": "template",
+          "valueString": "{\"<>\":\"div\",\"id\":\"${synonym}\",\"html\":[{\"<>\":\"table\",\"class\":\"table table-striped table-sm\",\"html\":[{\"<>\":\"thead\",\"html\":[{\"<>\":\"tr\",\"html\":[{\"<>\":\"th\",\"scope\":\"col\",\"html\":\"${resourceType}\"},{\"<>\":\"th\",\"scope\":\"col\",\"html\":\"\"}]}]},{\"<>\":\"tbody\",\"html\":[{\"<>\":\"tr\",\"html\":[{\"<>\":\"td\",\"style\":\"width: 90px;\",\"scope\":\"row\",\"html\":\"Name\"},{\"<>\":\"td\",\"html\":\"${synonym}\"}]},{\"<>\":\"tr\",\"html\":[{\"<>\":\"td\",\"scope\":\"row\",\"html\":\"ID\"},{\"<>\":\"td\",\"html\":\"${id}\"}]},{\"<>\":\"tr\",\"html\":[{\"<>\":\"td\",\"scope\":\"row\",\"html\":\"Status\"},{\"<>\":\"td\",\"html\":\"${status}\"}]}]}]}]}"
+        }
+      ]
+    }
+  ]
+}
