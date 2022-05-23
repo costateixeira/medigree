@@ -1,0 +1,168 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "823cf7aa-6701-4e5f-bc30-576d2e1203ce",
+  "meta" : {
+    "lastUpdated" : "2022-05-23T13:20:42.909+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "dose-form-ontology-cs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-dose-form-ontology-cs.html\">Dose Form Ontology Code System v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-dose-form-ontology-cs.html\"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</code></a></p><table class=\"codes\"><tr><td><b>Level</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name=\"http---medigree.net-eu-fhir-medigree-CodeSystem-dose-form-ontology-cs-20053000\"> </a>1</td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-20053000\">20053000</a></td><td>Oral use</td><td>Oral Use</td></tr><tr><td><a name=\"http---medigree.net-eu-fhir-medigree-CodeSystem-dose-form-ontology-cs-10220000\"> </a>2</td><td style=\"white-space:nowrap\">    <a href=\"CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-10220000\">10220000</a></td><td>Tablet</td><td>Tablet</td></tr><tr><td><a name=\"http---medigree.net-eu-fhir-medigree-CodeSystem-dose-form-ontology-cs-10318000\"> </a>3</td><td style=\"white-space:nowrap\">      <a href=\"CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-10318000\">10318000</a></td><td>Sublingual tablet</td><td>Sublingual tablet</td></tr></table></div>"
+      },
+      "url" : "http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs",
+      "version" : "1.0.0",
+      "name" : "DoseFormOntologyCS",
+      "title" : "Dose Form ontology Value Set",
+      "status" : "active",
+      "date" : "2022-05-23T13:20:42+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1ed11889-e036-474f-ae3e-ca2afa1f394c",
+        "timestamp" : "2022-05-23T13:21:00+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
+          "code" : "20053000",
+          "display" : "Oral use",
+          "contains" : [{
+            "system" : "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
+            "code" : "10220000",
+            "display" : "Tablet",
+            "contains" : [{
+              "system" : "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
+              "code" : "10318000",
+              "display" : "Sublingual tablet"
+            }]
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhirbender.github.io/mpd-box/ValueSet/prod-type-cs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "prod-type-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-prod-type-cs.html\">Product Types code system v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-prod-type-cs.html\"><code>https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhirbender.github.io-mpd-box-CodeSystem-prod-type-cs-IDMP-PhP\"> </a>  <a href=\"CodeSystem-prod-type-cs.html#prod-type-cs-IDMP_PhP\">IDMP_PhP</a></td><td>IDMP Pharmaceutical Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhirbender.github.io-mpd-box-CodeSystem-prod-type-cs-IDMP-MP\"> </a>  <a href=\"CodeSystem-prod-type-cs.html#prod-type-cs-IDMP_MP\">IDMP_MP</a></td><td>IDMP Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhirbender.github.io-mpd-box-CodeSystem-prod-type-cs-IDMP-PP\"> </a>  <a href=\"CodeSystem-prod-type-cs.html#prod-type-cs-IDMP_PP\">IDMP_PP</a></td><td>IDMP Packaged Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhirbender.github.io-mpd-box-CodeSystem-prod-type-cs-BE-MP\"> </a>  <a href=\"CodeSystem-prod-type-cs.html#prod-type-cs-BE_MP\">BE_MP</a></td><td>Belgian Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhirbender.github.io-mpd-box-CodeSystem-prod-type-cs-BE-VMP\"> </a>  <a href=\"CodeSystem-prod-type-cs.html#prod-type-cs-BE_VMP\">BE_VMP</a></td><td>Belgian Virtual Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhirbender.github.io-mpd-box-CodeSystem-prod-type-cs-ePI\"> </a>  <a href=\"CodeSystem-prod-type-cs.html#prod-type-cs-ePI\">ePI</a></td><td>ePI</td></tr></table></div>"
+      },
+      "url" : "https://fhirbender.github.io/mpd-box/ValueSet/prod-type-cs",
+      "version" : "1.0.0",
+      "name" : "ProductTypeVS",
+      "title" : "Product Types Value Set",
+      "status" : "active",
+      "date" : "2022-05-23T13:20:42+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Product Types Value Set.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9c0defa2-b634-4532-8c45-8e1d68fbae7b",
+        "timestamp" : "2022-05-23T13:21:00+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+          "code" : "IDMP_PhP",
+          "display" : "IDMP Pharmaceutical Product"
+        },
+        {
+          "system" : "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+          "code" : "IDMP_MP",
+          "display" : "IDMP Medicinal Product"
+        },
+        {
+          "system" : "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+          "code" : "IDMP_PP",
+          "display" : "IDMP Packaged Medicinal Product"
+        },
+        {
+          "system" : "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+          "code" : "BE_MP",
+          "display" : "Belgian Medicinal Product"
+        },
+        {
+          "system" : "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+          "code" : "BE_VMP",
+          "display" : "Belgian Virtual Medicinal Product"
+        },
+        {
+          "system" : "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+          "code" : "ePI",
+          "display" : "ePI"
+        }]
+      }
+    }
+  }]
+}

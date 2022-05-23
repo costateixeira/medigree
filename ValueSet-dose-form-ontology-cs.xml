@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dose-form-ontology-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-dose-form-ontology-cs.html"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs"/>
+  <version value="1.0.0"/>
+  <name value="DoseFormOntologyCS"/>
+  <title value="Dose Form ontology Value Set"/>
+  <status value="active"/>
+  <date value="2022-05-23T13:20:42+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"/>
+    </include>
+  </compose>
+</ValueSet>

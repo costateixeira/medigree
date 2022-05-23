@@ -1,0 +1,193 @@
+## Use in VSCode. Required extension : humao.rest-client
+
+## How to use: 
+## Define the variables e.g. host
+## Upload the examples if needed
+
+#@host = http://hapi.fhir.org/baseR4
+@host = http://185.11.167.107:8080/fhir
+
+### See if host is alive
+GET {{host}}/metadata HTTP/1.1
+
+
+### GET all patients
+GET {{host}}/Patient
+
+### GET a specific Patient using the id - this returns a Patient if it exists
+GET {{host}}/Patient/1545788
+
+### GET a specific patient by SEARCHING using the ID - this returns a Bundle
+GET {{host}}/Patient?_id=1545788
+
+### POST search 
+POST {{host}}/Patient/_search HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+_id=2081525
+
+
+### Search Medication Request for a certain Patient
+GET {{host}}/MedicationRequest?subject=Patient/5
+
+### Search observation for a given patient - logical reference (patient.identifier=xxxx)
+GET {{host}}/Patient?_id=1545788
+
+### Return a JSON response (?format=json)
+GET {{host}}/Patient/1545788?_format=json
+
+### Return a XML response (?format=xml)
+GET {{host}}/Patient/1545788?_format=xml
+
+### Return only summary (_summary)
+GET {{host}}/Patient?_summary=true
+
+### Return only certain elements (_elements)
+GET {{host}}/Patient?_elements=identifier,active,link
+
+### Sort search results
+GET {{host}}/Patient?_sort=-birthdate,name
+
+### search: Return only 10 results, then next 10 results
+GET {{host}}/Patient?_sort=-birthdate,name&_count=10
+
+### Free text search
+GET {{host}}/Patient?given:contains=eve
+GET {{host}}/Patient?given:exact=Eve
+
+### search types (tokens, etc)
+#### Search Patient by gender
+GET {{host}}/Patient?gender=male
+#### Search Patient by gender (NOT)
+GET {{host}}/Patient?gender:not=male
+
+### search operators: search patients above 65 years old
+GET {{host}}/Patient?birthdate=lt1956-11-03
+
+
+### 
+GET {{host}}/Condition?code:below=http://snomed.info/sct%7C73211009
+
+
+### graphql
+POST {{host}}/Patient/$graphql HTTP/1.1
+Content-Type: application/json
+
+{"query":" { \n   Patient(id: example) { id, active } \n }","variables":{}}
+
+
+
+
+###
+PUT {{host}}/CodeSystem/dose-form-ontology-cs
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DoseFormOntologyCS",
+  "id": "dose-form-ontology-cs",
+  "title": "Dose Form Ontology Code System",
+  "version": "1.0.0",
+  "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
+  "concept": [
+    {
+      "code": "20053000",
+      "display": "Oral use",
+      "definition": "Oral Use",
+      "concept": [
+        {
+          "code": "10220000",
+          "display": "Tablet",
+          "definition": "Tablet",
+          "concept": [
+            {
+              "code": "10318000",
+              "display": "Sublingual tablet",
+              "definition": "Sublingual tablet",
+              "designation": [
+                {
+                  "language": "en",
+                  "value": "Sublingual tablet"
+                }
+              ]
+            }
+          ],
+          "designation": [
+            {
+              "language": "en",
+              "value": "Tablet"
+            },
+            {
+              "language": "nl-BE",
+              "value": "X"
+            },
+            {
+              "language": "fr-BE",
+              "value": "Y"
+            }
+          ]
+        }
+      ],
+      "designation": [
+        {
+          "language": "en",
+          "value": "Oral use"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Oraal gebruik"
+        },
+        {
+          "language": "fr-BE",
+          "value": "Voie orale"
+        }
+      ]
+    }
+  ],
+  "hierarchyMeaning": "is-a",
+  "count": 3
+}
+
+
+
+# Add medication - Amlor
+###
+PUT {{host}}/Medication/Med-amlor
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+{
+  "resourceType": "Medication",
+  "id": "Med-amlor",
+  "code": {
+    "coding": [
+      {
+        "code": "123"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10220000",
+        "system": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"
+      }
+    ]
+  }
+}
+
+
+### search dose form - all meds with a specific dose form
+GET {{host}}/Medication?form=http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs|10220000
+
+### search dose form hierarchy - all meds with Oral dose forms (and children)
+GET {{host}}/Medication?form:below=http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs%7C20053000
+
+
+### find parent code (this is not working)
+GET {{host}}/CodeSystem/$lookup?system=http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs&code=10220000
+
+
