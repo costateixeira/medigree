@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 37, warn = 16, info = 20, 1 -->
+<!-- broken links = errors = 37, warn = 17, info = 20, 1 -->
 <head>
   <title>Medigree : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Medigree</h1>
- <p>Generated Mon May 23 13:21:09 UTC 2022, FHIR version 4.0.1 for medigree#1.0.0 (canonical = <a href="http://medigree.net/eu/fhir/medigree">http://medigree.net/eu/fhir/medigree</a> (<a href="http://medigree.net/eu/fhir/medigree/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon May 23 17:23:12 UTC 2022, FHIR version 4.0.1 for medigree#1.0.0 (canonical = <a href="http://medigree.net/eu/fhir/medigree">http://medigree.net/eu/fhir/medigree</a> (<a href="http://medigree.net/eu/fhir/medigree/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.120</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = medigree, Canonical = http://medigree.net/eu/fhir/medigree</td></tr>
@@ -53,20 +53,20 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://medigree.net/eu/fhir/medigree (Problem #1 with package-list.json at http://medigree.net/eu/fhir/medigree: medigree.net)</td></tr>
- <tr><td>Summary:</td><td> errors = 37, warn = 16, info = 20, broken links = 1</td></tr>
+ <tr><td>Summary:</td><td> errors = 37, warn = 17, info = 20, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>6</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-medigree"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-medigree</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Medication-Med-amlor"><b>/github/workspace/fsh-generated/resources/Medication-Med-amlor</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Medication-med-amlor"><b>/github/workspace/fsh-generated/resources/Medication-med-amlor</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-EPI-humalog"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-EPI-humalog</b></a></td><td><b>30</b></td><td><b>2</b></td><td><b>18</b></td>
@@ -114,7 +114,10 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationKnowledge/EPI-humalog.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/Med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/MedPrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Medication/med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationKnowledge-EPI-humalog.html#l334">output/MedicationKnowledge-EPI-humalog.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 624</a></b></td><td><b>error</b></td><td><b>The link 'Organization/Organization-uv-epi' for &quot;Organization/Organization-uv-epi&quot; cannot be resolved</b></td>
@@ -136,8 +139,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Medication-Med-amlor"> </a>
-<h2><a href="Medication-Med-amlor.html">fsh-generated/resources/Medication-Med-amlor.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Medication-med-amlor"> </a>
+<h2><a href="Medication-med-amlor.html">fsh-generated/resources/Medication-med-amlor.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Medication: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medication.html">Medication</a></li></ul>
 </div>
  <table class="grid">
@@ -487,7 +490,7 @@
 <h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Medication-Med-amlor.html">fsh-generated/resources/Medication-Med-amlor.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><a href="Medication-med-amlor.html">fsh-generated/resources/Medication-med-amlor.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
 </table>
 <hr/>

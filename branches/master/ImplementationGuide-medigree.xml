@@ -345,12 +345,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/MedPrescription"/>
+      </reference>
+      <name value="MedPrescription"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Medication"/>
       </extension>
       <reference>
-        <reference value="Medication/Med-amlor"/>
+        <reference value="Medication/med-amlor"/>
       </reference>
-      <name value="Med-amlor"/>
+      <name value="med-amlor"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
