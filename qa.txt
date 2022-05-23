@@ -1,15 +1,16 @@
 ﻿Medigree : Validation Results
 =========================================
 
-err = 37, warn = 16, info = 20
+err = 37, warn = 17, info = 20
 IG Publisher Version: 1.1.120
-Generated Mon May 23 13:21:09 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
- Build Errors : 1 / 5 / 0
+Generated Mon May 23 17:23:12 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
+ Build Errors : 1 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-medigree : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/Medication-Med-amlor : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Medication-med-amlor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-EPI-humalog : 30 / 2 / 19
+ /github/workspace/fsh-generated/resources/MedicationRequest-MedPrescription : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AMPModel : 1 / 1 / 1
@@ -26,7 +27,8 @@ WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/dose-form-ontology-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/dose-form-ontology-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationKnowledge/EPI-humalog.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/Med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/MedPrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/MedicationKnowledge-EPI-humalog.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 624: The link 'Organization/Organization-uv-epi' for "Organization/Organization-uv-epi" cannot be resolved
 == fsh-generated/resources/CodeSystem-dose-form-ontology-cs.json ==
 INFORMATION: CodeSystem/dose-form-ontology-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -35,8 +37,8 @@ INFORMATION: CodeSystem/prod-type-cs: CodeSystem: CodeSystems SHOULD have a stat
 == fsh-generated/resources/ImplementationGuide-medigree.json ==
 ERROR: ImplementationGuide.where(url = 'http://medigree.net/eu/fhir/medigree'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-medigree.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree) does not match the URL (http://medigree.net/eu/fhir/medigree)
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-medigree: URL Mismatch http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree vs http://medigree.net/eu/fhir/medigree
-== fsh-generated/resources/Medication-Med-amlor.json ==
-WARNING: Medication/Med-amlor: Medication.code.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Medication-med-amlor.json ==
+WARNING: Medication/med-amlor: Medication.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/MedicationKnowledge-EPI-humalog.json ==
 INFORMATION: MedicationKnowledge/EPI-humalog: MedicationKnowledge.code.coding[0]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
 ERROR: MedicationKnowledge/EPI-humalog: MedicationKnowledge.code.coding[1]: Unable to find code 13884911000001102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code "13884911000001102" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#13884911000001102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#13884911000001102'
@@ -88,6 +90,7 @@ INFORMATION: MedicationKnowledge/EPI-humalog: MedicationKnowledge.drugCharacteri
 INFORMATION: MedicationKnowledge/EPI-humalog: MedicationKnowledge.drugCharacteristic[5].type.coding[0]: Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated
 INFORMATION: MedicationKnowledge/EPI-humalog: MedicationKnowledge.drugCharacteristic[6].type.coding[0]: Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated
 INFORMATION: MedicationKnowledge/EPI-humalog: MedicationKnowledge.drugCharacteristic[7].type.coding[0]: Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-MedPrescription.json ==
 == fsh-generated/resources/SearchParameter-sp-phpid.json ==
 WARNING: SearchParameter/sp-phpid: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/SearchParameter-sp-prod-type.json ==

@@ -1,9 +1,11 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MEDIGREE\Med-amlor - FHIR v4.0.1</title>
+    <title>MEDIGREE\MedPrescription - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -135,7 +137,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Med-amlor</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MedPrescription</b></li>
           
         </ul>
       </div>  <!-- /container -->
@@ -147,10 +149,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide: Medigree - Local Development build (v1.0.0). See the <a href="http://medigree.net/eu/fhir/medigree/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide: Medigree - Local Development build (v1.0.0). See the <a href="http://medigree.net/eu/fhir/medigree/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
-  
 
 
 
@@ -161,28 +162,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="MedicationRequest-MedPrescription.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="Medication-Med-amlor.xml.html">XML</a>
+      <a href="MedicationRequest-MedPrescription.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="Medication-Med-amlor.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="Medication-Med-amlor.ttl.html">TTL</a>
+      <a href="MedicationRequest-MedPrescription.ttl.html">TTL</a>
     </li>
   
 
@@ -191,11 +192,10 @@
 </ul>
 
 
-  <a name="root"> </a>
+<a name="root"> </a>
 
 
-  <h2 id="root">Example Medication: Med-amlor</h2>
-
+<h2 id="root">: MedPrescription - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -210,15 +210,34 @@
   </table>
 
 
+<p><a href="MedicationRequest-MedPrescription.json" no-download="true">Raw json</a> | <a href="MedicationRequest-MedPrescription.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource &quot;Med-amlor&quot; </p></div><p><b>code</b>: 123 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#123)</span></p><p><b>form</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-dose-form-ontology-cs.html">Dose Form Ontology Code System</a>#10220000)</span></p></div>
+  <pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resourceType</a>" : "MedicationRequest",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">id</a>" : "MedPrescription",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;MedPrescription\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;a href=\&quot;Medication-med-amlor.html\&quot;&gt;Medication/med-amlor&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">intent</a>" : "order",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication[x]">medicationReference</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Medication/med-amlor"
+  },
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://patientids.org",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "P09123873847"
+    }
+  }
+}</code></pre>
 
-  
 
   <!-- insert notes if present -->
   
@@ -247,7 +266,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 23, 2022 13:20+0000">2022-05-23</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 23, 2022 17:22+0000">2022-05-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

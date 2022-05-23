@@ -507,13 +507,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/MedPrescription"
+        },
+        "name": "MedPrescription",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Medication"
           }
         ],
         "reference": {
-          "reference": "Medication/Med-amlor"
+          "reference": "Medication/med-amlor"
         },
-        "name": "Med-amlor",
+        "name": "med-amlor",
         "exampleBoolean": true
       },
       {
