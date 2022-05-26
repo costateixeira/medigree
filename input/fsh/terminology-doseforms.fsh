@@ -12,6 +12,16 @@ Title:     "Dose Form Ontology Code System"
   * ^designation[+].language = #fr-BE
   * ^designation[=].value = "Voie orale"
 
+  * #10220XXX
+      "Capsule"
+      "Capsule"
+    * ^designation[0].language = #en
+    * ^designation[=].value = "Capsule"
+    * ^designation[+].language = #nl-BE
+    * ^designation[=].value = "X"
+    * ^designation[+].language = #fr-BE
+    * ^designation[=].value = "Y"
+
   * #10220000
       "Tablet"
       "Tablet"
