@@ -180,7 +180,35 @@ Content-Type: application/fhir+json;fhirVersion=4.0
 }
 
 
-### search dose form - all meds with a specific dose form
+
+# Add medication - Amlor capsules
+###
+PUT {{host}}/Medication/med-amlor-sl
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+
+{
+  "resourceType": "Medication",
+  "id": "med-amlor-sl",
+  "code": {
+    "coding": [
+      {
+        "code": "1234"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10318000",
+        "system": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"
+      }
+    ]
+  }
+}
+
+
+### search dose form - all meds with a specific dose form - tablet
 GET {{host}}/Medication?form=http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs|10220000
 
 ### search dose form hierarchy - all meds with Oral dose forms (and children)
@@ -224,7 +252,7 @@ GET {{host}}/MedicationRequest
 
 
 ### get prescription
-GET {{host}}/MedicationRequest?patient:identifier=http://patientids.org|P09123873847
+GET {{host}}/MedicationRequest?_include=MedicationRequest:medication
 
 ### get prescription and the medication that comes with it
 GET {{host}}/MedicationRequest?patient:identifier=P09123873847&_include=MedicationRequest:medication
