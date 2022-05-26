@@ -84,6 +84,20 @@
     "name": "BEVMPModel"
   },
   {
+    "id": "BoSS",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS",
+    "version": "1.0.0",
+    "name": "BoSS"
+  },
+  {
+    "id": "ConcentrationPresentation",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation",
+    "version": "1.0.0",
+    "name": "ConcentrationPresentation"
+  },
+  {
     "id": "IDMPPhPModel",
     "type": "StructureDefinition",
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPhPModel",
@@ -91,11 +105,32 @@
     "name": "IDMPPhPModel"
   },
   {
+    "id": "IDMPPharmaceuticalProduct",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct",
+    "version": "1.0.0",
+    "name": "IDMPPharmaceuticalProduct"
+  },
+  {
     "id": "PharmaceuticalProduct",
     "type": "StructureDefinition",
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
     "version": "1.0.0",
     "name": "PharmaceuticalProduct"
+  },
+  {
+    "id": "StrengthPattern",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern",
+    "version": "1.0.0",
+    "name": "StrengthPattern"
+  },
+  {
+    "id": "UnitOfPresentation",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation",
+    "version": "1.0.0",
+    "name": "UnitOfPresentation"
   },
   {
     "id": "VMPGroupModel",

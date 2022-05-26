@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "PharmaceuticalProduct"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge\">MedicationKnowledge</a><a name=\"MedicationKnowledge\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/medicationknowledge.html\">MedicationKnowledge</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Definition of Medication Knowledge</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code\">code</a><a name=\"MedicationKnowledge.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding\">Slices for coding</a><a name=\"MedicationKnowledge.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding:PhPID\" title=\"Slice PhPID\">coding:PhPID</a><a name=\"MedicationKnowledge.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding:PhPID.system\">system</a><a name=\"MedicationKnowledge.code.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.edqm.eu/pharmaceutical-product-identifier-type</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding:Other\" title=\"Slice Other\">coding:Other</a><a name=\"MedicationKnowledge.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding:Other.system\">system</a><a name=\"MedicationKnowledge.code.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.belgium.be/pharmaceutical-ids</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm\">doseForm</a><a name=\"MedicationKnowledge.doseForm\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding\">Slices for coding</a><a name=\"MedicationKnowledge.doseForm.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:EDQM\" title=\"Slice EDQM\">coding:EDQM</a><a name=\"MedicationKnowledge.doseForm.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:EDQM.system\">system</a><a name=\"MedicationKnowledge.doseForm.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.edqm.eu/dose-forms</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:Other\" title=\"Slice Other\">coding:Other</a><a name=\"MedicationKnowledge.doseForm.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:Other.system\">system</a><a name=\"MedicationKnowledge.doseForm.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.belgium.be/dose-forms</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.synonym\">synonym</a><a name=\"MedicationKnowledge.synonym\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Additional names for a medication</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.ingredient\">ingredient</a><a name=\"MedicationKnowledge.ingredient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Active or inactive ingredient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute\">Slices for intendedRoute</a><a name=\"MedicationKnowledge.intendedRoute\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">The intended or approved route of administration</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:coding.system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:EDQM\" title=\"Slice EDQM\">intendedRoute:EDQM</a><a name=\"MedicationKnowledge.intendedRoute\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The intended or approved route of administration</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0341.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:EDQM.coding\">coding</a><a name=\"MedicationKnowledge.intendedRoute.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:EDQM.coding.system\">system</a><a name=\"MedicationKnowledge.intendedRoute.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.edqm.eu/routes</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:Other\" title=\"Slice Other\">intendedRoute:Other</a><a name=\"MedicationKnowledge.intendedRoute\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The intended or approved route of administration</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0241.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:Other.coding\">coding</a><a name=\"MedicationKnowledge.intendedRoute.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:Other.coding.system\">system</a><a name=\"MedicationKnowledge.intendedRoute.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.belgium.be/routes</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge\">MedicationKnowledge</a><a name=\"MedicationKnowledge\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/medicationknowledge.html\">MedicationKnowledge</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Definition of Medication Knowledge</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code\">code</a><a name=\"MedicationKnowledge.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding\">Slices for coding</a><a name=\"MedicationKnowledge.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding:PhPID\" title=\"Slice PhPID\">coding:PhPID</a><a name=\"MedicationKnowledge.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding:PhPID.system\">system</a><a name=\"MedicationKnowledge.code.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.example.org/pharmaceutical-product-identifier-type</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1024.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.code.coding:Other\" title=\"Slice Other\">coding:Other</a><a name=\"MedicationKnowledge.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm\">doseForm</a><a name=\"MedicationKnowledge.doseForm\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding\">Slices for coding</a><a name=\"MedicationKnowledge.doseForm.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:EDQM\" title=\"Slice EDQM\">coding:EDQM</a><a name=\"MedicationKnowledge.doseForm.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:EDQM.system\">system</a><a name=\"MedicationKnowledge.doseForm.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.edqm.eu/dose-forms</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:Other\" title=\"Slice Other\">coding:Other</a><a name=\"MedicationKnowledge.doseForm.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.doseForm.coding:Other.system\">system</a><a name=\"MedicationKnowledge.doseForm.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.belgium.be/dose-forms</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.synonym\">synonym</a><a name=\"MedicationKnowledge.synonym\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Additional names for a medication</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.ingredient\">ingredient</a><a name=\"MedicationKnowledge.ingredient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Active or inactive ingredient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute\">Slices for intendedRoute</a><a name=\"MedicationKnowledge.intendedRoute\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">The intended or approved route of administration</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:coding.system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:EDQM\" title=\"Slice EDQM\">intendedRoute:EDQM</a><a name=\"MedicationKnowledge.intendedRoute\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The intended or approved route of administration</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0341.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:EDQM.coding\">coding</a><a name=\"MedicationKnowledge.intendedRoute.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:EDQM.coding.system\">system</a><a name=\"MedicationKnowledge.intendedRoute.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.edqm.eu/routes</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:Other\" title=\"Slice Other\">intendedRoute:Other</a><a name=\"MedicationKnowledge.intendedRoute\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The intended or approved route of administration</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0241.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:Other.coding\">coding</a><a name=\"MedicationKnowledge.intendedRoute.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PharmaceuticalProduct-definitions.html#MedicationKnowledge.intendedRoute:Other.coding.system\">system</a><a name=\"MedicationKnowledge.intendedRoute.coding.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of the terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://www.belgium.be/routes</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PharmaceuticalProduct"];
   fhir:StructureDefinition.title [ fhir:value "Pharmaceutical Product Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-26T15:10:33+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-26T16:44:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "My Organization"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -899,7 +899,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ];
-       fhir:ElementDefinition.patternUri [ fhir:value "http://www.edqm.eu/pharmaceutical-product-identifier-type" ];
+       fhir:ElementDefinition.patternUri [ fhir:value "http://www.example.org/pharmaceutical-product-identifier-type" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -1163,336 +1163,6 @@
        ]
      ], [
        fhir:index 22;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.id" ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.id" ];
-       fhir:ElementDefinition.representation [
-         fhir:value "xmlAttr";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
-       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
-           fhir:Extension.valueUrl [ fhir:value "string" ]
-         ];
-         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
-     ], [
-       fhir:index 23;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.extension" ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.extension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
-       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
-       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
-       fhir:ElementDefinition.alias [
-         fhir:value "extensions";
-         fhir:index 0
-       ], [
-         fhir:value "user content";
-         fhir:index 1
-       ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
-     ], [
-       fhir:index 24;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.system" ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.system" ];
-       fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
-       fhir:ElementDefinition.definition [ fhir:value "The identification of the code system that defines the meaning of the symbol in the code." ];
-       fhir:ElementDefinition.comment [ fhir:value "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." ];
-       fhir:ElementDefinition.requirements [ fhir:value "Need to be unambiguous about the source of the definition of the symbol." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Coding.system" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
-       ];
-       fhir:ElementDefinition.patternUri [ fhir:value "http://www.belgium.be/pharmaceutical-ids" ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.3" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./codeSystem" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
-       ]
-     ], [
-       fhir:index 25;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.version" ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.version" ];
-       fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
-       fhir:ElementDefinition.definition [ fhir:value "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ];
-       fhir:ElementDefinition.comment [ fhir:value "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Coding.version" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "string" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.7" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./codeSystemVersion" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
-       ]
-     ], [
-       fhir:index 26;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.code" ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.code" ];
-       fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
-       fhir:ElementDefinition.definition [ fhir:value "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ];
-       fhir:ElementDefinition.requirements [ fhir:value "Need to refer to a particular code in the system." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Coding.code" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.1" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./code" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
-       ]
-     ], [
-       fhir:index 27;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.display" ];
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable" ];
-         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-       ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.display" ];
-       fhir:ElementDefinition.short [ fhir:value "Representation defined by the system" ];
-       fhir:ElementDefinition.definition [ fhir:value "A representation of the meaning of the code in the system, following the rules of the system." ];
-       fhir:ElementDefinition.requirements [ fhir:value "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Coding.display" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "string" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.2 - but note this is not well followed" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CV.displayName" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
-       ]
-     ], [
-       fhir:index 28;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.userSelected" ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.userSelected" ];
-       fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
-       fhir:ElementDefinition.definition [ fhir:value "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." ];
-       fhir:ElementDefinition.comment [ fhir:value "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." ];
-       fhir:ElementDefinition.requirements [ fhir:value "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Coding.userSelected" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Sometimes implied by being first" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "CD.codingRationale" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
-       ]
-     ], [
-       fhir:index 29;
        fhir:Element.id [ fhir:value "MedicationKnowledge.code.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1543,7 +1213,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "MedicationKnowledge.status" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.status" ];
        fhir:ElementDefinition.short [ fhir:value "active | inactive | entered-in-error" ];
@@ -1594,7 +1264,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".statusCode" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "MedicationKnowledge.manufacturer" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.manufacturer" ];
        fhir:ElementDefinition.short [ fhir:value "Manufacturer of the item" ];
@@ -1647,7 +1317,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".player.scopingRole[typeCode=MANU].scoper" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm" ];
        fhir:ElementDefinition.short [ fhir:value "powder | tablets | capsule +" ];
@@ -1705,7 +1375,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".formCode" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.id" ];
        fhir:ElementDefinition.representation [
@@ -1738,7 +1408,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1802,7 +1472,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.slicing [
@@ -1856,7 +1526,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "EDQM" ];
@@ -1904,7 +1574,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -1937,7 +1607,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2001,7 +1671,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -2048,7 +1718,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.version" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -2093,7 +1763,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.code" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -2138,7 +1808,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2188,7 +1858,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -2234,7 +1904,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Other" ];
@@ -2282,7 +1952,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -2315,7 +1985,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2379,7 +2049,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -2426,7 +2096,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.version" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -2471,7 +2141,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.code" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -2516,7 +2186,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2566,7 +2236,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -2612,7 +2282,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2663,7 +2333,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "MedicationKnowledge.amount" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Amount of drug in package" ];
@@ -2705,7 +2375,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".quantity" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "MedicationKnowledge.synonym" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.synonym" ];
        fhir:ElementDefinition.short [ fhir:value "Additional names for a medication" ];
@@ -2737,7 +2407,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge" ];
        fhir:ElementDefinition.short [ fhir:value "Associated or related medication information" ];
@@ -2768,7 +2438,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 56;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.id" ];
        fhir:ElementDefinition.representation [
@@ -2801,7 +2471,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2856,7 +2526,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2916,7 +2586,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.type" ];
        fhir:ElementDefinition.short [ fhir:value "Category of medicationKnowledge" ];
@@ -2947,7 +2617,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.reference" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.relatedMedicationKnowledge.reference" ];
        fhir:ElementDefinition.short [ fhir:value "Associated documentation about the associated medication knowledge" ];
@@ -2983,7 +2653,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 61;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "MedicationKnowledge.associatedMedication" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.associatedMedication" ];
        fhir:ElementDefinition.short [ fhir:value "A medication resource that is associated with this medication" ];
@@ -3019,7 +2689,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 62;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "MedicationKnowledge.productType" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.productType" ];
        fhir:ElementDefinition.short [ fhir:value "Category of the medication or product" ];
@@ -3050,7 +2720,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 63;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monograph" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monograph" ];
        fhir:ElementDefinition.short [ fhir:value "Associated documentation about the medication" ];
@@ -3081,7 +2751,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 64;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monograph.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monograph.id" ];
        fhir:ElementDefinition.representation [
@@ -3114,7 +2784,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monograph.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monograph.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3169,7 +2839,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monograph.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monograph.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3229,7 +2899,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monograph.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monograph.type" ];
        fhir:ElementDefinition.short [ fhir:value "The category of medication document" ];
@@ -3260,7 +2930,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monograph.source" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monograph.source" ];
        fhir:ElementDefinition.short [ fhir:value "Associated documentation about the medication" ];
@@ -3300,7 +2970,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient" ];
        fhir:ElementDefinition.short [ fhir:value "Active or inactive ingredient" ];
@@ -3332,7 +3002,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 70;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient.id" ];
        fhir:ElementDefinition.representation [
@@ -3365,7 +3035,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3420,7 +3090,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3480,7 +3150,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient.item[x]" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient.item[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Medication(s) or substance(s) contained in the medication" ];
@@ -3532,7 +3202,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".player" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient.isActive" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient.isActive" ];
        fhir:ElementDefinition.short [ fhir:value "Active ingredient indicator" ];
@@ -3569,7 +3239,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "NA" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient.strength" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient.strength" ];
        fhir:ElementDefinition.short [ fhir:value "Quantity of ingredient present" ];
@@ -3613,7 +3283,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".quantity" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "MedicationKnowledge.preparationInstruction" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.preparationInstruction" ];
        fhir:ElementDefinition.short [ fhir:value "The instructions for preparing the medication" ];
@@ -3644,7 +3314,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.slicing [
@@ -3696,7 +3366,7 @@
          ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.sliceName [ fhir:value "EDQM" ];
@@ -3742,7 +3412,7 @@
          ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.id" ];
        fhir:ElementDefinition.representation [
@@ -3775,7 +3445,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3839,7 +3509,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -3885,7 +3555,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -3918,7 +3588,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3982,7 +3652,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -4029,7 +3699,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -4074,7 +3744,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -4119,7 +3789,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 87;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4169,7 +3839,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -4215,7 +3885,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4266,7 +3936,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Other" ];
@@ -4312,7 +3982,7 @@
          ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.id" ];
        fhir:ElementDefinition.representation [
@@ -4345,7 +4015,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 92;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4409,7 +4079,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -4455,7 +4125,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -4488,7 +4158,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4552,7 +4222,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -4599,7 +4269,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -4644,7 +4314,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -4689,7 +4359,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 99;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4739,7 +4409,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 100;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -4785,7 +4455,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4836,7 +4506,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 102;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "MedicationKnowledge.cost" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.cost" ];
        fhir:ElementDefinition.short [ fhir:value "The pricing of the medication" ];
@@ -4867,7 +4537,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 103;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "MedicationKnowledge.cost.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.cost.id" ];
        fhir:ElementDefinition.representation [
@@ -4900,7 +4570,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 104;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "MedicationKnowledge.cost.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.cost.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4955,7 +4625,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 105;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "MedicationKnowledge.cost.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.cost.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -5015,7 +4685,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 106;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "MedicationKnowledge.cost.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.cost.type" ];
        fhir:ElementDefinition.short [ fhir:value "The category of the cost information" ];
@@ -5046,7 +4716,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 107;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "MedicationKnowledge.cost.source" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.cost.source" ];
        fhir:ElementDefinition.short [ fhir:value "The source or owner for the price information" ];
@@ -5077,7 +4747,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 108;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "MedicationKnowledge.cost.cost" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.cost.cost" ];
        fhir:ElementDefinition.short [ fhir:value "The price of the medication" ];
@@ -5108,7 +4778,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 109;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monitoringProgram" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monitoringProgram" ];
        fhir:ElementDefinition.short [ fhir:value "Program under which a medication is reviewed" ];
@@ -5139,7 +4809,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 110;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monitoringProgram.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monitoringProgram.id" ];
        fhir:ElementDefinition.representation [
@@ -5172,7 +4842,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 111;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monitoringProgram.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monitoringProgram.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -5227,7 +4897,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 112;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monitoringProgram.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monitoringProgram.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -5287,7 +4957,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 113;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monitoringProgram.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monitoringProgram.type" ];
        fhir:ElementDefinition.short [ fhir:value "Type of program under which the medication is monitored" ];
@@ -5318,7 +4988,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 114;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "MedicationKnowledge.monitoringProgram.name" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.monitoringProgram.name" ];
        fhir:ElementDefinition.short [ fhir:value "Name of the reviewing program" ];
@@ -5349,7 +5019,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 115;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines" ];
        fhir:ElementDefinition.short [ fhir:value "Guidelines for administration of the medication" ];
@@ -5380,7 +5050,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 116;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.id" ];
        fhir:ElementDefinition.representation [
@@ -5413,7 +5083,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 117;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -5468,7 +5138,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 118;
+       fhir:index 111;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -5528,7 +5198,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 119;
+       fhir:index 112;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage" ];
        fhir:ElementDefinition.short [ fhir:value "Dosage for the medication for the specific guidelines" ];
@@ -5559,7 +5229,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 120;
+       fhir:index 113;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.id" ];
        fhir:ElementDefinition.representation [
@@ -5592,7 +5262,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 121;
+       fhir:index 114;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -5647,7 +5317,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 122;
+       fhir:index 115;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -5707,7 +5377,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 123;
+       fhir:index 116;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.type" ];
        fhir:ElementDefinition.short [ fhir:value "Type of dosage" ];
@@ -5738,7 +5408,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 124;
+       fhir:index 117;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.dosage" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.dosage.dosage" ];
        fhir:ElementDefinition.short [ fhir:value "Dosage for the medication for the specific guidelines" ];
@@ -5769,7 +5439,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 125;
+       fhir:index 118;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.indication[x]" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.indication[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Indication for use that apply to the specific administration guidelines" ];
@@ -5808,7 +5478,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 126;
+       fhir:index 119;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics" ];
        fhir:ElementDefinition.short [ fhir:value "Characteristics of the patient that are relevant to the administration guidelines" ];
@@ -5839,7 +5509,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 127;
+       fhir:index 120;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.id" ];
        fhir:ElementDefinition.representation [
@@ -5872,7 +5542,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 128;
+       fhir:index 121;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -5927,7 +5597,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 129;
+       fhir:index 122;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -5987,7 +5657,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 130;
+       fhir:index 123;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.characteristic[x]" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.characteristic[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Specific characteristic that is relevant to the administration guideline" ];
@@ -6026,7 +5696,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 131;
+       fhir:index 124;
        fhir:Element.id [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.value" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.administrationGuidelines.patientCharacteristics.value" ];
        fhir:ElementDefinition.short [ fhir:value "The specific characteristic" ];
@@ -6057,7 +5727,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 132;
+       fhir:index 125;
        fhir:Element.id [ fhir:value "MedicationKnowledge.medicineClassification" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.medicineClassification" ];
        fhir:ElementDefinition.short [ fhir:value "Categorization of the medication within a formulary or classification system" ];
@@ -6088,7 +5758,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 133;
+       fhir:index 126;
        fhir:Element.id [ fhir:value "MedicationKnowledge.medicineClassification.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.medicineClassification.id" ];
        fhir:ElementDefinition.representation [
@@ -6121,7 +5791,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 134;
+       fhir:index 127;
        fhir:Element.id [ fhir:value "MedicationKnowledge.medicineClassification.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.medicineClassification.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -6176,7 +5846,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 135;
+       fhir:index 128;
        fhir:Element.id [ fhir:value "MedicationKnowledge.medicineClassification.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.medicineClassification.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -6236,7 +5906,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 136;
+       fhir:index 129;
        fhir:Element.id [ fhir:value "MedicationKnowledge.medicineClassification.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.medicineClassification.type" ];
        fhir:ElementDefinition.short [ fhir:value "The type of category for the medication (for example, therapeutic classification, therapeutic sub-classification)" ];
@@ -6267,7 +5937,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 137;
+       fhir:index 130;
        fhir:Element.id [ fhir:value "MedicationKnowledge.medicineClassification.classification" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.medicineClassification.classification" ];
        fhir:ElementDefinition.short [ fhir:value "Specific category assigned to the medication" ];
@@ -6298,7 +5968,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 138;
+       fhir:index 131;
        fhir:Element.id [ fhir:value "MedicationKnowledge.packaging" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.packaging" ];
        fhir:ElementDefinition.short [ fhir:value "Details about packaged medications" ];
@@ -6329,7 +5999,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 139;
+       fhir:index 132;
        fhir:Element.id [ fhir:value "MedicationKnowledge.packaging.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.packaging.id" ];
        fhir:ElementDefinition.representation [
@@ -6362,7 +6032,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 140;
+       fhir:index 133;
        fhir:Element.id [ fhir:value "MedicationKnowledge.packaging.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.packaging.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -6417,7 +6087,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 141;
+       fhir:index 134;
        fhir:Element.id [ fhir:value "MedicationKnowledge.packaging.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.packaging.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -6477,7 +6147,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 142;
+       fhir:index 135;
        fhir:Element.id [ fhir:value "MedicationKnowledge.packaging.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.packaging.type" ];
        fhir:ElementDefinition.short [ fhir:value "A code that defines the specific type of packaging that the medication can be found in" ];
@@ -6521,7 +6191,7 @@
          ]
        ]
      ], [
-       fhir:index 143;
+       fhir:index 136;
        fhir:Element.id [ fhir:value "MedicationKnowledge.packaging.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.packaging.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "The number of product units the package would contain if fully loaded" ];
@@ -6557,7 +6227,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 144;
+       fhir:index 137;
        fhir:Element.id [ fhir:value "MedicationKnowledge.drugCharacteristic" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.drugCharacteristic" ];
        fhir:ElementDefinition.short [ fhir:value "Specifies descriptive properties of the medicine" ];
@@ -6588,7 +6258,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 145;
+       fhir:index 138;
        fhir:Element.id [ fhir:value "MedicationKnowledge.drugCharacteristic.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.drugCharacteristic.id" ];
        fhir:ElementDefinition.representation [
@@ -6621,7 +6291,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 146;
+       fhir:index 139;
        fhir:Element.id [ fhir:value "MedicationKnowledge.drugCharacteristic.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.drugCharacteristic.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -6676,7 +6346,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 147;
+       fhir:index 140;
        fhir:Element.id [ fhir:value "MedicationKnowledge.drugCharacteristic.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.drugCharacteristic.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -6736,7 +6406,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 148;
+       fhir:index 141;
        fhir:Element.id [ fhir:value "MedicationKnowledge.drugCharacteristic.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.drugCharacteristic.type" ];
        fhir:ElementDefinition.short [ fhir:value "Code specifying the type of characteristic of medication" ];
@@ -6780,7 +6450,7 @@
          ]
        ]
      ], [
-       fhir:index 149;
+       fhir:index 142;
        fhir:Element.id [ fhir:value "MedicationKnowledge.drugCharacteristic.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.drugCharacteristic.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Description of the characteristic" ];
@@ -6826,7 +6496,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 150;
+       fhir:index 143;
        fhir:Element.id [ fhir:value "MedicationKnowledge.contraindication" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.contraindication" ];
        fhir:ElementDefinition.short [ fhir:value "Potential clinical issue with or between medication(s)" ];
@@ -6862,7 +6532,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 151;
+       fhir:index 144;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory" ];
        fhir:ElementDefinition.short [ fhir:value "Regulatory information about a medication" ];
@@ -6893,7 +6563,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 152;
+       fhir:index 145;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.id" ];
        fhir:ElementDefinition.representation [
@@ -6926,7 +6596,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 153;
+       fhir:index 146;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -6981,7 +6651,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 154;
+       fhir:index 147;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -7041,7 +6711,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 155;
+       fhir:index 148;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.regulatoryAuthority" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.regulatoryAuthority" ];
        fhir:ElementDefinition.short [ fhir:value "Specifies the authority of the regulation" ];
@@ -7077,7 +6747,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 156;
+       fhir:index 149;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.substitution" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.substitution" ];
        fhir:ElementDefinition.short [ fhir:value "Specifies if changes are allowed when dispensing a medication from a regulatory perspective" ];
@@ -7108,7 +6778,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 157;
+       fhir:index 150;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.substitution.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.substitution.id" ];
        fhir:ElementDefinition.representation [
@@ -7141,7 +6811,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 158;
+       fhir:index 151;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.substitution.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.substitution.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -7196,7 +6866,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 159;
+       fhir:index 152;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.substitution.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.substitution.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -7256,7 +6926,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 160;
+       fhir:index 153;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.substitution.type" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.substitution.type" ];
        fhir:ElementDefinition.short [ fhir:value "Specifies the type of substitution allowed" ];
@@ -7287,7 +6957,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 161;
+       fhir:index 154;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.substitution.allowed" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.substitution.allowed" ];
        fhir:ElementDefinition.short [ fhir:value "Specifies if regulation allows for changes in the medication when dispensing" ];
@@ -7318,7 +6988,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 162;
+       fhir:index 155;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.schedule" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.schedule" ];
        fhir:ElementDefinition.short [ fhir:value "Specifies the schedule of a medication in jurisdiction" ];
@@ -7349,7 +7019,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 163;
+       fhir:index 156;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.schedule.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.schedule.id" ];
        fhir:ElementDefinition.representation [
@@ -7382,7 +7052,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 164;
+       fhir:index 157;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.schedule.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.schedule.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -7437,7 +7107,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 165;
+       fhir:index 158;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.schedule.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.schedule.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -7497,7 +7167,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 166;
+       fhir:index 159;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.schedule.schedule" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.schedule.schedule" ];
        fhir:ElementDefinition.short [ fhir:value "Specifies the specific drug schedule" ];
@@ -7528,7 +7198,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 167;
+       fhir:index 160;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.maxDispense" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.maxDispense" ];
        fhir:ElementDefinition.short [ fhir:value "The maximum number of units of the medication that can be dispensed in a period" ];
@@ -7559,7 +7229,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 168;
+       fhir:index 161;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.maxDispense.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.maxDispense.id" ];
        fhir:ElementDefinition.representation [
@@ -7592,7 +7262,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 169;
+       fhir:index 162;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.maxDispense.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.maxDispense.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -7647,7 +7317,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 170;
+       fhir:index 163;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.maxDispense.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.maxDispense.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -7707,7 +7377,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 171;
+       fhir:index 164;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.maxDispense.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.maxDispense.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "The maximum number of units of the medication that can be dispensed" ];
@@ -7743,7 +7413,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 172;
+       fhir:index 165;
        fhir:Element.id [ fhir:value "MedicationKnowledge.regulatory.maxDispense.period" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.regulatory.maxDispense.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period that applies to the maximum number of units" ];
@@ -7774,7 +7444,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 173;
+       fhir:index 166;
        fhir:Element.id [ fhir:value "MedicationKnowledge.kinetics" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.kinetics" ];
        fhir:ElementDefinition.short [ fhir:value "The time course of drug absorption, distribution, metabolism and excretion of a medication from the body" ];
@@ -7805,7 +7475,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 174;
+       fhir:index 167;
        fhir:Element.id [ fhir:value "MedicationKnowledge.kinetics.id" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.kinetics.id" ];
        fhir:ElementDefinition.representation [
@@ -7838,7 +7508,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 175;
+       fhir:index 168;
        fhir:Element.id [ fhir:value "MedicationKnowledge.kinetics.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.kinetics.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -7893,7 +7563,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 176;
+       fhir:index 169;
        fhir:Element.id [ fhir:value "MedicationKnowledge.kinetics.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.kinetics.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -7953,7 +7623,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 177;
+       fhir:index 170;
        fhir:Element.id [ fhir:value "MedicationKnowledge.kinetics.areaUnderCurve" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.kinetics.areaUnderCurve" ];
        fhir:ElementDefinition.short [ fhir:value "The drug concentration measured at certain discrete points in time" ];
@@ -7989,7 +7659,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 178;
+       fhir:index 171;
        fhir:Element.id [ fhir:value "MedicationKnowledge.kinetics.lethalDose50" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.kinetics.lethalDose50" ];
        fhir:ElementDefinition.short [ fhir:value "The median lethal dose of a drug" ];
@@ -8025,7 +7695,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 179;
+       fhir:index 172;
        fhir:Element.id [ fhir:value "MedicationKnowledge.kinetics.halfLifePeriod" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.kinetics.halfLifePeriod" ];
        fhir:ElementDefinition.short [ fhir:value "Time required for concentration in the body to decrease by half" ];
@@ -8087,7 +7757,7 @@
        fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:PhPID.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.patternUri [ fhir:value "http://www.edqm.eu/pharmaceutical-product-identifier-type" ]
+       fhir:ElementDefinition.patternUri [ fhir:value "http://www.example.org/pharmaceutical-product-identifier-type" ]
      ], [
        fhir:index 4;
        fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other" ];
@@ -8098,12 +7768,6 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 5;
-       fhir:Element.id [ fhir:value "MedicationKnowledge.code.coding:Other.system" ];
-       fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.code.coding.system" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.patternUri [ fhir:value "http://www.belgium.be/pharmaceutical-ids" ]
-     ], [
-       fhir:index 6;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.slicing [
@@ -8115,7 +7779,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "EDQM" ];
@@ -8123,13 +7787,13 @@
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:EDQM.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.patternUri [ fhir:value "http://www.edqm.eu/dose-forms" ]
      ], [
-       fhir:index 9;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Other" ];
@@ -8137,26 +7801,26 @@
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "MedicationKnowledge.doseForm.coding:Other.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.doseForm.coding.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.patternUri [ fhir:value "http://www.belgium.be/dose-forms" ]
      ], [
-       fhir:index 11;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "MedicationKnowledge.synonym" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.synonym" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "MedicationKnowledge.ingredient" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.ingredient" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.slicing [
@@ -8168,7 +7832,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.sliceName [ fhir:value "EDQM" ];
@@ -8176,13 +7840,13 @@
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:EDQM.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.patternUri [ fhir:value "http://www.edqm.eu/routes" ]
      ], [
-       fhir:index 16;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Other" ];
@@ -8190,7 +7854,7 @@
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "MedicationKnowledge.intendedRoute:Other.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "MedicationKnowledge.intendedRoute.coding.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];

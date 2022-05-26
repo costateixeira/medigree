@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="amlodipine-5mg-caps"/>
+  <meta>
+    <profile value="http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "amlodipine-5mg-caps" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-IDMPPharmaceuticalProduct.html">Pharmaceutical Product Profile</a></p></div><p><b>doseForm</b>: 10210000 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (dose-forms#10210000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Amlodipine besilate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (substances#123)</span></td><td>5 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/</td></tr></table><p><b>intendedRoute</b>: oral <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (routes#oral)</span></p></div>
+  </text>
+  <doseForm>
+    <coding>
+      <system value="http://www.edqm.eu/dose-forms"/>
+      <code value="10210000"/>
+    </coding>
+  </doseForm>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://somesystem.org/substances"/>
+        <code value="123"/>
+        <display value="Amlodipine besilate"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <extension url="http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS">
+        <valueCode value="base"/>
+      </extension>
+      <extension url="http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern">
+        <valueCode value="oral-solid"/>
+      </extension>
+      <extension url="http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation">
+        <valueCode value="concentration"/>
+      </extension>
+      <extension url="http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation">
+        <valueCode value="10210000"/>
+      </extension>
+      <numerator>
+        <value value="5"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+    </strength>
+  </ingredient>
+  <intendedRoute>
+    <coding>
+      <system value="http://www.edqm.eu/routes"/>
+      <code value="oral"/>
+    </coding>
+  </intendedRoute>
+</MedicationKnowledge>

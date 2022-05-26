@@ -230,10 +230,65 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/IDMPPharmaceuticalProduct"/>
+      </reference>
+      <name value="Pharmaceutical Product Profile"/>
+      <description value="Pharmaceutical Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PharmaceuticalProduct"/>
       </reference>
       <name value="Pharmaceutical Product Profile"/>
       <description value="Pharmaceutical Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BoSS"/>
+      </reference>
+      <name value="BoSS"/>
+      <description value="Basis of Substance Strength."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConcentrationPresentation"/>
+      </reference>
+      <name value="ConcentrationPresentation"/>
+      <description value="Pattern for Concentration or Presentation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StrengthPattern"/>
+      </reference>
+      <name value="StrengthPattern"/>
+      <description value="Pattern for Strength."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UnitOfPresentation"/>
+      </reference>
+      <name value="UnitOfPresentation"/>
+      <description value="Unit of Presentation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -478,6 +533,16 @@
       </reference>
       <name value="MedPrescription"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/amlodipine-5mg-caps"/>
+      </reference>
+      <name value="amlodipine-5mg-caps"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

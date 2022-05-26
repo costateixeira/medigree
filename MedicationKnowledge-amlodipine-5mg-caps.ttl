@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medigree.net/eu/fhir/medigree/MedicationKnowledge/amlodipine-5mg-caps> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "amlodipine-5mg-caps"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct";
+       fhir:index 0;
+       fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"amlodipine-5mg-caps\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IDMPPharmaceuticalProduct.html\">Pharmaceutical Product Profile</a></p></div><p><b>doseForm</b>: 10210000 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (dose-forms#10210000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Amlodipine besilate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (substances#123)</span></td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/</td></tr></table><p><b>intendedRoute</b>: oral <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (routes#oral)</span></p></div>"
+  ];
+  fhir:MedicationKnowledge.doseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.edqm.eu/dose-forms" ];
+       fhir:Coding.code [ fhir:value "10210000" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.ingredient [
+     fhir:index 0;
+     fhir:MedicationKnowledge.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://somesystem.org/substances" ];
+         fhir:Coding.code [ fhir:value "123" ];
+         fhir:Coding.display [ fhir:value "Amlodipine besilate" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.ingredient.strength [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS" ];
+         fhir:Extension.valueCode [ fhir:value "base" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern" ];
+         fhir:Extension.valueCode [ fhir:value "oral-solid" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation" ];
+         fhir:Extension.valueCode [ fhir:value "concentration" ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation" ];
+         fhir:Extension.valueCode [ fhir:value "10210000" ]
+       ];
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ];
+  fhir:MedicationKnowledge.intendedRoute [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.edqm.eu/routes" ];
+       fhir:Coding.code [ fhir:value "oral" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medigree.net/eu/fhir/medigree/MedicationKnowledge/amlodipine-5mg-caps.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

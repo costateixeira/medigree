@@ -360,10 +360,80 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/IDMPPharmaceuticalProduct"
+        },
+        "name": "Pharmaceutical Product Profile",
+        "description": "Pharmaceutical Product Profile",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/PharmaceuticalProduct"
         },
         "name": "Pharmaceutical Product Profile",
         "description": "Pharmaceutical Product Profile",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BoSS"
+        },
+        "name": "BoSS",
+        "description": "Basis of Substance Strength.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ConcentrationPresentation"
+        },
+        "name": "ConcentrationPresentation",
+        "description": "Pattern for Concentration or Presentation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/StrengthPattern"
+        },
+        "name": "StrengthPattern",
+        "description": "Pattern for Strength.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/UnitOfPresentation"
+        },
+        "name": "UnitOfPresentation",
+        "description": "Unit of Presentation.",
         "exampleBoolean": false
       },
       {
@@ -677,6 +747,19 @@
         },
         "name": "MedPrescription",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationKnowledge"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationKnowledge/amlodipine-5mg-caps"
+        },
+        "name": "amlodipine-5mg-caps",
+        "exampleCanonical": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct"
       },
       {
         "extension": [
