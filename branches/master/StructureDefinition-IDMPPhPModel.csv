@@ -3,13 +3,13 @@
 "IDMPPhPModel.identifier","IDMPPhPModel.identifier","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Identifiers","Identifiers","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.identifier",0,*,"",""
 "IDMPPhPModel.identifier.l1-identifier","IDMPPhPModel.identifier.l1_identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","Business identifier for this medication","Business identifier for this medication","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.identifier.l1_identifier",0,1,"",""
+","IDMP PhPID Level 1","IDMP PhPID Level 1","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.identifier.l1_identifier",0,1,"",""
 "IDMPPhPModel.identifier.l2-identifier","IDMPPhPModel.identifier.l2_identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","Business identifier for this medication","Business identifier for this medication","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.identifier.l2_identifier",0,1,"",""
+","IDMP PhPID Level 2","IDMP PhPID Level 2","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.identifier.l2_identifier",0,1,"",""
 "IDMPPhPModel.identifier.l3-identifier","IDMPPhPModel.identifier.l3_identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","Business identifier for this medication","Business identifier for this medication","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.identifier.l3_identifier",0,1,"",""
+","IDMP PhPID Level 3","IDMP PhPID Level 3","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.identifier.l3_identifier",0,1,"",""
 "IDMPPhPModel.identifier.l4-identifier","IDMPPhPModel.identifier.l4_identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","Business identifier for this medication","Business identifier for this medication","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""0x073AF2E5B92AE19E8B67635AFFB3D6CA""/>","","",,,,,"",,,,"IDMPPhPModel.identifier.l4_identifier",0,1,"",""
+","IDMP PhPID Level 4","IDMP PhPID Level 4","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""0x073AF2E5B92AE19E8B67635AFFB3D6CA""/>","","",,,,,"",,,,"IDMPPhPModel.identifier.l4_identifier",0,1,"",""
 "IDMPPhPModel.ingredient","IDMPPhPModel.ingredient","","","",1,*,"","","","BackboneElement {[]} {[]}
 ","Ingredient(s) that are part of the product, with therapeutical usage or not","Ingredient(s) that are part of the product, with therapeutical usage or not","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.ingredient",1,*,"",""
 "IDMPPhPModel.ingredient.substance","IDMPPhPModel.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -29,4 +29,8 @@
 "IDMPPhPModel.ingredient.strength.concentration-presentation","IDMPPhPModel.ingredient.strength.concentration_presentation","","","",1,1,"","","","code {[]} {[]}
 ","concentration | presentation","concentration | presentation","","","","","","","","","",,"required","","http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs","",,,,"IDMPPhPModel.ingredient.strength.concentration_presentation",1,1,"",""
 "IDMPPhPModel.ingredient.strength.unit-of-presentation","IDMPPhPModel.ingredient.strength.unit_of_presentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","unit of presentation if strength is by presentation","unit of presentation is strength is by presentation","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""tablet""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.unit_of_presentation",1,1,"",""
+","unit of presentation if strength is by presentation","unit of presentation is strength is by presentation","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.unit_of_presentation",1,1,"",""
+"IDMPPhPModel.ingredient.strength.unit-of-presentation","IDMPPhPModel.ingredient.strength.unit_of_presentation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","unit of presentation if strength is by presentation","unit of presentation is strength is by presentation","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.unit_of_presentation",0,1,"",""
+"IDMPPhPModel.ingredient.doseForm","IDMPPhPModel.ingredient.doseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Dose Form","Dose Form","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.doseForm",1,1,"",""

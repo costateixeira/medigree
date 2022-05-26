@@ -3,9 +3,45 @@
   "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS",
+      "title": "BoSS",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation",
+      "title": "ConcentrationPresentation",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern",
+      "title": "StrengthPattern",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation",
+      "title": "UnitOfPresentation",
+      "types": [
+        "code"
+      ]
+    }
+  ],
   "profiles": {
     "MedicationKnowledge": [
+      {
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct",
+        "title": "Pharmaceutical Product Profile"
+      },
       {
         "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
         "title": "Pharmaceutical Product Profile"
@@ -54,6 +90,18 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS": [
+      "MedicationKnowledge.ingredient.strength"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation": [
+      "MedicationKnowledge.ingredient.strength"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern": [
+      "MedicationKnowledge.ingredient.strength"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation": [
+      "MedicationKnowledge.ingredient.strength"
     ]
   }
 }
