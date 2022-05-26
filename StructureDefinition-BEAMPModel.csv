@@ -1,0 +1,22 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BEAMPModel","BEAMPModel","","","",0,*,"","","","","BE AMP logical model","Belgium AMP logical model","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BEAMPModel.identifier","BEAMPModel.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Business identifier for this medication","Business identifier for this medication","","","","","","","","","",,,,,"",,,,"BEAMPModel.identifier",0,*,"",""
+"BEAMPModel.ingredient","BEAMPModel.ingredient","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Ingredient(s) that are part of the product, with therapeutical usage or not","Ingredient(s) that are part of the product, with therapeutical usage or not","","","","","","","","","",,,,,"",,,,"BEAMPModel.ingredient",1,*,"",""
+"BEAMPModel.ingredient.substance","BEAMPModel.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Codification of the substance","Codification of the substance","","","","","","","","","",,,,,"",,,,"BEAMPModel.ingredient.substance",1,1,"",""
+"BEAMPModel.ingredient.role","BEAMPModel.ingredient.role","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Role the substance has in this product (active principle, excipient, ...)","Role the substance has in this product (active principle, excipient, ...)","","","","","","","","","",,,,,"",,,,"BEAMPModel.ingredient.role",1,1,"",""
+"BEAMPModel.ingredient.strength","BEAMPModel.ingredient.strength","","","",1,1,"","","","Quantity {[]} {[]}
+","Strength of the substance in this product","Strength of the substance in this product","","","","","","","","","",,,,,"",,,,"BEAMPModel.ingredient.strength",1,1,"",""
+"BEAMPModel.routeOfAdministration","BEAMPModel.routeOfAdministration","","","",1,*,"","","","CodeableConcept {[]} {[]}
+","The approved route of administration","The approved route of administration","","","","","","","","","",,,,,"",,,,"BEAMPModel.routeOfAdministration",1,*,"",""
+"BEAMPModel.pharmaceuticalDoseForm","BEAMPModel.pharmaceuticalDoseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Dose form of the product - tablet, powder, solution...","Dose form of the product - tablet, powder, solution...","","","","","","","","","",,,,,"",,,,"BEAMPModel.pharmaceuticalDoseForm",1,1,"",""
+"BEAMPModel.brandName","BEAMPModel.brandName","","","",1,1,"","","","string {[]} {[]}
+","Brand name of the product","Brand name of the product","","","","","","","","","",,,,,"",,,,"BEAMPModel.brandName",1,1,"",""
+"BEAMPModel.marketingAuthorizationHolder","BEAMPModel.marketingAuthorizationHolder","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Who has the marketing authorization for the market","Who has the marketing authorization for the market","","","","","","","","","",,,,,"",,,,"BEAMPModel.marketingAuthorizationHolder",1,1,"",""
+"BEAMPModel.marketingAuthorizationNumber","BEAMPModel.marketingAuthorizationNumber","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","License number for the marketing authorization","License number for the marketing authorization","","","","","","","","","",,,,,"",,,,"BEAMPModel.marketingAuthorizationNumber",1,1,"",""

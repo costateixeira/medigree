@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ConcPres-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">concentration<a name="ConcPres-cs-concentration"> </a></td><td>Concentration</td><td>Concentration</td></tr><tr><td style="white-space:nowrap">presentation<a name="ConcPres-cs-presentation"> </a></td><td>Presentation</td><td>Presentation</td></tr></table></div>
+  </text>
+  <url value="http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs"/>
+  <version value="1.0.0"/>
+  <name value="ConcPresCS"/>
+  <title value="Concentration or Presentation Code System"/>
+  <status value="active"/>
+  <date value="2022-05-26T15:10:33+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="concentration"/>
+    <display value="Concentration"/>
+    <definition value="Concentration"/>
+  </concept>
+  <concept>
+    <code value="presentation"/>
+    <display value="Presentation"/>
+    <definition value="Presentation"/>
+  </concept>
+</CodeSystem>

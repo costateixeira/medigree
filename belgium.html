@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MEDIGREE\Belgium - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.2"}
+    h3,h4,h5,h6{--heading-prefix:"2.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="ig-nav">
+          <a id="hl7-logo" no-external="true" href="https://medigree.net">
+            <img height="65" alt="Medigree" src="assets/images/medigree-logo-small.png"/>
+          </a>
+        </div>
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <!-- <div id="ig-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div> -->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide: Medigree</span><br/>1.0.0 - STU1</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Models
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="global.html">Global</a>
+      </li>
+      <li>
+        <a href="belgium.html">Belgium</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifacts</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='countries.html'><b>Member States</b></a></li><li><b>Belgium</b></li>
+          
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide: Medigree - Local Development build (v1.0.0). See the <a href="http://medigree.net/eu/fhir/medigree/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Belgium</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>The Belgian database can be browsed through the <a href="https://samviewer.digile.be">SAM Viewer</a>.</p>
+
+<p>The following is a schema representation of the most relevant concepts</p>
+
+<figure>
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="582px" preserveAspectRatio="none" style="width:1244px;height:582px;background:#FFFFFF;" version="1.1" viewBox="0 0 1244 582" width="1244px" zoomAndPan="magnify"><defs /><g><!--MD5=[b0961ff36b5fda95e4aabd7303763a94]
+cluster MR--><polygon fill="#E9EAE0" points="16,6,274,6,281,28.2969,1227,28.2969,1227,575,16,575,16,6" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="281" y1="28.2969" y2="28.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="232" x="25" y="20.9951">Belgium Medication Concepts</text><!--MD5=[a2e1ee2b3db0935b0b93be30a685d199]
+class VTM--><rect codeLine="59" fill="#F5F5F5" height="61.5781" id="VTM" style="stroke:#2F4F4F;stroke-width:1.5;" width="136" x="155" y="52" /><rect fill="#909090" height="23.9688" style="stroke:#2F4F4F;stroke-width:1.5;" width="136" x="155" y="52" /><text fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="208.5" y="68.1387">VTM</text><line style="stroke:#2F4F4F;stroke-width:1.5;" x1="156" x2="290" y1="75.9688" y2="75.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="177" y="96.1792">identifier (76)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="177" y="108.9839">name (amlodipine)</text><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="170" y="91.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="163" x2="171" y1="92.3711" y2="92.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="163" x2="163" y1="85.9688" y2="92.3711" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="170" y="104.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="163" x2="171" y1="105.1758" y2="105.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="163" x2="163" y1="92.3711" y2="105.1758" /><!--MD5=[d84faddef3aa8a7244fb5b5f0153fb31]
+class SUB--><rect codeLine="67" fill="#F5F5F5" height="99.9922" id="SUB" style="stroke:#2F4F4F;stroke-width:1.5;" width="185" x="424.5" y="33" /><rect fill="#909090" height="23.9688" style="stroke:#2F4F4F;stroke-width:1.5;" width="185" x="424.5" y="33" /><text fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="75" x="479.5" y="49.1387">Substance</text><line style="stroke:#2F4F4F;stroke-width:1.5;" x1="425.5" x2="608.5" y1="56.9688" y2="56.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="446.5" y="77.1792">identifier (6307)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="446.5" y="89.9839">name (Amlodipine besilate)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="70" x="446.5" y="102.7886">other_codes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="454.5" y="115.5933">type (snomed)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="454.5" y="128.3979">code (384976003)</text><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="439.5" y="72.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="432.5" x2="440.5" y1="73.3711" y2="73.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="432.5" x2="432.5" y1="66.9688" y2="73.3711" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="439.5" y="85.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="432.5" x2="440.5" y1="86.1758" y2="86.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="432.5" x2="432.5" y1="73.3711" y2="86.1758" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="439.5" y="97.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="432.5" x2="440.5" y1="98.9805" y2="98.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="432.5" x2="432.5" y1="86.1758" y2="98.9805" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="447.5" y="110.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="440.5" x2="448.5" y1="111.7852" y2="111.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="440.5" x2="440.5" y1="98.9805" y2="111.7852" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="447.5" y="123.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="440.5" x2="448.5" y1="124.5898" y2="124.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="440.5" x2="440.5" y1="111.7852" y2="124.5898" /><!--MD5=[9ddcd405fe5ae7ca94b1f804062f4cfa]
+class VMPG--><rect codeLine="77" fill="#F5F5F5" height="99.9922" id="VMPG" style="stroke:#2F4F4F;stroke-width:1.5;" width="194" x="277" y="186" /><rect fill="#909090" height="23.9688" style="stroke:#2F4F4F;stroke-width:1.5;" width="194" x="277" y="186" /><text fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="77" x="335.5" y="202.1387">VMP Group</text><line style="stroke:#2F4F4F;stroke-width:1.5;" x1="278" x2="470" y1="209.9688" y2="209.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="299" y="230.1792">identifier (1651)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="299" y="242.9839">ingredient</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="160" x="307" y="255.7886">vtm_substance (amlodipine)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="307" y="268.5933">strength (10 mg)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="299" y="281.3979">route (oral)</text><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="292" y="225.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="285" x2="293" y1="226.3711" y2="226.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="285" x2="285" y1="219.9688" y2="226.3711" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="292" y="238.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="285" x2="293" y1="239.1758" y2="239.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="285" x2="285" y1="226.3711" y2="239.1758" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="300" y="250.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="293" x2="301" y1="251.9805" y2="251.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="293" x2="293" y1="239.1758" y2="251.9805" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="300" y="263.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="293" x2="301" y1="264.7852" y2="264.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="293" x2="293" y1="251.9805" y2="264.7852" /><rect fill="#F5F5F5" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="292" y="276.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="285" x2="293" y1="277.5898" y2="277.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="285" x2="285" y1="239.1758" y2="277.5898" /><!--MD5=[1c20ac462d220416a927fc5474e30d6a]
+class PhP--><rect codeLine="87" fill="#C2F0FF" height="125.6016" id="PhP" style="stroke:#505090;stroke-width:1.5;" width="282" x="24" y="390" /><rect fill="#87CEEB" height="23.9688" style="stroke:#505090;stroke-width:1.5;" width="282" x="24" y="390" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="150" y="406.1387" /><text fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="30" x="150" y="406.1387">VMP</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="184" y="406.1387" /><line style="stroke:#505090;stroke-width:1.5;" x1="25" x2="305" y1="413.9688" y2="413.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="256" x="46" y="434.1792">designation (amlodipine 10 mg capsule (or.))</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="46" y="446.9839">identifier (1834)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="46" y="459.7886">ingredient</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="54" y="472.5933">substance (amlodipine)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="54" y="485.3979">strength (10mg)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="46" y="498.2026">route (oral)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="46" y="511.0073">doseForm (capsule)</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="39" y="429.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="40" y1="430.3711" y2="430.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="32" y1="423.9688" y2="430.3711" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="39" y="442.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="40" y1="443.1758" y2="443.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="32" y1="430.3711" y2="443.1758" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="39" y="454.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="40" y1="455.9805" y2="455.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="32" y1="443.1758" y2="455.9805" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="47" y="467.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="40" x2="48" y1="468.7852" y2="468.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="40" x2="40" y1="455.9805" y2="468.7852" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="47" y="480.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="40" x2="48" y1="481.5898" y2="481.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="40" x2="40" y1="468.7852" y2="481.5898" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="39" y="493.3945" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="40" y1="494.3945" y2="494.3945" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="32" y1="455.9805" y2="494.3945" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="39" y="506.1992" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="40" y1="507.1992" y2="507.1992" /><line style="stroke:#000000;stroke-width:1.0;" x1="32" x2="32" y1="494.3945" y2="507.1992" /><!--MD5=[700e55c49127fcf6779e649deee2df4c]
+class MP--><rect codeLine="98" fill="#97FF97" height="125.6016" id="MP" style="stroke:#006400;stroke-width:1.5;" width="301" x="465.5" y="390" /><rect fill="#32CD32" height="23.9688" style="stroke:#006400;stroke-width:1.5;" width="301" x="465.5" y="390" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="599" y="406.1387" /><text fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="30" x="599" y="406.1387">AMP</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="637" y="406.1387" /><line style="stroke:#006400;stroke-width:1.5;" x1="466.5" x2="765.5" y1="413.9688" y2="413.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="487.5" y="434.1792">name (Amlor 10 mg harde caps)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="487.5" y="446.9839">identifier (SAM148303-00)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="487.5" y="459.7886">active_ingredient</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="495.5" y="472.5933">substance (amlodipine besilate = 6307)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="495.5" y="485.3979">strength???</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="487.5" y="498.2026">actualRoute (Oraal gebruik)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="271" x="487.5" y="511.0073">actualPharmaceuticalDoseForm (Capsule, hard)</text><rect fill="#97FF97" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="480.5" y="429.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="481.5" y1="430.3711" y2="430.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="473.5" y1="423.9688" y2="430.3711" /><rect fill="#97FF97" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="480.5" y="442.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="481.5" y1="443.1758" y2="443.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="473.5" y1="430.3711" y2="443.1758" /><rect fill="#97FF97" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="480.5" y="454.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="481.5" y1="455.9805" y2="455.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="473.5" y1="443.1758" y2="455.9805" /><rect fill="#97FF97" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="488.5" y="467.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="481.5" x2="489.5" y1="468.7852" y2="468.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="481.5" x2="481.5" y1="455.9805" y2="468.7852" /><rect fill="#97FF97" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="488.5" y="480.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="481.5" x2="489.5" y1="481.5898" y2="481.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="481.5" x2="481.5" y1="468.7852" y2="481.5898" /><rect fill="#97FF97" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="480.5" y="493.3945" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="481.5" y1="494.3945" y2="494.3945" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="473.5" y1="455.9805" y2="494.3945" /><rect fill="#97FF97" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="480.5" y="506.1992" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="481.5" y1="507.1992" y2="507.1992" /><line style="stroke:#000000;stroke-width:1.0;" x1="473.5" x2="473.5" y1="494.3945" y2="507.1992" /><!--MD5=[1addf4cd2d8800f055c5ba7af4c28c90]
+class AMPP--><rect codeLine="109" fill="#FFE4E1" height="228.0391" id="AMPP" style="stroke:#8B0000;stroke-width:1.5;" width="301" x="917.5" y="339" /><rect fill="#F09090" height="23.9688" style="stroke:#8B0000;stroke-width:1.5;" width="301" x="917.5" y="339" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="1044.5" y="355.1387" /><text fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="39" x="1044.5" y="355.1387">AMPP</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="1095.5" y="355.1387" /><line style="stroke:#8B0000;stroke-width:1.5;" x1="918.5" x2="1217.5" y1="362.9688" y2="362.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="207" x="939.5" y="383.1792">name (Amlor 10 mg harde caps. 30)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="939.5" y="395.9839">cti_extended (148303-01)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="939.5" y="408.7886">classification</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="947.5" y="421.5933">atc (C08CA01)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="939.5" y="434.3979">actualRoute (Oraal gebruik)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="271" x="939.5" y="447.2026">actualPharmaceuticalDoseForm (Capsule, hard)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="70" x="939.5" y="460.0073">otherNames</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="61" x="947.5" y="472.812">type (BCFI)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="947.5" y="485.6167">name (Amlor harde caps. 30x 10mg)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="939.5" y="498.4214">marketingAuthorization (BE148303)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="218" x="939.5" y="511.2261">marketingAuthorizationHolder (Upjohn)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="939.5" y="524.0308">packageComponent</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="947.5" y="536.8354">type (Blisterverpakking)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="947.5" y="549.6401">pack_size (30)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="947.5" y="562.4448">pack_units (U)</text><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="378.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="379.3711" y2="379.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="372.9688" y2="379.3711" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="391.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="392.1758" y2="392.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="379.3711" y2="392.1758" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="403.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="404.9805" y2="404.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="392.1758" y2="404.9805" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="940.5" y="416.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="941.5" y1="417.7852" y2="417.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="933.5" y1="404.9805" y2="417.7852" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="429.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="430.5898" y2="430.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="404.9805" y2="430.5898" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="442.3945" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="443.3945" y2="443.3945" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="430.5898" y2="443.3945" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="455.1992" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="456.1992" y2="456.1992" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="443.3945" y2="456.1992" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="940.5" y="468.0039" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="941.5" y1="469.0039" y2="469.0039" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="933.5" y1="456.1992" y2="469.0039" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="940.5" y="480.8086" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="941.5" y1="481.8086" y2="481.8086" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="933.5" y1="469.0039" y2="481.8086" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="493.6133" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="494.6133" y2="494.6133" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="456.1992" y2="494.6133" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="506.418" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="507.418" y2="507.418" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="494.6133" y2="507.418" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="932.5" y="519.2227" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="933.5" y1="520.2227" y2="520.2227" /><line style="stroke:#000000;stroke-width:1.0;" x1="925.5" x2="925.5" y1="507.418" y2="520.2227" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="940.5" y="532.0273" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="941.5" y1="533.0273" y2="533.0273" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="933.5" y1="520.2227" y2="533.0273" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="940.5" y="544.832" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="941.5" y1="545.832" y2="545.832" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="933.5" y1="533.0273" y2="545.832" /><rect fill="#FFE4E1" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="940.5" y="557.6367" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="941.5" y1="558.6367" y2="558.6367" /><line style="stroke:#000000;stroke-width:1.0;" x1="933.5" x2="933.5" y1="545.832" y2="558.6367" /><!--MD5=[02534a1b67d2f6d01f263d4a17fe8919]
+class DMPP--><rect codeLine="131" fill="#DDEEEE" height="74.3828" id="DMPP" style="stroke:#2F4F4F;stroke-width:1.5;" width="120" x="1008" y="199" /><rect fill="#A0B0B0" height="23.9688" style="stroke:#2F4F4F;stroke-width:1.5;" width="120" x="1008" y="199" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="1044" y="215.1387" /><text fill="#000000" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="40" x="1044" y="215.1387">DMPP</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="1096" y="215.1387" /><line style="stroke:#2F4F4F;stroke-width:1.5;" x1="1009" x2="1127" y1="222.9688" y2="222.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="1030" y="243.1792">cnk (1588-581)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="1030" y="255.9839">context (public)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="1030" y="268.7886">cost (9,87 €)</text><rect fill="#DDEEEE" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1023" y="238.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1024" y1="239.3711" y2="239.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1016" y1="232.9688" y2="239.3711" /><rect fill="#DDEEEE" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1023" y="251.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1024" y1="252.1758" y2="252.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1016" y1="239.3711" y2="252.1758" /><rect fill="#DDEEEE" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1023" y="263.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1024" y1="264.9805" y2="264.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1016" y1="252.1758" y2="264.9805" /><!--MD5=[3749633758d62d08331656465a72cc3e]
+class REIMB--><rect codeLine="140" fill="#FFFFE0" fill-opacity="0.33333" height="99.9922" id="REIMB" style="stroke:#99770055;stroke-width:1.5;" width="120" x="1008" y="33" /><rect fill="#FFDD73" fill-opacity="0.26667" height="23.9688" style="stroke:#99770055;stroke-width:1.5;" width="120" x="1008" y="33" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="47" x="1044.5" y="49.1387">(REIMB)</text><line style="stroke:#99770055;stroke-width:1.5;" x1="1009" x2="1127" y1="56.9688" y2="56.9688" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="1030" y="77.1792">cnk (1588-581)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="1030" y="89.9839">cost (9,87 €)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="1030" y="102.7886">copayment</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="1038" y="115.5933">regimen (reg)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="1038" y="128.3979">value (1,78 €)</text><rect fill="#FFFFE0" fill-opacity="0.33333" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1023" y="72.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1024" y1="73.3711" y2="73.3711" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1016" y1="66.9688" y2="73.3711" /><rect fill="#FFFFE0" fill-opacity="0.33333" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1023" y="85.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1024" y1="86.1758" y2="86.1758" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1016" y1="73.3711" y2="86.1758" /><rect fill="#FFFFE0" fill-opacity="0.33333" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1023" y="97.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1024" y1="98.9805" y2="98.9805" /><line style="stroke:#000000;stroke-width:1.0;" x1="1016" x2="1016" y1="86.1758" y2="98.9805" /><rect fill="#FFFFE0" fill-opacity="0.33333" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1031" y="110.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="1024" x2="1032" y1="111.7852" y2="111.7852" /><line style="stroke:#000000;stroke-width:1.0;" x1="1024" x2="1024" y1="98.9805" y2="111.7852" /><rect fill="#FFFFE0" fill-opacity="0.33333" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="1031" y="123.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="1024" x2="1032" y1="124.5898" y2="124.5898" /><line style="stroke:#000000;stroke-width:1.0;" x1="1024" x2="1024" y1="111.7852" y2="124.5898" /><path d="M291.1885,83 C330.7971,83 381.2439,83 424.4053,83 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="424.4053,83,415.4053,79,419.4053,83,415.4053,87,424.4053,83" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="316.75" y="76.0669">Grouping of</text><path d="M326.3131,286.0559 C296.4348,316.7919 257.654,356.6861 225.6049,389.6552 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="225.6049,389.6552,234.7464,385.9899,229.0901,386.07,229.0101,380.4137,225.6049,389.6552" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="323" y="317.0669">Grouping of</text><path d="M471.1775,258.1883 C553.1762,276.891 673.2775,306.2239 776,339 C822.4778,353.8298 872.2565,372.1503 917.309,389.6911 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="917.309,389.6911,910.3735,382.6983,912.6497,387.877,907.471,390.1532,917.309,389.6911" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="724" y="317.0669">Grouping of</text><path d="M204.2508,114.44 C193.2142,134.0854 180.2319,160.6253 174,186 C157.2484,254.2077 157.2165,335.1941 159.9552,389.7387 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="204.2508,114.44,196.3553,120.3274,201.8018,118.7992,203.33,124.2457,204.2508,114.44" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="187" y="240.5669">Contains</text><path d="M253.1942,114.1942 C273.6778,134.6778 301.2218,162.2218 324.836,185.836 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="253.1942,114.1942,256.7297,123.3866,256.7297,117.7297,262.3866,117.7297,253.1942,114.1942" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="316" y="164.0669">Contains</text><path d="M306.1529,453 C356.7975,453 414.074,453 465.4831,453 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="306.1529,453,315.1529,457,311.1529,453,315.1529,449,306.1529,453" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="327.75" y="446.0669">Medicinal Product of</text><path d="M766.5095,453 C815.0467,453 868.8323,453 917.3777,453 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="766.5095,453,775.5095,457,771.5095,453,775.5095,449,766.5095,453" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="788.5" y="446.0669">Packaged Form of</text><path d="M1068,273.4718 C1068,291.8021 1068,315.1194 1068,338.8064 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="1068,338.8064,1072,329.8064,1068,333.8064,1064,329.8064,1068,338.8064" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="1073" y="317.0669">Reimbursed product</text><path d="M1068,133.0254 C1068,154.382 1068,178.9746 1068,198.6576 " fill="none" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="1068,198.6576,1072,189.6576,1068,193.6576,1064,189.6576,1068,198.6576" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="1073" y="164.0669">Reimbursement rule</text></g></svg>
+  <figcaption>Belgian SAM database (simplified)</figcaption>
+</figure>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 26, 2022 15:10+0000">2022-05-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
