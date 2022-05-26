@@ -402,6 +402,90 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/BEAMPModel"
+        },
+        "name": "BE AMP logical model",
+        "description": "Belgium AMP logical model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BEAMPPModel"
+        },
+        "name": "BE AMPP logical model",
+        "description": "Belgium AMPP logical model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BEDMPPModel"
+        },
+        "name": "BE DMPP logical model",
+        "description": "Belgium DMPP logical model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BEVMPGroupModel"
+        },
+        "name": "BE VMP Group logical model",
+        "description": "Belgium VMP Group logical model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BEVMPModel"
+        },
+        "name": "BE VMP logical model",
+        "description": "Belgium VMP logical model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/IDMPPhPModel"
+        },
+        "name": "IDMP Pharmaceutical Product logical model",
+        "description": "IDMP Pharmaceutical Product logical model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/VMPGroupModel"
         },
         "name": "VMP Group logical model",
@@ -444,9 +528,48 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/BoSS-vs"
+        },
+        "name": "BoSS - Basis of Substance Strength options",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ConcPres-vs"
+        },
+        "name": "Concentration or Presentation Value Set",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/dose-form-ontology-cs"
         },
         "name": "Dose Form ontology Value Set",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/Pattern-vs"
+        },
+        "name": "Presentation pattern Value Set",
         "exampleBoolean": false
       },
       {
@@ -471,9 +594,48 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/BoSS-cs"
+        },
+        "name": "BoSS - Basis of Substance Strength options Code System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ConcPres-cs"
+        },
+        "name": "Concentration or Presentation Code System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/dose-form-ontology-cs"
         },
         "name": "Dose Form Ontology Code System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/Pattern-cs"
+        },
+        "name": "Presentation pattern Code System",
         "exampleBoolean": false
       },
       {
@@ -569,24 +731,21 @@
           "generation": "html"
         },
         {
-          "nameUrl": "background.html",
-          "title": "Background",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "changes.html",
-          "title": "Changes",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "spec.html",
-          "title": "Spec",
-          "generation": "markdown"
+          "nameUrl": "countries.html",
+          "title": "Member States",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "global.html",
+              "title": "Global",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "belgium.html",
+              "title": "Belgium",
+              "generation": "markdown"
+            }
+          ]
         }
       ]
     },

@@ -263,6 +263,72 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/BEAMPModel"/>
+      </reference>
+      <name value="BE AMP logical model"/>
+      <description value="Belgium AMP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEAMPPModel"/>
+      </reference>
+      <name value="BE AMPP logical model"/>
+      <description value="Belgium AMPP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEDMPPModel"/>
+      </reference>
+      <name value="BE DMPP logical model"/>
+      <description value="Belgium DMPP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEVMPGroupModel"/>
+      </reference>
+      <name value="BE VMP Group logical model"/>
+      <description value="Belgium VMP Group logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEVMPModel"/>
+      </reference>
+      <name value="BE VMP logical model"/>
+      <description value="Belgium VMP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDMPPhPModel"/>
+      </reference>
+      <name value="IDMP Pharmaceutical Product logical model"/>
+      <description value="IDMP Pharmaceutical Product logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/VMPGroupModel"/>
       </reference>
       <name value="VMP Group logical model"/>
@@ -296,9 +362,39 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/BoSS-vs"/>
+      </reference>
+      <name value="BoSS - Basis of Substance Strength options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ConcPres-vs"/>
+      </reference>
+      <name value="Concentration or Presentation Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/dose-form-ontology-cs"/>
       </reference>
       <name value="Dose Form ontology Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Pattern-vs"/>
+      </reference>
+      <name value="Presentation pattern Value Set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -317,9 +413,39 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/BoSS-cs"/>
+      </reference>
+      <name value="BoSS - Basis of Substance Strength options Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ConcPres-cs"/>
+      </reference>
+      <name value="Concentration or Presentation Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/dose-form-ontology-cs"/>
       </reference>
       <name value="Dose Form Ontology Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Pattern-cs"/>
+      </reference>
+      <name value="Presentation pattern Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -395,24 +521,19 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="changes.html"/>
-        <title value="Changes"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="spec.html"/>
-        <title value="Spec"/>
+        <nameUrl value="countries.html"/>
+        <title value="Member States"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="global.html"/>
+          <title value="Global"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="belgium.html"/>
+          <title value="Belgium"/>
+          <generation value="markdown"/>
+        </page>
       </page>
     </page>
     <parameter>

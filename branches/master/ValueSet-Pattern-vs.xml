@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Pattern-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-Pattern-cs.html"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs"/>
+  <version value="1.0.0"/>
+  <name value="PatternVS"/>
+  <title value="Presentation pattern Value Set"/>
+  <status value="active"/>
+  <date value="2022-05-26T15:10:33+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs"/>
+    </include>
+  </compose>
+</ValueSet>

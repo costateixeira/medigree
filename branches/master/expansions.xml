@@ -1,11 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="858ee9dd-b754-478c-a774-4eaf3f049229"/>
+  <id value="6acdece1-41b4-41fa-97f8-2adf67724ac1"/>
   <meta>
-    <lastUpdated value="2022-05-23T17:22:42.992+00:00"/>
+    <lastUpdated value="2022-05-26T15:10:33.337+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="BoSS-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-BoSS-cs.html">BoSS - Basis of Substance Strength options Code System v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-BoSS-cs.html">
+                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-BoSS-cs-base"> </a>  
+                  <a href="CodeSystem-BoSS-cs.html#BoSS-cs-base">base</a>
+                </td>
+                <td>Base</td>
+                <td>The strength corresponds to the strength of the base substance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-BoSS-cs-base-modifier"> </a>  
+                  <a href="CodeSystem-BoSS-cs.html#BoSS-cs-base-modifier">base-modifier</a>
+                </td>
+                <td>Base and modifier</td>
+                <td>The strength corresponds to the strength of the modifier</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-BoSS-cs-ref-substance"> </a>  
+                  <a href="CodeSystem-BoSS-cs.html#BoSS-cs-ref-substance">ref-substance</a>
+                </td>
+                <td>Reference Substance</td>
+                <td>The strength corresponds to the associated reference substance</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs"/>
+        <version value="1.0.0"/>
+        <name value="BoSSVS"/>
+        <title value="BoSS - Basis of Substance Strength options"/>
+        <status value="active"/>
+        <date value="2022-05-26T15:10:33+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a6e5d167-b10c-4008-b306-5ce94164e206"/>
+          <timestamp value="2022-05-26T15:10:51+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs"/>
+            <code value="base"/>
+            <display value="Base"/>
+          </contains>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs"/>
+            <code value="base-modifier"/>
+            <display value="Base and modifier"/>
+          </contains>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs"/>
+            <code value="ref-substance"/>
+            <display value="Reference Substance"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="ConcPres-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-ConcPres-cs.html">Concentration or Presentation Code System v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-ConcPres-cs.html">
+                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-ConcPres-cs-concentration"> </a>  
+                  <a href="CodeSystem-ConcPres-cs.html#ConcPres-cs-concentration">concentration</a>
+                </td>
+                <td>Concentration</td>
+                <td>Concentration</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-ConcPres-cs-presentation"> </a>  
+                  <a href="CodeSystem-ConcPres-cs.html#ConcPres-cs-presentation">presentation</a>
+                </td>
+                <td>Presentation</td>
+                <td>Presentation</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs"/>
+        <version value="1.0.0"/>
+        <name value="ConcPresVS"/>
+        <title value="Concentration or Presentation Value Set"/>
+        <status value="active"/>
+        <date value="2022-05-26T15:10:33+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:45fbc2ae-64d8-462a-ad1f-147236be9b0a"/>
+          <timestamp value="2022-05-26T15:10:51+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs"/>
+            <code value="concentration"/>
+            <display value="Concentration"/>
+          </contains>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs"/>
+            <code value="presentation"/>
+            <display value="Presentation"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs"/>
     <resource>
@@ -14,7 +241,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-dose-form-ontology-cs.html">Dose Form Ontology Code System v1.0.0 (CodeSystem)</a>
             </p>
@@ -50,6 +277,16 @@
               </tr>
               <tr>
                 <td>
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-dose-form-ontology-cs-10220XXX"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-10220XXX">10220XXX</a>
+                </td>
+                <td>Capsule</td>
+                <td>Capsule</td>
+              </tr>
+              <tr>
+                <td>
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-dose-form-ontology-cs-10220000"> </a>2
                 </td>
                 <td style="white-space:nowrap">    
@@ -76,7 +313,7 @@
         <name value="DoseFormOntologyCS"/>
         <title value="Dose Form ontology Value Set"/>
         <status value="active"/>
-        <date value="2022-05-23T17:22:42+00:00"/>
+        <date value="2022-05-26T15:10:33+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -105,9 +342,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8b053252-7b3b-4553-a107-8e5516a76cd3"/>
-          <timestamp value="2022-05-23T17:23:04+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:d563a57c-61c8-4036-99e7-948071997462"/>
+          <timestamp value="2022-05-26T15:10:51+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -122,6 +359,11 @@
             <display value="Oral use"/>
             <contains>
               <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"/>
+              <code value="10220XXX"/>
+              <display value="Capsule"/>
+            </contains>
+            <contains>
+              <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"/>
               <code value="10220000"/>
               <display value="Tablet"/>
               <contains>
@@ -130,6 +372,113 @@
                 <display value="Sublingual tablet"/>
               </contains>
             </contains>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="Pattern-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-Pattern-cs.html">Presentation pattern Code System v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-Pattern-cs.html">
+                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Pattern-cs-oral-solid"> </a>  
+                  <a href="CodeSystem-Pattern-cs.html#Pattern-cs-oral-solid">oral-solid</a>
+                </td>
+                <td>Oral Solid</td>
+                <td>Oral Solid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Pattern-cs-injectable"> </a>  
+                  <a href="CodeSystem-Pattern-cs.html#Pattern-cs-injectable">injectable</a>
+                </td>
+                <td>Injectable</td>
+                <td>Injectable</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs"/>
+        <version value="1.0.0"/>
+        <name value="PatternVS"/>
+        <title value="Presentation pattern Value Set"/>
+        <status value="active"/>
+        <date value="2022-05-26T15:10:33+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ffca3bdd-042d-48b5-bbd3-8b8517871274"/>
+          <timestamp value="2022-05-26T15:10:51+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs"/>
+            <code value="oral-solid"/>
+            <display value="Oral Solid"/>
+          </contains>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs"/>
+            <code value="injectable"/>
+            <display value="Injectable"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -211,7 +560,7 @@
         <name value="ProductTypeVS"/>
         <title value="Product Types Value Set"/>
         <status value="active"/>
-        <date value="2022-05-23T17:22:42+00:00"/>
+        <date value="2022-05-26T15:10:33+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -241,8 +590,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1ba6c4c6-9a83-4c6f-9722-4c11eaf0f886"/>
-          <timestamp value="2022-05-23T17:23:04+00:00"/>
+          <identifier value="urn:uuid:64c5cee5-ad38-4d4c-acb9-3d7e4111be2e"/>
+          <timestamp value="2022-05-26T15:10:51+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
