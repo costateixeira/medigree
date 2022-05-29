@@ -25,7 +25,7 @@ Description: "IDMP Identifiable Product Model"
   * ^example.valueString = "10210000 capsule, hard"
 * unitOfPresentation 1..1 CodeableConcept "Unit of presentation" "Unit of presentation"
   * ^example.label = "(edqm)"
-  * ^example.valueString = "10210000 capsule, hard"
+  * ^example.valueString = "15012000 capsule"
 * routeOfAdministration 1..1 CodeableConcept "Route of administration" "Route of administration"
 
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
