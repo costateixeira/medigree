@@ -13,29 +13,29 @@ Description: "IDMP Pharmaceutical Product logical model"
   * substance 1..1 CodeableConcept "Codification of the substance" "Codification of the substance"
     * ^example.label = "(illustrative)"
     * ^example.valueString = "Amlodipine Besilate"
-  * strength 1..1 BackboneElement "strength of the substance" "strength of the substance"
+  * strength 1..1 BackboneElement "Authorized strength of the substance" "Authorized strength of the substance"
     * strengthValue 1..1 BackboneElement "Strength of the substance in this product" "Strength of the substance in this product"
       * numerator 1..1 SimpleQuantity "Strength numerator" "Strength numerator"
         * ^example.label = "(illustrative)"
         * ^example.valueString = "5 mg"
       * denominator 1..1 SimpleQuantity "Strength denominator" "Strength denominator"
-
     * boss 1..1 code "base | base-modifier | ref-substance" "basis of substance strength" 
+      * ^comment = "not needed from countries, will be looked up by substance"
       * ^binding.valueSet = Canonical(BoSSVS)
       * ^binding.strength = #required
     * pattern 1..1 code "oral-solid | injectable" "oral-solid | injectable"
+      * ^comment = "not needed from countries, will be looked up by dose form"
       * ^binding.valueSet = Canonical(PatternVS)
       * ^binding.strength = #required
     * concentration_presentation 1..1 code "concentration | presentation" "concentration | presentation"
+      * ^comment = "not needed from countries, will be looked up by dose form"
       * ^binding.valueSet = Canonical(ConcPresVS)
       * ^binding.strength = #required
-    * unit_of_presentation 1..1 CodeableConcept "unit of presentation if strength is by presentation" "unit of presentation is strength is by presentation"
-      * ^example.label = "(edqm)"
-      * ^example.valueString = "10210000 capsule, hard"
     * unit_of_presentation 0..1 CodeableConcept "unit of presentation if strength is by presentation" "unit of presentation is strength is by presentation"
+      * ^comment = "not needed from countries, will be looked up by dose form"
       * ^example.label = "(edqm)"
       * ^example.valueString = "10210000 capsule, hard"
-  * doseForm 1..1 CodeableConcept "Dose Form" "Dose Form"
+  * doseForm 1..1 CodeableConcept "Authorized Dose Form" "Authorized Dose Form"
     * ^example.label = "(edqm)"
     * ^example.valueString = "10210000 capsule, hard"
 
