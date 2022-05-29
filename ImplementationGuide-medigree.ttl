@@ -537,6 +537,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPProductModel>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/IDMPProductModel" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IDMPIdentifiableProductModel" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "IDMP Identifiable Product Model" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPGroupModel>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/VMPGroupModel" ]
        ];
@@ -544,7 +558,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "VMP Group logical model" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -558,7 +572,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "VMP logical model" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -572,7 +586,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "VMPP logical model" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -585,7 +599,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BoSS - Basis of Substance Strength options" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -598,7 +612,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Concentration or Presentation Value Set" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -611,7 +625,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dose Form ontology Value Set" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -624,7 +638,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Presentation pattern Value Set" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -638,7 +652,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Product Types Value Set." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -651,7 +665,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BoSS - Basis of Substance Strength options Code System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -664,7 +678,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Concentration or Presentation Code System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -677,7 +691,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dose Form Ontology Code System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -690,7 +704,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Presentation pattern Code System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -704,7 +718,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Product Types" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -717,7 +731,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "EPI-humalog" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -730,7 +744,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedPrescription" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -746,7 +760,7 @@
          fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -759,7 +773,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "med-amlor" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -773,7 +787,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search by phpid" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
