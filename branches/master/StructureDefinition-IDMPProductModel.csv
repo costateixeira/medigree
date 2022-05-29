@@ -19,7 +19,7 @@
 "IDMPProductModel.identifier.id","IDMPProductModel.identifier.id","","","",0,*,"","","","Identifier {[]} {[]}
 ","Any other identifier","Any other identifier","","","","","","","","","",,,,,"",,,,"IDMPProductModel.identifier.id",0,*,"",""
 "IDMPProductModel.marketingAuthorizationHolder","IDMPProductModel.marketingAuthorizationHolder","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Authorized Dose Form","Authorized Dose Form","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPProductModel.marketingAuthorizationHolder",0,1,"",""
+","Authorized Dose Form","Authorized Dose Form","","","","","","","","","",,,,,"",,,,"IDMPProductModel.marketingAuthorizationHolder",0,1,"",""
 "IDMPProductModel.doseForm","IDMPProductModel.doseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Authorized Dose Form","Authorized Dose Form","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPProductModel.doseForm",1,1,"",""
 "IDMPProductModel.unitOfPresentation","IDMPProductModel.unitOfPresentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
