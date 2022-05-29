@@ -384,6 +384,17 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/IDMPProductModel"/>
+      </reference>
+      <name value="IDMPIdentifiableProductModel"/>
+      <description value="IDMP Identifiable Product Model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/VMPGroupModel"/>
       </reference>
       <name value="VMP Group logical model"/>

@@ -112,6 +112,13 @@
     "name": "IDMPPharmaceuticalProduct"
   },
   {
+    "id": "IDMPProductModel",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPProductModel",
+    "version": "1.0.0",
+    "name": "IDMPProductModel"
+  },
+  {
     "id": "PharmaceuticalProduct",
     "type": "StructureDefinition",
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",

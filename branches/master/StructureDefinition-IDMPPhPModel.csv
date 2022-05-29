@@ -15,7 +15,7 @@
 "IDMPPhPModel.ingredient.substance","IDMPPhPModel.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Codification of the substance","Codification of the substance","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Amlodipine Besilate""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.substance",1,1,"",""
 "IDMPPhPModel.ingredient.strength","IDMPPhPModel.ingredient.strength","","","",1,1,"","","","BackboneElement {[]} {[]}
-","strength of the substance","strength of the substance","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength",1,1,"",""
+","Authorized strength of the substance","Authorized strength of the substance","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength",1,1,"",""
 "IDMPPhPModel.ingredient.strength.strengthValue","IDMPPhPModel.ingredient.strength.strengthValue","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Strength of the substance in this product","Strength of the substance in this product","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.strengthValue",1,1,"",""
 "IDMPPhPModel.ingredient.strength.strengthValue.numerator","IDMPPhPModel.ingredient.strength.strengthValue.numerator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
@@ -23,14 +23,12 @@
 "IDMPPhPModel.ingredient.strength.strengthValue.denominator","IDMPPhPModel.ingredient.strength.strengthValue.denominator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","Strength denominator","Strength denominator","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.strengthValue.denominator",1,1,"",""
 "IDMPPhPModel.ingredient.strength.boss","IDMPPhPModel.ingredient.strength.boss","","","",1,1,"","","","code {[]} {[]}
-","base | base-modifier | ref-substance","basis of substance strength","","","","","","","","","",,"required","","http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs","",,,,"IDMPPhPModel.ingredient.strength.boss",1,1,"",""
+","base | base-modifier | ref-substance","basis of substance strength","not needed from countries, will be looked up by substance","","","","","","","","",,"required","","http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs","",,,,"IDMPPhPModel.ingredient.strength.boss",1,1,"",""
 "IDMPPhPModel.ingredient.strength.pattern","IDMPPhPModel.ingredient.strength.pattern","","","",1,1,"","","","code {[]} {[]}
-","oral-solid | injectable","oral-solid | injectable","","","","","","","","","",,"required","","http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs","",,,,"IDMPPhPModel.ingredient.strength.pattern",1,1,"",""
+","oral-solid | injectable","oral-solid | injectable","not needed from countries, will be looked up by dose form","","","","","","","","",,"required","","http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs","",,,,"IDMPPhPModel.ingredient.strength.pattern",1,1,"",""
 "IDMPPhPModel.ingredient.strength.concentration-presentation","IDMPPhPModel.ingredient.strength.concentration_presentation","","","",1,1,"","","","code {[]} {[]}
-","concentration | presentation","concentration | presentation","","","","","","","","","",,"required","","http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs","",,,,"IDMPPhPModel.ingredient.strength.concentration_presentation",1,1,"",""
-"IDMPPhPModel.ingredient.strength.unit-of-presentation","IDMPPhPModel.ingredient.strength.unit_of_presentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","unit of presentation if strength is by presentation","unit of presentation is strength is by presentation","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.unit_of_presentation",1,1,"",""
+","concentration | presentation","concentration | presentation","not needed from countries, will be looked up by dose form","","","","","","","","",,"required","","http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs","",,,,"IDMPPhPModel.ingredient.strength.concentration_presentation",1,1,"",""
 "IDMPPhPModel.ingredient.strength.unit-of-presentation","IDMPPhPModel.ingredient.strength.unit_of_presentation","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","unit of presentation if strength is by presentation","unit of presentation is strength is by presentation","","","","","","","","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.unit_of_presentation",0,1,"",""
+","unit of presentation if strength is by presentation","unit of presentation is strength is by presentation","not needed from countries, will be looked up by dose form","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.strength.unit_of_presentation",0,1,"",""
 "IDMPPhPModel.ingredient.doseForm","IDMPPhPModel.ingredient.doseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Dose Form","Dose Form","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.doseForm",1,1,"",""
+","Authorized Dose Form","Authorized Dose Form","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPPhPModel.ingredient.doseForm",1,1,"",""

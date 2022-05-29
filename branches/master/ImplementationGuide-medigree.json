@@ -556,6 +556,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/IDMPProductModel"
+        },
+        "name": "IDMPIdentifiableProductModel",
+        "description": "IDMP Identifiable Product Model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/VMPGroupModel"
         },
         "name": "VMP Group logical model",
