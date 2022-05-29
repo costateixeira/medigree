@@ -17,8 +17,8 @@ Description: "IDMP Identifiable Product Model"
   * id 0..* Identifier "Any other identifier" "Any other identifier"
 
 * marketingAuthorizationHolder 0..1 CodeableConcept "Authorized Dose Form" "Authorized Dose Form"
-  * ^example.label = "(edqm)"
-  * ^example.valueString = "10210000 capsule, hard"
+  // * ^example.label = "(edqm)"
+  // * ^example.valueString = "10210000 capsule, hard"
 
 * doseForm 1..1 CodeableConcept "Authorized Dose Form" "Authorized Dose Form"
   * ^example.label = "(edqm)"
