@@ -23,7 +23,7 @@
 "IDMPProductModel.doseForm","IDMPProductModel.doseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Authorized Dose Form","Authorized Dose Form","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPProductModel.doseForm",1,1,"",""
 "IDMPProductModel.unitOfPresentation","IDMPProductModel.unitOfPresentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Unit of presentation","Unit of presentation","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPProductModel.unitOfPresentation",1,1,"",""
+","Unit of presentation","Unit of presentation","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""15012000 capsule""/>","","",,,,,"",,,,"IDMPProductModel.unitOfPresentation",1,1,"",""
 "IDMPProductModel.routeOfAdministration","IDMPProductModel.routeOfAdministration","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Route of administration","Route of administration","","","","","","","","","",,,,,"",,,,"IDMPProductModel.routeOfAdministration",1,1,"",""
 "IDMPProductModel.ingredient","IDMPProductModel.ingredient","","","",1,*,"","","","BackboneElement {[]} {[]}
