@@ -11,11 +11,24 @@ Description:    "Drug Characteristic"
 * extension[characteristicValue].value[x] only string or Quantity or CodeableConcept or Attachment or base64Binary or Reference
 
 
+
+Extension:      MedicationDefinition
+Parent:         Extension
+Id:             medicationDefinition
+Title:          "Medication Definition extension"
+Description:    "Medication Definition extension"
+* value[x] only Reference 
+* valueReference only Reference(MedicationKnowledge or Bundle)
+
+
+
 Profile: DefinedMed
 Parent: Medication
 * extension contains
-    DrugCharacteristic named drugCharacteristic 0..* 
-    
+    DrugCharacteristic named drugCharacteristic 0..* and
+    MedicationDefinition named medicationDefinition 0..*
+
+
 
 // 2. Extend Medication with drugCharacteristics
 
