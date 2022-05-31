@@ -25,7 +25,7 @@ Id:         definedMedication
 * value[x] only CodeableConcept or Reference(DefinedMed)
 
 
-ValueSet: CSMedRelationTypes
+CodeSystem: CSMedRelationTypes
 Id: Cs-med-relation-types
 Title: "Marketing Authorization Holder"
 Description:  "Marketing Authorization Holder."
