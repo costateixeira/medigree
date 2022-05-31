@@ -60,6 +60,7 @@ Description:    "Related Medication"
 
 Profile: IntMedicationRequest
 Parent: MedicationRequest
+* medicationReference only Reference(DefinedMed)
 * extension contains RelatedMedication named relatedMedication 0..1
 
 
