@@ -31,7 +31,7 @@ Title: "Marketing Authorization Holder"
 Description:  "Marketing Authorization Holder."
 * #package-of "Package of"
 * #contains "Contains"
-* #contains "Matches"
+* #matches "Matches"
 
 
 ValueSet: VSMedRelationTypes
