@@ -230,6 +230,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/BEIdentifiableProduct"/>
+      </reference>
+      <name value="BE Identifiable Product Profile"/>
+      <description value="BE Identifiable Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DefinedMed"/>
       </reference>
       <name value="DefinedMed"/>
@@ -318,6 +329,17 @@
         <reference value="StructureDefinition/medRelation"/>
       </reference>
       <name value="MedRelation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationDefinition"/>
+      </reference>
+      <name value="Medication Definition extension"/>
+      <description value="Medication Definition extension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -638,6 +660,16 @@
       </reference>
       <name value="amlodipine-5mg-caps"/>
       <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/amlodipine-5mg-caps2"/>
+      </reference>
+      <name value="amlodipine-5mg-caps2"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

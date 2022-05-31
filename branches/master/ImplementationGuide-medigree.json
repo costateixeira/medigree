@@ -360,6 +360,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/BEIdentifiableProduct"
+        },
+        "name": "BE Identifiable Product Profile",
+        "description": "BE Identifiable Product Profile",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DefinedMed"
         },
         "name": "DefinedMed",
@@ -472,6 +486,20 @@
           "reference": "StructureDefinition/medRelation"
         },
         "name": "MedRelation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/medicationDefinition"
+        },
+        "name": "Medication Definition extension",
+        "description": "Medication Definition extension",
         "exampleBoolean": false
       },
       {
@@ -882,6 +910,19 @@
         },
         "name": "amlodipine-5mg-caps",
         "exampleCanonical": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationKnowledge"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationKnowledge/amlodipine-5mg-caps2"
+        },
+        "name": "amlodipine-5mg-caps2",
+        "exampleCanonical": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"
       },
       {
         "extension": [

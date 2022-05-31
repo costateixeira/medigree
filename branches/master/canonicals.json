@@ -77,6 +77,13 @@
     "name": "BEDMPPModel"
   },
   {
+    "id": "BEIdentifiableProduct",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct",
+    "version": "1.0.0",
+    "name": "BEIdentifiableProduct"
+  },
+  {
     "id": "BEVMPGroupModel",
     "type": "StructureDefinition",
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEVMPGroupModel",
@@ -201,6 +208,13 @@
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation",
     "version": "1.0.0",
     "name": "MedRelation"
+  },
+  {
+    "id": "medicationDefinition",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition",
+    "version": "1.0.0",
+    "name": "MedicationDefinition"
   },
   {
     "id": "relatedMedication",

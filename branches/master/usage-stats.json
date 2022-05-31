@@ -122,6 +122,14 @@
       ]
     },
     {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition",
+      "title": "Medication Definition extension",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
       "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication",
       "title": "Related Medication",
       "types": [
@@ -179,16 +187,16 @@
     }
   ],
   "profiles": {
-    "Medication": [
-      {
-        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed",
-        "title": "DefinedMed"
-      }
-    ],
     "MedicationKnowledge": [
       {
         "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
         "title": "Pharmaceutical Product Profile"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed",
+        "title": "DefinedMed"
       }
     ],
     "MedicationRequest": [
@@ -261,6 +269,9 @@
     ],
     "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation": [
       "Extension"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition": [
+      "Medication"
     ],
     "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication": [
       "MedicationRequest"
