@@ -360,10 +360,36 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DefinedMed"
+        },
+        "name": "DefinedMed",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/IDMPPharmaceuticalProduct"
         },
         "name": "Pharmaceutical Product Profile",
         "description": "Pharmaceutical Product Profile",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/IntMedicationRequest"
+        },
+        "name": "IntMedicationRequest",
         "exampleBoolean": false
       },
       {
@@ -406,6 +432,60 @@
         },
         "name": "ConcentrationPresentation",
         "description": "Pattern for Concentration or Presentation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/definedMedication"
+        },
+        "name": "DefinedMedication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/drugCharacteristic"
+        },
+        "name": "Drug Characteristic",
+        "description": "Drug Characteristic",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/medRelation"
+        },
+        "name": "MedRelation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/relatedMedication"
+        },
+        "name": "Related Medication",
+        "description": "Related Medication",
         "exampleBoolean": false
       },
       {
@@ -674,6 +754,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-med-relation-types"
+        },
+        "name": "Marketing Authorization Holder",
+        "description": "Marketing Authorization Holder.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -681,6 +775,20 @@
           "reference": "CodeSystem/BoSS-cs"
         },
         "name": "BoSS - Basis of Substance Strength options Code System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/Cs-med-relation-types"
+        },
+        "name": "Marketing Authorization Holder",
+        "description": "Marketing Authorization Holder.",
         "exampleBoolean": false
       },
       {

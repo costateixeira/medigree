@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Cs-med-relation-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">package-of<a name="Cs-med-relation-types-package-of"> </a></td><td>Package of</td></tr><tr><td style="white-space:nowrap">contains<a name="Cs-med-relation-types-contains"> </a></td><td>Contains</td></tr><tr><td style="white-space:nowrap">matches<a name="Cs-med-relation-types-matches"> </a></td><td>Matches</td></tr></table></div>
+  </text>
+  <url value="http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types"/>
+  <version value="1.0.0"/>
+  <name value="CSMedRelationTypes"/>
+  <title value="Marketing Authorization Holder"/>
+  <status value="active"/>
+  <date value="2022-05-31T09:58:25+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Marketing Authorization Holder."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="package-of"/>
+    <display value="Package of"/>
+  </concept>
+  <concept>
+    <code value="contains"/>
+    <display value="Contains"/>
+  </concept>
+  <concept>
+    <code value="matches"/>
+    <display value="Matches"/>
+  </concept>
+</CodeSystem>

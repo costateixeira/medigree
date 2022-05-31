@@ -34,17 +34,167 @@
       "types": [
         "code"
       ]
+    },
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication",
+      "title": "DefinedMedication",
+      "types": [
+        "CodeableConcept",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic",
+      "title": "Drug Characteristic",
+      "types": [
+        "CodeableConcept",
+        "base64Binary",
+        "string",
+        "Attachment",
+        "CodeableConcept",
+        "Quantity",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation",
+      "title": "MedRelation",
+      "types": [
+        "Coding",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication",
+      "title": "Related Medication",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
     }
   ],
   "profiles": {
-    "MedicationKnowledge": [
+    "Medication": [
       {
-        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct",
-        "title": "Pharmaceutical Product Profile"
-      },
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed",
+        "title": "DefinedMed"
+      }
+    ],
+    "MedicationKnowledge": [
       {
         "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
         "title": "Pharmaceutical Product Profile"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest",
+        "title": "IntMedicationRequest"
       }
     ]
   },
@@ -102,6 +252,18 @@
     ],
     "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation": [
       "MedicationKnowledge.ingredient.strength"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication": [
+      "Extension"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic": [
+      "Medication"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation": [
+      "Extension"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication": [
+      "MedicationRequest"
     ]
   }
 }
