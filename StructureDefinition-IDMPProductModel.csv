@@ -40,12 +40,6 @@
 ","Strength numerator","Strength numerator","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""5 mg""/>","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue.numerator",1,1,"",""
 "IDMPProductModel.ingredient.strength.strengthValue.denominator","IDMPProductModel.ingredient.strength.strengthValue.denominator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","Strength denominator","Strength denominator","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue.denominator",1,1,"",""
-"IDMPProductModel.ingredient.strength.strengthValue","IDMPProductModel.ingredient.strength.strengthValue","","","",1,1,"","","","BackboneElement {[]} {[]}
-","Strength of the substance in this product","Strength of the substance in this product","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue",1,1,"",""
-"IDMPProductModel.ingredient.strength.strengthValue.numerator","IDMPProductModel.ingredient.strength.strengthValue.numerator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
-","Strength numerator","Strength numerator","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue.numerator",1,1,"",""
-"IDMPProductModel.ingredient.strength.strengthValue.denominator","IDMPProductModel.ingredient.strength.strengthValue.denominator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
-","Strength denominator","Strength denominator","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue.denominator",1,1,"",""
 "IDMPProductModel.ingredient.referenceStrength","IDMPProductModel.ingredient.referenceStrength","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Authorized strength of the substance","Authorized strength of the substance","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.referenceStrength",1,1,"",""
 "IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue","IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue","","","",1,1,"","","","BackboneElement {[]} {[]}

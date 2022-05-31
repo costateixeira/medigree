@@ -1,0 +1,141 @@
+{
+  "resourceType": "MedicationKnowledge",
+  "id": "amlodipine-5mg-caps2",
+  "meta": {
+    "profile": [
+      "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"amlodipine-5mg-caps2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BEIdentifiableProduct.html\">BE Identifiable Product Profile</a></p></div><p><b>code</b>: name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (identifiable-product-identifier-type#id; medicinal-product-identifier-type#mpid; pharmaceutical-product-identifier-type#phpid)</span></p><p><b>manufacturer</b>: <span></span></p><p><b>doseForm</b>: edqm_df <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (dose-forms#edqm_df; dose-forms#other_df)</span></p><p><b>synonym</b>: name</p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>amlodipine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#amlodipine)</span></td><td>5 miligrams<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 U<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code U = 'U')</span></td></tr></table><p><b>intendedRoute</b>: 123 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (routes#123)</span>, 234 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (routes#234)</span></p><h3>MedicineClassifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Classification</b></td></tr><tr><td>*</td><td>atc <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#atc)</span></td><td>A01B01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#A01B01)</span></td></tr></table><h3>Packagings</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#box)</span></td><td>20</td></tr></table><h3>DrugCharacteristics</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>123 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (presentationunits#123; presentationunits#234)</span></td></tr></table></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.medigree.net/identifiable-product-identifier-type",
+        "code": "id",
+        "display": "name"
+      },
+      {
+        "system": "http://www.medigree.net/medicinal-product-identifier-type",
+        "code": "mpid"
+      },
+      {
+        "system": "http://www.medigree.net/pharmaceutical-product-identifier-type",
+        "code": "phpid"
+      }
+    ]
+  },
+  "manufacturer": {
+    "identifier": {
+      "value": "UJ"
+    }
+  },
+  "doseForm": {
+    "coding": [
+      {
+        "system": "http://www.edqm.eu/dose-forms",
+        "code": "edqm_df"
+      },
+      {
+        "system": "http://www.belgium.be/dose-forms",
+        "code": "other_df"
+      }
+    ]
+  },
+  "synonym": [
+    "name"
+  ],
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "amlodipine"
+          }
+        ],
+        "text": "amlodipine"
+      },
+      "strength": {
+        "numerator": {
+          "value": 5,
+          "unit": "miligrams",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "system": "http://unitsofmeasure.org",
+          "code": "U"
+        }
+      }
+    }
+  ],
+  "intendedRoute": [
+    {
+      "coding": [
+        {
+          "system": "http://www.edqm.eu/routes",
+          "code": "123"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://www.belgium.be/routes",
+          "code": "234"
+        }
+      ]
+    }
+  ],
+  "medicineClassification": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "atc"
+          }
+        ]
+      },
+      "classification": [
+        {
+          "coding": [
+            {
+              "code": "A01B01"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "packaging": {
+    "type": {
+      "coding": [
+        {
+          "code": "box"
+        }
+      ]
+    },
+    "quantity": {
+      "value": 20
+    }
+  },
+  "drugCharacteristic": [
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.edqm.eu/presentationunits",
+            "code": "123"
+          },
+          {
+            "system": "http://www.belgium.be/presentationunits",
+            "code": "234"
+          }
+        ]
+      }
+    }
+  ]
+}
