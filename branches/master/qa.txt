@@ -1,12 +1,13 @@
 ﻿Medigree : Validation Results
 =========================================
 
-err = 76, warn = 47, info = 26
+err = 76, warn = 57, info = 27
 IG Publisher Version: 1.1.121
-Generated Sun May 29 08:21:38 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
- Build Errors : 1 / 13 / 0
+Generated Tue May 31 09:59:21 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
+ Build Errors : 1 / 17 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs : 0 / 0 / 2
@@ -26,23 +27,34 @@ Generated Sun May 29 08:21:38 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (c
  /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPModel : 1 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BoSS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ConcentrationPresentation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPhPModel : 1 / 13 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-IDMPProductModel : 32 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IntMedicationRequest : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-StrengthPattern : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-UnitOfPresentation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VMPGroupModel : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VMPModel : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VMPPModel : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-definedMedication : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-medRelation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-BoSS-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ConcPres-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-Pattern-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IntMedicationRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/definedMedication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/medRelation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/BoSS-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ConcPres-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/dose-form-ontology-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -60,6 +72,8 @@ ERROR: /github/workspace/output/MedicationKnowledge-EPI-humalog.html#/html/body/
 INFORMATION: CodeSystem/BoSS-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-ConcPres-cs.json ==
 INFORMATION: CodeSystem/ConcPres-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-Cs-med-relation-types.json ==
+INFORMATION: CodeSystem/Cs-med-relation-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-Pattern-cs.json ==
 INFORMATION: CodeSystem/Pattern-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-dose-form-ontology-cs.json ==
@@ -157,6 +171,8 @@ WARNING: StructureDefinition/BEVMPModel: StructureDefinition.differential.elemen
 WARNING: StructureDefinition/BEVMPModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-BoSS.json ==
 == fsh-generated/resources/StructureDefinition-ConcentrationPresentation.json ==
+== fsh-generated/resources/StructureDefinition-DefinedMed.json ==
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-IDMPPhPModel.json ==
 ERROR: StructureDefinition/IDMPPhPModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -209,6 +225,8 @@ ERROR: StructureDefinition/IDMPProductModel: StructureDefinition.differential.el
 ERROR: StructureDefinition/IDMPProductModel: StructureDefinition.differential.element[29]: Duplicate id value 'IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.numerator'
 ERROR: StructureDefinition/IDMPProductModel: StructureDefinition.differential.element[30]: Duplicate id value 'IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.denominator'
 WARNING: StructureDefinition/IDMPProductModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== fsh-generated/resources/StructureDefinition-IntMedicationRequest.json ==
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json ==
 WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-StrengthPattern.json ==
@@ -222,8 +240,17 @@ WARNING: StructureDefinition/VMPModel: StructureDefinition: Unable to find base 
 == fsh-generated/resources/StructureDefinition-VMPPModel.json ==
 ERROR: StructureDefinition/VMPPModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/VMPPModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== fsh-generated/resources/StructureDefinition-definedMedication.json ==
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-drugCharacteristic.json ==
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-medRelation.json ==
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-relatedMedication.json ==
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-BoSS-vs.json ==
 == fsh-generated/resources/ValueSet-ConcPres-vs.json ==
 == fsh-generated/resources/ValueSet-Pattern-vs.json ==
 == fsh-generated/resources/ValueSet-dose-form-ontology-cs.json ==
 == fsh-generated/resources/ValueSet-prod-type-vs.json ==
+== fsh-generated/resources/ValueSet-vs-med-relation-types.json ==

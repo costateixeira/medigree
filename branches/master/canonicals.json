@@ -21,6 +21,13 @@
     "name": "ConcPresCS"
   },
   {
+    "id": "Cs-med-relation-types",
+    "type": "CodeSystem",
+    "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types",
+    "version": "1.0.0",
+    "name": "CSMedRelationTypes"
+  },
+  {
     "id": "Pattern-cs",
     "type": "CodeSystem",
     "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs",
@@ -98,6 +105,13 @@
     "name": "ConcentrationPresentation"
   },
   {
+    "id": "DefinedMed",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed",
+    "version": "1.0.0",
+    "name": "DefinedMed"
+  },
+  {
     "id": "IDMPPhPModel",
     "type": "StructureDefinition",
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPhPModel",
@@ -117,6 +131,13 @@
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPProductModel",
     "version": "1.0.0",
     "name": "IDMPProductModel"
+  },
+  {
+    "id": "IntMedicationRequest",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest",
+    "version": "1.0.0",
+    "name": "IntMedicationRequest"
   },
   {
     "id": "PharmaceuticalProduct",
@@ -161,6 +182,34 @@
     "name": "VMPPModel"
   },
   {
+    "id": "definedMedication",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication",
+    "version": "1.0.0",
+    "name": "DefinedMedication"
+  },
+  {
+    "id": "drugCharacteristic",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic",
+    "version": "1.0.0",
+    "name": "DrugCharacteristic"
+  },
+  {
+    "id": "medRelation",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation",
+    "version": "1.0.0",
+    "name": "MedRelation"
+  },
+  {
+    "id": "relatedMedication",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication",
+    "version": "1.0.0",
+    "name": "RelatedMedication"
+  },
+  {
     "id": "BoSS-vs",
     "type": "ValueSet",
     "url": "http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs",
@@ -187,6 +236,13 @@
     "url": "http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs",
     "version": "1.0.0",
     "name": "DoseFormOntologyCS"
+  },
+  {
+    "id": "vs-med-relation-types",
+    "type": "ValueSet",
+    "url": "http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types",
+    "version": "1.0.0",
+    "name": "VSMedRelationTypes"
   },
   {
     "id": "prod-type-cs",

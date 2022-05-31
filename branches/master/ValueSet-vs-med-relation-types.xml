@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-med-relation-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-Cs-med-relation-types.html"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</code></a></li></ul></div>
+  </text>
+  <url value="http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types"/>
+  <version value="1.0.0"/>
+  <name value="VSMedRelationTypes"/>
+  <title value="Marketing Authorization Holder"/>
+  <status value="active"/>
+  <date value="2022-05-31T09:58:25+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Marketing Authorization Holder."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types"/>
+    </include>
+  </compose>
+</ValueSet>

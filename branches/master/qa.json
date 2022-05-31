@@ -3,10 +3,10 @@
   "name": "Medigree",
   "package-id": "medigree",
   "ig-ver": "1.0.0",
-  "date": "Sun, 29 May, 2022 08:21:05 +0000",
+  "date": "Tue, 31 May, 2022 09:58:25 +0000",
   "errs": 76,
-  "warnings": 47,
-  "hints": 26,
+  "warnings": 57,
+  "hints": 27,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot1 (3)"
 }

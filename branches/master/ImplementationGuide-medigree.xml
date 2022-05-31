@@ -230,10 +230,30 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DefinedMed"/>
+      </reference>
+      <name value="DefinedMed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/IDMPPharmaceuticalProduct"/>
       </reference>
       <name value="Pharmaceutical Product Profile"/>
       <description value="Pharmaceutical Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IntMedicationRequest"/>
+      </reference>
+      <name value="IntMedicationRequest"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -267,6 +287,48 @@
       </reference>
       <name value="ConcentrationPresentation"/>
       <description value="Pattern for Concentration or Presentation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/definedMedication"/>
+      </reference>
+      <name value="DefinedMedication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/drugCharacteristic"/>
+      </reference>
+      <name value="Drug Characteristic"/>
+      <description value="Drug Characteristic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medRelation"/>
+      </reference>
+      <name value="MedRelation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relatedMedication"/>
+      </reference>
+      <name value="Related Medication"/>
+      <description value="Related Medication"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -476,12 +538,34 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-med-relation-types"/>
+      </reference>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
         <reference value="CodeSystem/BoSS-cs"/>
       </reference>
       <name value="BoSS - Basis of Substance Strength options Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Cs-med-relation-types"/>
+      </reference>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="fb964251-7c57-4bfc-9d3c-5491f7be67b2"/>
+  <id value="d74bc862-7d28-400d-9b92-cd225ba5763f"/>
   <meta>
-    <lastUpdated value="2022-05-29T08:21:05.840+00:00"/>
+    <lastUpdated value="2022-05-31T09:58:25.931+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -67,7 +67,7 @@
         <name value="BoSSVS"/>
         <title value="BoSS - Basis of Substance Strength options"/>
         <status value="active"/>
-        <date value="2022-05-29T08:21:05+00:00"/>
+        <date value="2022-05-31T09:58:25+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -96,8 +96,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3bbbe435-22e4-4d50-9489-26159c2564e4"/>
-          <timestamp value="2022-05-29T08:21:26+00:00"/>
+          <identifier value="urn:uuid:882896ef-1049-43a1-b703-84716fb8246a"/>
+          <timestamp value="2022-05-31T09:59:03+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -179,7 +179,7 @@
         <name value="ConcPresVS"/>
         <title value="Concentration or Presentation Value Set"/>
         <status value="active"/>
-        <date value="2022-05-29T08:21:05+00:00"/>
+        <date value="2022-05-31T09:58:25+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -208,8 +208,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8ec142dc-6c7b-4f08-8179-a0a55917a016"/>
-          <timestamp value="2022-05-29T08:21:27+00:00"/>
+          <identifier value="urn:uuid:b364213a-8884-42fe-95eb-7896b9ae1e7b"/>
+          <timestamp value="2022-05-31T09:59:03+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -313,7 +313,7 @@
         <name value="DoseFormOntologyCS"/>
         <title value="Dose Form ontology Value Set"/>
         <status value="active"/>
-        <date value="2022-05-29T08:21:05+00:00"/>
+        <date value="2022-05-31T09:58:25+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -342,8 +342,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3192fbb7-457f-4f7a-91d8-9b7f447f7e4c"/>
-          <timestamp value="2022-05-29T08:21:27+00:00"/>
+          <identifier value="urn:uuid:7cb373b9-bb3d-4018-93cb-ad2b3b63e703"/>
+          <timestamp value="2022-05-31T09:59:03+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -430,7 +430,7 @@
         <name value="PatternVS"/>
         <title value="Presentation pattern Value Set"/>
         <status value="active"/>
-        <date value="2022-05-29T08:21:05+00:00"/>
+        <date value="2022-05-31T09:58:25+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -459,8 +459,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7cd54850-0dc7-443e-b4ea-e7c2cc46a362"/>
-          <timestamp value="2022-05-29T08:21:27+00:00"/>
+          <identifier value="urn:uuid:23feacf3-9799-44c1-828a-210847ef66e1"/>
+          <timestamp value="2022-05-31T09:59:03+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -560,7 +560,7 @@
         <name value="ProductTypeVS"/>
         <title value="Product Types Value Set"/>
         <status value="active"/>
-        <date value="2022-05-29T08:21:05+00:00"/>
+        <date value="2022-05-31T09:58:25+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -590,8 +590,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2dafe75b-cf1c-40a3-95c3-91c0b4690785"/>
-          <timestamp value="2022-05-29T08:21:27+00:00"/>
+          <identifier value="urn:uuid:d73294e0-ace6-491d-8cce-340e003cc23b"/>
+          <timestamp value="2022-05-31T09:59:03+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -630,6 +630,121 @@
             <system value="https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs"/>
             <code value="ePI"/>
             <display value="ePI"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-med-relation-types"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-Cs-med-relation-types.html">Marketing Authorization Holder v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-Cs-med-relation-types.html">
+                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Cs-med-relation-types-package-of"> </a>  
+                  <a href="CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-package-of">package-of</a>
+                </td>
+                <td>Package of</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Cs-med-relation-types-contains"> </a>  
+                  <a href="CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-contains">contains</a>
+                </td>
+                <td>Contains</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Cs-med-relation-types-matches"> </a>  
+                  <a href="CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-matches">matches</a>
+                </td>
+                <td>Matches</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types"/>
+        <version value="1.0.0"/>
+        <name value="VSMedRelationTypes"/>
+        <title value="Marketing Authorization Holder"/>
+        <status value="active"/>
+        <date value="2022-05-31T09:58:25+00:00"/>
+        <publisher value="My Organization"/>
+        <contact>
+          <name value="My Organization"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://example.com/committees"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="my-group@example.com"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Marketing Authorization Holder."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d3419588-c235-4a37-8857-608cebcd5aeb"/>
+          <timestamp value="2022-05-31T09:59:03+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types"/>
+            <code value="package-of"/>
+            <display value="Package of"/>
+          </contains>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types"/>
+            <code value="contains"/>
+            <display value="Contains"/>
+          </contains>
+          <contains>
+            <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types"/>
+            <code value="matches"/>
+            <display value="Matches"/>
           </contains>
         </expansion>
       </ValueSet>
