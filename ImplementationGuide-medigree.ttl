@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "medigree"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree</pre><div><p>Example IG</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree</pre><div><p>Example IG</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://medigree.net/eu/fhir/medigree"];
+  fhir:ImplementationGuide.url [ fhir:value "http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "Medigree"];
   fhir:ImplementationGuide.title [ fhir:value "FHIR Implementation Guide: Medigree"];
@@ -173,7 +173,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://medigree.net/eu/fhir/medigree/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -887,32 +887,16 @@
          fhir:Extension.valueString [ fhir:value "MedicationKnowledge" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://medigree.net/eu/fhir/medigree/MedicationKnowledge/amlodipine-5mg-caps>;
-         fhir:Reference.reference [ fhir:value "MedicationKnowledge/amlodipine-5mg-caps" ]
+         fhir:link <http://medigree.net/eu/fhir/medigree/MedicationKnowledge/be-ampp-148303-02>;
+         fhir:Reference.reference [ fhir:value "MedicationKnowledge/be-ampp-148303-02" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "amlodipine-5mg-caps" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct";
-         fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct>
-       ]
-     ], [
-       fhir:index 41;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationKnowledge" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://medigree.net/eu/fhir/medigree/MedicationKnowledge/amlodipine-5mg-caps2>;
-         fhir:Reference.reference [ fhir:value "MedicationKnowledge/amlodipine-5mg-caps2" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "amlodipine-5mg-caps2" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "be-ampp-148303-02" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct";
          fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct>
        ]
      ], [
-       fhir:index 42;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -925,7 +909,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "med-amlor" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -939,7 +923,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search by phpid" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

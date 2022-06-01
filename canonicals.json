@@ -1,12 +1,5 @@
 [
   {
-    "id": "medigree",
-    "type": "ImplementationGuide",
-    "url": "http://medigree.net/eu/fhir/medigree",
-    "version": "1.0.0",
-    "name": "Medigree"
-  },
-  {
     "id": "BoSS-cs",
     "type": "CodeSystem",
     "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs",
@@ -40,6 +33,13 @@
     "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
     "version": "1.0.0",
     "name": "DoseFormOntologyCS"
+  },
+  {
+    "id": "medigree",
+    "type": "ImplementationGuide",
+    "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree",
+    "version": "1.0.0",
+    "name": "Medigree"
   },
   {
     "id": "AMPModel",
