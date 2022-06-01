@@ -9,7 +9,7 @@
 
 id: medigree
 canonical: http://medigree.net/eu/fhir/medigree
-url: http://medigree.net/eu/fhir/medigree
+url: http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree
 name: Medigree
 title: "FHIR Implementation Guide: Medigree"
 description: Example IG

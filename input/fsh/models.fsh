@@ -1,6 +1,7 @@
 Logical: VMPGroupModel
 Title: "VMP Group logical model"
 Description: "VMP Group logical model"
+Parent: Element
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
@@ -13,6 +14,7 @@ Description: "VMP Group logical model"
 Logical: VMPModel
 Title: "VMP logical model"
 Description: "VMP logical model"
+Parent: Element
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
@@ -26,6 +28,7 @@ Description: "VMP logical model"
 Logical: AMPModel
 Title: "AMP logical model"
 Description: "AMP logical model"
+Parent: Element
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
@@ -42,6 +45,7 @@ Description: "AMP logical model"
 Logical: AMPPModel
 Title: "AMPP logical model"
 Description: "AMPP logical model"
+Parent: Element
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
@@ -62,6 +66,7 @@ Description: "AMPP logical model"
 Logical: VMPPModel
 Title: "VMPP logical model"
 Description: "VMPP logical model"
+Parent: Element
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"

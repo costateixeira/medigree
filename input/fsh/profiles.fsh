@@ -88,24 +88,3 @@ Description: "Pattern for Concentration or Presentation."
 Extension: UnitOfPresentation
 Description: "Unit of Presentation."
 * value[x] only code
-
-
-Instance: amlodipine-5mg-caps
-InstanceOf: IDMPPharmaceuticalProduct
-* intendedRoute = http://www.edqm.eu/routes#oral
-
-* doseForm = http://www.edqm.eu/dose-forms#10210000
-* ingredient
-  * itemCodeableConcept = http://somesystem.org/substances#123 "Amlodipine besilate"
-  * strength
-    * extension[boss].valueCode = #base
-    * extension[pattern].valueCode = #oral-solid
-    * extension[concentration_presentation].valueCode = #concentration
-    * extension[unit_presentation].valueCode = #10210000
-    * numerator
-      * value = 5
-      * unit = "mg"
-      * system = "http://unitsofmeasure.org"
-      * code = #mg
-
-

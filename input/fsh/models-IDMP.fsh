@@ -1,6 +1,7 @@
 Logical: IDMPPhPModel
 Title: "IDMP Pharmaceutical Product logical model"
 Description: "IDMP Pharmaceutical Product logical model"
+Parent: Element
 
 * identifier 0..* BackboneElement "Identifiers" "Identifiers"
   * l1_identifier 0..1 Identifier "IDMP PhPID Level 1" "IDMP PhPID Level 1"
