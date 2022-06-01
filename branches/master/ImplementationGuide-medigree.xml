@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="medigree"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree</pre><div><p>Example IG</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree</pre><div><p>Example IG</p>
 </div></div>
   </text>
-  <url value="http://medigree.net/eu/fhir/medigree"/>
+  <url value="http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree"/>
   <version value="1.0.0"/>
   <name value="Medigree"/>
   <title value="FHIR Implementation Guide: Medigree"/>
@@ -118,7 +118,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="history.html"/>
+        <valueString value="http://medigree.net/eu/fhir/medigree/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -656,19 +656,9 @@
         <valueString value="MedicationKnowledge"/>
       </extension>
       <reference>
-        <reference value="MedicationKnowledge/amlodipine-5mg-caps"/>
+        <reference value="MedicationKnowledge/be-ampp-148303-02"/>
       </reference>
-      <name value="amlodipine-5mg-caps"/>
-      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationKnowledge"/>
-      </extension>
-      <reference>
-        <reference value="MedicationKnowledge/amlodipine-5mg-caps2"/>
-      </reference>
-      <name value="amlodipine-5mg-caps2"/>
+      <name value="be-ampp-148303-02"/>
       <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"/>
     </resource>
     <resource>
