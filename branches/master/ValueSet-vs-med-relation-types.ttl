@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VSMedRelationTypes"];
   fhir:ValueSet.title [ fhir:value "Marketing Authorization Holder"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-05-31T22:14:36+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-06-01T13:57:06+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "My Organization"];
   fhir:ValueSet.contact [
      fhir:index 0;
