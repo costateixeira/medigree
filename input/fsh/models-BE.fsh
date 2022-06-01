@@ -1,6 +1,7 @@
 Logical: BEVMPGroupModel
 Title: "BE VMP Group logical model"
 Description: "Belgium VMP Group logical model"
+Parent: Element
 
 * identifier 0..* string "Business identifier for this medication" "Business identifier for this medication"
 * name 0..* string "Business identifier for this medication" "Business identifier for this medication"
@@ -15,6 +16,8 @@ Description: "Belgium VMP Group logical model"
 Logical: BEVMPModel
 Title: "BE VMP logical model"
 Description: "Belgium VMP logical model"
+Parent: Element
+
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * component 1..* BackboneElement "Components of the product, with therapeutical relevance or not" "Components of the product, with therapeutical relevance or not"
   * virtualIngredient 1..1 CodeableConcept "Codification of the substance" "Codification of the substance"
@@ -28,6 +31,7 @@ Description: "Belgium VMP logical model"
 Logical: BEAMPModel
 Title: "BE AMP logical model"
 Description: "Belgium AMP logical model"
+Parent: Element
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
@@ -44,6 +48,7 @@ Description: "Belgium AMP logical model"
 Logical: BEAMPPModel
 Title: "BE AMPP logical model"
 Description: "Belgium AMPP logical model"
+Parent: Element
 
 * identifier 0..* Identifier "CTI Extended identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
@@ -64,6 +69,7 @@ Description: "Belgium AMPP logical model"
 Logical: BEDMPPModel
 Title: "BE DMPP logical model"
 Description: "Belgium DMPP logical model"
+Parent: Element
 
 * identifier 0..* Identifier "CNK identifier for this medication" "Business identifier for this medication"
 * ingredient 1..* BackboneElement "Ingredient(s) that are part of the product, with therapeutical usage or not" "Ingredient(s) that are part of the product, with therapeutical usage or not"
