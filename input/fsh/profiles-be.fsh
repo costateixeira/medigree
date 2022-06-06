@@ -111,20 +111,23 @@ Instance: be-ampp-148303-02 // {{cti_ext}}
 InstanceOf: BEIdentifiableProduct
 
 * code.coding[ID] = #148303-02 "Amlor harde caps. 100 x 10 mg"  // #{{cti_ext}} "{{amppname}}"
-//* code.coding[MPID].code = #mpid
-//* code.coding[PhPID].code = #phpid
 //* code.coding[+] = http://medigree.net/be/NamingSystems/samv2-amp_id#1372 // {{samv2_amp_id}} // To do: How to add a slice that is not named
 * synonym = "Amlor harde caps. 100 x 10 mg" // "{{amppname}}"
 * medicineClassification[atc].classification = #C08CA01 //{{atc}}
+
 //* manufacturer.identifier.value = "Upjohn" // {{marketingauthorisationholder}}
+// TO DO: Country code
+
 * manufacturer.display = "Upjohn" // {{marketingauthorisationholder}}
-* doseForm.coding[EDQM] = #10210000 "Capsule, hard" // #{{edqmid}} "{{edqmform}}" 
+//* manufacturer.identifier = "" // {{marketingauthorisationholder - code}} // TO DO: Belgian ID, but should come from SPOR
+* doseForm.coding[EDQM] = #10210000 "Capsule, hard" // #{{edqmid}} "{{edqmform}}" // extension: manufactured or administrable? in the target, should be administrable.
+// abbreviated form will be usef e.g. for labels
 * doseForm.coding[Other].display = "# harde caps." // {{abbrform_nl}} // WILL CHANGE when there is a BE code
 * ingredient[+].strength.numerator = 10 http://unitsofmeasure.org#mg // {{strenght_nominator_value_low_limit}} http://unitsofmeasure.org#{{strengthunitucum}}
 * ingredient[=].strength.denominator = 1 http://unitsofmeasure.org#U // {{strenght_denominator_value_low_limit}} http://unitsofmeasure.org#{{strengthdenomunitucum}}
-// if not exists, = 1 http://unitsofmeasure.org#U 
+// if not exists, = 1 http://unitsofmeasure.org#U
 
-* ingredient[=].itemCodeableConcept.text = "amlodipine" // {{basis_substance}} //To confirm // to add code
+* ingredient[=].itemCodeableConcept.text = "amlodipine besilaat" // {{basis_substance}} //To confirm // to add code
 //* ingredient.itemCodeableConcept.coding.display = #??? //To do
 //* drugCharacteristic[presentationUnit].valueCodeableConcept
 //  * coding[EDQM] = http://www.edqm.eu/presentationunits#123 // To Do
