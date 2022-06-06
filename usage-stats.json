@@ -216,6 +216,9 @@
     "http://example.org/StructureDefinition/MedicationKnowledgeRole": [
       "MedicationKnowledge.ingredient"
     ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction": [
+      "MedicationKnowledge"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

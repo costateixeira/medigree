@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 30, warn = 48, info = 33, 1 -->
+<!-- broken links = errors = 32, warn = 48, info = 33, 1 -->
 <head>
   <title>Medigree : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Medigree</h1>
- <p>Generated Mon Jun 06 08:54:33 UTC 2022, FHIR version 4.0.1 for medigree#1.0.0 (canonical = <a href="http://medigree.net/eu/fhir/medigree">http://medigree.net/eu/fhir/medigree</a> (<a href="http://medigree.net/eu/fhir/medigree/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Mon Jun 06 12:38:58 UTC 2022, FHIR version 4.0.1 for medigree#1.0.0 (canonical = <a href="http://medigree.net/eu/fhir/medigree">http://medigree.net/eu/fhir/medigree</a> (<a href="http://medigree.net/eu/fhir/medigree/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.121</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = medigree, Canonical = http://medigree.net/eu/fhir/medigree</td></tr>
@@ -53,7 +53,7 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://medigree.net/eu/fhir/medigree (Problem #1 with package-list.json at http://medigree.net/eu/fhir/medigree: medigree.net)</td></tr>
- <tr><td>Summary:</td><td> errors = 30, warn = 48, info = 33, broken links = 1</td></tr>
+ <tr><td>Summary:</td><td> errors = 32, warn = 48, info = 33, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -89,8 +89,8 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-EPI-humalog"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-EPI-humalog</b></a></td><td><b>30</b></td><td><b>2</b></td><td><b>18</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-be-ampp-148303-02"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>5</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-be-ampp-148303-02"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>5</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-MedPrescription"><b>/github/workspace/fsh-generated/resources/MedicationRequest-MedPrescription</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -368,13 +368,13 @@
      <td><b>MedicationKnowledge.code.coding[0] (l20/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationKnowledge.code.coding[1] (l24/c8)</b></td><td><b>error</b></td><td><b>Unable to find code 13884911000001102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;13884911000001102&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#13884911000001102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#13884911000001102'</b> (<a href="qa-tx.html#l20">see Tx log</a>)</td>
+     <td><b>MedicationKnowledge.code.coding[1] (l24/c8)</b></td><td><b>error</b></td><td><b>Unable to find code 13884911000001102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;13884911000001102&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#13884911000001102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#13884911000001102'</b> (<a href="qa-tx.html#l15">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>MedicationKnowledge.manufacturer (l33/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Organization/Organization-uv-epi'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationKnowledge.productType[0].coding[0] (l54/c10)</b></td><td><b>warning</b></td><td><b>The display &quot;Chemical Medicinal Product&quot; is not a valid display for the code {http://snomed.info/sct}767102007 - should be one of ['Medicinal product categorised by chemical element', 'Medicinal product categorized by chemical element', 'Medicinal product categorized by chemical element (product)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#767102007'</b> (<a href="qa-tx.html#l23">see Tx log</a>)</td>
+     <td><b>MedicationKnowledge.productType[0].coding[0] (l54/c10)</b></td><td><b>warning</b></td><td><b>The display &quot;Chemical Medicinal Product&quot; is not a valid display for the code {http://snomed.info/sct}767102007 - should be one of ['Medicinal product categorised by chemical element', 'Medicinal product categorized by chemical element', 'Medicinal product categorized by chemical element (product)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#767102007'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>MedicationKnowledge.productType[1].coding[0] (l63/c10)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs#IDMP_MP should be one of 'IDMP Medicinal Product' instead of 'IDMPMedicinalProduct' for 'https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs#IDMP_MP'</b></td>
@@ -398,7 +398,7 @@
      <td><b>MedicationKnowledge.ingredient[0].strength (l103/c23)</b></td><td><b>error</b></td><td title="rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed"><b>rat-1: 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Rule 'Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationKnowledge.ingredient[0].strength.numerator (l104/c24)</b></td><td><b>error</b></td><td><b>Error processing Unit: 'units/ml': The unit &quot;units&quot; is unknown at character 1; The code &quot;units/ml&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units/ml) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units/ml'</b> (<a href="qa-tx.html#l24">see Tx log</a>)</td>
+     <td><b>MedicationKnowledge.ingredient[0].strength.numerator (l104/c24)</b></td><td><b>error</b></td><td><b>Error processing Unit: 'units/ml': The unit &quot;units&quot; is unknown at character 1; The code &quot;units/ml&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units/ml) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units/ml'</b> (<a href="qa-tx.html#l19">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>MedicationKnowledge.ingredient[1].extension[0].value.ofType(CodeableConcept).coding[0] (l116/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ingredient-role/'</b></td>
@@ -485,10 +485,10 @@
      <td><b>MedicationKnowledge.ingredient[7].item.ofType(CodeableConcept).coding[0] (l319/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://gsrs.ncats.nih.gov/ginas/app/beta' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationKnowledge.packaging.type.coding[0] (l342/c10)</b></td><td><b>error</b></td><td><b>Unable to find code 3318611000001103 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;3318611000001103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#3318611000001103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#3318611000001103'</b> (<a href="qa-tx.html#l26">see Tx log</a>)</td>
+     <td><b>MedicationKnowledge.packaging.type.coding[0] (l342/c10)</b></td><td><b>error</b></td><td><b>Unable to find code 3318611000001103 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220331); The code &quot;3318611000001103&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#3318611000001103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#3318611000001103'</b> (<a href="qa-tx.html#l21">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationKnowledge.packaging.quantity (l350/c18)</b></td><td><b>error</b></td><td><b>Error processing Unit: 'units': The unit &quot;units&quot; is unknown at character 1; The code &quot;units&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units'</b> (<a href="qa-tx.html#l27">see Tx log</a>)</td>
+     <td><b>MedicationKnowledge.packaging.quantity (l350/c18)</b></td><td><b>error</b></td><td><b>Error processing Unit: 'units': The unit &quot;units&quot; is unknown at character 1; The code &quot;units&quot; is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#units) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://unitsofmeasure.org#units'</b> (<a href="qa-tx.html#l22">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationKnowledge.drugCharacteristic[0].type.coding[0] (l359/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://example.org/CodeSystem/epi-leaflet-cs' is unknown so the code cannot be validated</b></td>
@@ -523,6 +523,12 @@
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.extension[0] (l64/c6)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.extension[0].url (l65/c78)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationKnowledge.code.coding[0] (l33/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://www.medigree.net/identifiable-product-identifier-type' is unknown so the code cannot be validated</b></td>
@@ -1005,6 +1011,14 @@
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-be-ampp-148303-02.html">fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction is unknown, and not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Reference_REF_CantResolve"> </a>
 <h2>Reference_REF_CantResolve</h2>
  <table class="grid">
@@ -1219,6 +1233,9 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="MedicationKnowledge-EPI-humalog.html">fsh-generated/resources/MedicationKnowledge-EPI-humalog.json</a></td><td><b>URL value 'http://hl7.org/fhir/ingredient-role/' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-be-ampp-148303-02.html">fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02.json</a></td><td><b>URL value 'http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction' does not resolve</b></td>
    </tr>
 </table>
 </body>
