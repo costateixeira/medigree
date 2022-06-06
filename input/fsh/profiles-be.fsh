@@ -110,6 +110,10 @@ Description: "BE Identifiable Product Profile"
 Instance: be-ampp-148303-02 // {{cti_ext}}
 InstanceOf: BEIdentifiableProduct
 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction"
+* extension[=].valueCodeableConcept = urn:iso:std:iso:3166#BE
+
+
 * code.coding[ID] = #148303-02 "Amlor harde caps. 100 x 10 mg"  // #{{cti_ext}} "{{amppname}}"
 //* code.coding[+] = http://medigree.net/be/NamingSystems/samv2-amp_id#1372 // {{samv2_amp_id}} // To do: How to add a slice that is not named
 * synonym = "Amlor harde caps. 100 x 10 mg" // "{{amppname}}"
