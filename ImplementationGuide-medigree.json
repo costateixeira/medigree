@@ -964,6 +964,11 @@
           "generation": "html"
         },
         {
+          "nameUrl": "architecture.html",
+          "title": "Architecture",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "countries.html",
           "title": "Member States",
           "generation": "markdown",
