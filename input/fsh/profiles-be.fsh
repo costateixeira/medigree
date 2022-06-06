@@ -47,28 +47,6 @@ Description: "BE Identifiable Product Profile"
 * medicineClassification[atc].classification.coding.system = "http://www.who.no/atc"
 //////////////////////////////////////////////////////
 
-/*
-
-* drugCharacteristic.type 1..1
-* drugCharacteristic ^slicing.discriminator.type = #pattern
-* drugCharacteristic ^slicing.discriminator.path = "type"
-* drugCharacteristic ^slicing.rules = #open
-* drugCharacteristic contains presentationUnit 0..1 MS
-* drugCharacteristic[presentationUnit].value[x] only CodeableConcept
-* drugCharacteristic[presentationUnit].type = http://www.medigree.net/drugcharacteristics#presentation-unit
-* drugCharacteristic[presentationUnit].valueCodeableConcept
-  * coding ^slicing.discriminator.type = #pattern
-  * coding ^slicing.discriminator.path = "system"
-  * coding ^slicing.rules = #open
-  * coding contains
-      EDQM 0..1 MS and
-      other 0..1 MS 
-  * coding[EDQM].system = "http://www.edqm.eu/presentationunits"
-  * coding[other].system = "http://www.belgium.be/presentationunits"
-*/
-
-
-
 * manufacturer MS //{{mkt_auth_holder}}
 
 
