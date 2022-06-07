@@ -36,6 +36,13 @@
       ]
     },
     {
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction",
+      "title": "jurisdiction",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication",
       "title": "DefinedMedication",
       "types": [
@@ -216,9 +223,6 @@
     "http://example.org/StructureDefinition/MedicationKnowledgeRole": [
       "MedicationKnowledge.ingredient"
     ],
-    "http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction": [
-      "MedicationKnowledge"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -226,6 +230,7 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -243,7 +248,13 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
@@ -263,6 +274,9 @@
     ],
     "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation": [
       "MedicationKnowledge.ingredient.strength"
+    ],
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction": [
+      "MedicationKnowledge"
     ],
     "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication": [
       "Extension"

@@ -326,6 +326,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/artifact-jurisdiction"/>
+      </reference>
+      <name value="jurisdiction"/>
+      <description value="A legal or geographic region in which the {{title}} is intended to be used."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/medRelation"/>
       </reference>
       <name value="MedRelation"/>
