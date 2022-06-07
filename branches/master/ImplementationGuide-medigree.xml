@@ -644,16 +644,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationKnowledge"/>
-      </extension>
-      <reference>
-        <reference value="MedicationKnowledge/EPI-humalog"/>
-      </reference>
-      <name value="EPI-humalog"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>

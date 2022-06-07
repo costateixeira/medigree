@@ -214,15 +214,6 @@
     ]
   },
   "usage": {
-    "http://example.org/StructureDefinition/MedicationKnowledgeDomain": [
-      "MedicationKnowledge"
-    ],
-    "http://example.org/StructureDefinition/MedicationKnowledgeIngredientManufacturer": [
-      "MedicationKnowledge.ingredient"
-    ],
-    "http://example.org/StructureDefinition/MedicationKnowledgeRole": [
-      "MedicationKnowledge.ingredient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
