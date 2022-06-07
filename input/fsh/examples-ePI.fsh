@@ -1,3 +1,4 @@
+/*
 Instance: EPI-humalog
 InstanceOf: MedicationKnowledge
 Usage: #example
@@ -65,3 +66,5 @@ Usage: #example
 * drugCharacteristic[+].type = http://example.org/CodeSystem/epi-leaflet-cs#sideeffects
 * drugCharacteristic[+].type = http://example.org/CodeSystem/epi-leaflet-cs#storageinstructions
 * drugCharacteristic[+].type = http://example.org/CodeSystem/epi-leaflet-cs#contentspack
+
+*/
