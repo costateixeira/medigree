@@ -890,19 +890,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationKnowledge"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationKnowledge/EPI-humalog"
-        },
-        "name": "EPI-humalog",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
