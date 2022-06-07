@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "VMPPModel"];
   fhir:StructureDefinition.title [ fhir:value "VMPP logical model"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-06-06T12:38:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-06-07T12:41:09+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "My Organization"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

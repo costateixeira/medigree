@@ -189,6 +189,13 @@
     "name": "VMPPModel"
   },
   {
+    "id": "artifact-jurisdiction",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction",
+    "version": "1.0.0",
+    "name": "Jurisdiction"
+  },
+  {
     "id": "definedMedication",
     "type": "StructureDefinition",
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication",
