@@ -1,8 +1,46 @@
+
+Alias: $jurisdiction = http://hl7.org/fhir/ValueSet/jurisdiction
+
+Extension: Jurisdiction
+Id: artifact-jurisdiction
+Title: "jurisdiction"
+Description: "A legal or geographic region in which the {{title}} is intended to be used."
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[=].valueCode = #fhir
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^version = "4.6.0"
+* ^status = #draft
+* ^date = "2022-02-07"
+* ^publisher = "Health Level Seven, Inc. - CDS WG"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "HL7"
+* . 0..*
+* . ^short = "Intended jurisdiction for {{title}} (if applicable)"
+* . ^definition = "A legal or geographic region in which the {{title}} is intended to be used."
+* . ^comment = "It may be possible for the {{title}} to be used in jurisdictions other than those for which it was originally designed or intended."
+* value[x] 1..
+* value[x] only CodeableConcept
+* value[x] from $jurisdiction (extensible)
+* value[x] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* value[x] ^binding.extension.valueString = "Jurisdiction"
+* value[x] ^binding.description = "Countries and regions within which this artifact is targeted for use."
+
+
+
+
+
 Profile:     BEIdentifiableProduct
 Id:          BEIdentifiableProduct
 Parent:      MedicationKnowledge
 Title:       "BE Identifiable Product Profile"
 Description: "BE Identifiable Product Profile"
+
+* extension contains
+   artifact-jurisdiction named jurisdiction 1..1
+
+* extension[jurisdiction].valueCodeableConcept = urn:iso:std:iso:3166#BE
+
 
 * code.coding.system 1..1
 
@@ -110,8 +148,6 @@ Description: "BE Identifiable Product Profile"
 Instance: be-ampp-148303-02 // {{cti_ext}}
 InstanceOf: BEIdentifiableProduct
 
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction"
-* extension[=].valueCodeableConcept = urn:iso:std:iso:3166#BE
 
 
 * code.coding[ID] = #148303-02 "Amlor harde caps. 100 x 10 mg"  // #{{cti_ext}} "{{amppname}}"
