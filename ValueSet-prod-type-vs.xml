@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="prod-type-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-prod-type-cs.html"><code>https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-prod-type-cs.html"><code>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</code></a></li></ul></div>
   </text>
-  <url value="https://fhirbender.github.io/mpd-box/ValueSet/prod-type-cs"/>
+  <url value="https://medigree.github.io/mpd/ValueSet/prod-type-cs"/>
   <version value="1.0.0"/>
   <name value="ProductTypeVS"/>
   <title value="Product Types Value Set"/>
   <status value="active"/>
-  <date value="2022-06-07T12:51:30+00:00"/>
+  <date value="2022-06-08T14:01:48+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>
@@ -41,7 +41,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs"/>
+      <system value="https://medigree.github.io/mpd/CodeSystem/prod-type-cs"/>
     </include>
   </compose>
 </ValueSet>

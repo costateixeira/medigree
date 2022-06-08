@@ -677,6 +677,17 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/sp-meta-tag"/>
+      </reference>
+      <name value="sp-meta-tag"/>
+      <description value="Search by meta tag_"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/sp-phpid"/>
       </reference>
       <name value="sp-phpid"/>

@@ -933,6 +933,20 @@
           }
         ],
         "reference": {
+          "reference": "SearchParameter/sp-meta-tag"
+        },
+        "name": "sp-meta-tag",
+        "description": "Search by meta tag_",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
           "reference": "SearchParameter/sp-phpid"
         },
         "name": "sp-phpid",
