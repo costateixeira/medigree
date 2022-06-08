@@ -2,7 +2,7 @@ CodeSystem: ProductTypeCS
 Id:         prod-type-cs
 Title:     "Product Types code system"
 Description: "Product Types"
-* ^url =  https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs
+* ^url =  https://medigree.github.io/mpd/CodeSystem/prod-type-cs
 * #IDMP_PhP
     "IDMP Pharmaceutical Product"
 * #IDMP_MP
@@ -23,6 +23,6 @@ ValueSet: ProductTypeVS
 Id: prod-type-vs
 Title: "Product Types Value Set"
 Description: "Product Types Value Set."
-* ^url =  https://fhirbender.github.io/mpd-box/ValueSet/prod-type-cs
+* ^url =  https://medigree.github.io/mpd/ValueSet/prod-type-cs
 * include codes from system ProductTypeCS
 
