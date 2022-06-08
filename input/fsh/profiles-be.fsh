@@ -39,7 +39,7 @@ Description: "BE Identifiable Product Profile"
 * extension contains
    artifact-jurisdiction named jurisdiction 1..1
 
-* extension[jurisdiction].valueCodeableConcept = urn:iso:std:iso:3166#BE
+* extension[jurisdiction].valueCodeableConcept = urn:iso:std:iso:3166#BEL
 
 
 * code.coding.system 1..1
