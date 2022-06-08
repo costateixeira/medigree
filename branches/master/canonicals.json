@@ -268,28 +268,35 @@
   {
     "id": "prod-type-cs",
     "type": "CodeSystem",
-    "url": "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs",
+    "url": "https://medigree.github.io/mpd/CodeSystem/prod-type-cs",
     "version": "1.0.0",
     "name": "ProductTypeCS"
   },
   {
+    "id": "sp-meta-tag",
+    "type": "SearchParameter",
+    "url": "https://medigree.github.io/mpd/SearchParameter/sp-meta-tag",
+    "version": "1.0.0",
+    "name": "META-TAG-SEARCH-PARAMETER"
+  },
+  {
     "id": "sp-phpid",
     "type": "SearchParameter",
-    "url": "https://fhirbender.github.io/mpd-box/SearchParameter/sp-phpid",
+    "url": "https://medigree.github.io/mpd/SearchParameter/sp-phpid",
     "version": "1.0.0",
     "name": "PhPID-SEARCH-PARAMETER"
   },
   {
     "id": "sp-prod-type",
     "type": "SearchParameter",
-    "url": "https://fhirbender.github.io/mpd-box/SearchParameter/sp-prod-type",
+    "url": "https://medigree.github.io/mpd/SearchParameter/sp-prod-type",
     "version": "1.0.0",
-    "name": "PPRDUCT-TYPE-SEARCH-PARAMETER"
+    "name": "PRODUCT-TYPE-SEARCH-PARAMETER"
   },
   {
     "id": "prod-type-vs",
     "type": "ValueSet",
-    "url": "https://fhirbender.github.io/mpd-box/ValueSet/prod-type-cs",
+    "url": "https://medigree.github.io/mpd/ValueSet/prod-type-cs",
     "version": "1.0.0",
     "name": "ProductTypeVS"
   }

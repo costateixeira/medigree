@@ -1,0 +1,61 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "sp-meta-tag",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"sp-meta-tag\" </p></div><p><b>url</b>: <code>https://medigree.github.io/mpd/SearchParameter/sp-meta-tag</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: META-TAG-SEARCH-PARAMETER</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-05-05</p><p><b>publisher</b>: My Organization</p><p><b>contact</b>: My Organization: <a href=\"http://example.com/committees\">http://example.com/committees</a>,<a href=\"mailto:my-group@example.com\">my-group@example.com</a>, Bob Smith: <a href=\"mailto:bobsmith@example.com\">bobsmith@example.com</a></p><p><b>description</b>: Search by meta tag_</p><p><b>jurisdiction</b>: World <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>purpose</b>: Search by Meta tag</p><p><b>code</b>: meta</p><p><b>base</b>: Resource</p><p><b>type</b>: token</p><p><b>expression</b>: Resource.meta.tag</p><p><b>xpath</b>: f:Resource/f:meta/f:tag</p><p><b>xpathUsage</b>: normal</p></div>"
+  },
+  "url": "https://medigree.github.io/mpd/SearchParameter/sp-meta-tag",
+  "version": "1.0.0",
+  "name": "META-TAG-SEARCH-PARAMETER",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-05-05",
+  "publisher": "My Organization",
+  "contact": [
+    {
+      "name": "My Organization",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Search by meta tag_",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "purpose": "Search by Meta tag",
+  "code": "meta",
+  "base": [
+    "Resource"
+  ],
+  "type": "token",
+  "expression": "Resource.meta.tag",
+  "xpath": "f:Resource/f:meta/f:tag",
+  "xpathUsage": "normal"
+}

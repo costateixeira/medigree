@@ -3,14 +3,14 @@
   "id": "prod-type-vs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-prod-type-cs.html\"><code>https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-prod-type-cs.html\"><code>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</code></a></li></ul></div>"
   },
-  "url": "https://fhirbender.github.io/mpd-box/ValueSet/prod-type-cs",
+  "url": "https://medigree.github.io/mpd/ValueSet/prod-type-cs",
   "version": "1.0.0",
   "name": "ProductTypeVS",
   "title": "Product Types Value Set",
   "status": "active",
-  "date": "2022-06-07T12:51:30+00:00",
+  "date": "2022-06-08T14:01:48+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -52,7 +52,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhirbender.github.io/mpd-box/CodeSystem/prod-type-cs"
+        "system": "https://medigree.github.io/mpd/CodeSystem/prod-type-cs"
       }
     ]
   }

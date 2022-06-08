@@ -917,6 +917,20 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://medigree.net/eu/fhir/medigree/SearchParameter/sp-meta-tag>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/sp-meta-tag" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "sp-meta-tag" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search by meta tag_" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://medigree.net/eu/fhir/medigree/SearchParameter/sp-phpid>;
          fhir:Reference.reference [ fhir:value "SearchParameter/sp-phpid" ]
        ];
@@ -924,7 +938,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search by phpid" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
