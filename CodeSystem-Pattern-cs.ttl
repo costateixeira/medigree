@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "PatternCS"];
   fhir:CodeSystem.title [ fhir:value "Presentation pattern Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-06-08T14:01:48+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-06-10T09:36:45+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "My Organization"];
   fhir:CodeSystem.contact [
      fhir:index 0;

@@ -878,7 +878,7 @@
          fhir:link <http://medigree.net/eu/fhir/medigree/MedicationRequest/MedPrescription>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/MedPrescription" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedPrescription" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prescription - Amlor 1x day for 30 days" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 40;
@@ -907,7 +907,7 @@
          fhir:link <http://medigree.net/eu/fhir/medigree/Medication/med-amlor>;
          fhir:Reference.reference [ fhir:value "Medication/med-amlor" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "med-amlor" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication - Amlor Harde Caps" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 42;

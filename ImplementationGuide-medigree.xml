@@ -649,7 +649,7 @@
       <reference>
         <reference value="MedicationRequest/MedPrescription"/>
       </reference>
-      <name value="MedPrescription"/>
+      <name value="Prescription - Amlor 1x day for 30 days"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -669,7 +669,7 @@
       <reference>
         <reference value="Medication/med-amlor"/>
       </reference>
-      <name value="med-amlor"/>
+      <name value="Medication - Amlor Harde Caps"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

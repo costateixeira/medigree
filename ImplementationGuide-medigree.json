@@ -896,7 +896,7 @@
         "reference": {
           "reference": "MedicationRequest/MedPrescription"
         },
-        "name": "MedPrescription",
+        "name": "Prescription - Amlor 1x day for 30 days",
         "exampleBoolean": true
       },
       {
@@ -922,7 +922,7 @@
         "reference": {
           "reference": "Medication/med-amlor"
         },
-        "name": "med-amlor",
+        "name": "Medication - Amlor Harde Caps",
         "exampleBoolean": true
       },
       {
