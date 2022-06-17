@@ -106,7 +106,7 @@ Description: "PT Identifiable Product Profile"
 * intendedRoute ^slicing.rules = #open
 * intendedRoute contains
     EDQM 0..1 MS and
-    Other 0..1 MS 
+    Other 0..* MS 
 * intendedRoute[EDQM].coding.system = "http://www.edqm.eu/routes"
 * intendedRoute[Other].coding.system = "http://www.belgium.be/routes"
 
