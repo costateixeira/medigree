@@ -1,0 +1,3650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="medigree"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree</pre><div><p>Example IG</p>
+</div></div>
+  </text>
+  <url value="http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree"/>
+  <version value="1.0.0"/>
+  <name value="Medigree"/>
+  <title value="FHIR Implementation Guide: Medigree"/>
+  <status value="active"/>
+  <date value="2022-05-26"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Example IG"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="medigree"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://medigree.net/eu/fhir/medigree/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEIdentifiableProduct"/>
+      </reference>
+      <name value="BE Identifiable Product Profile"/>
+      <description value="BE Identifiable Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DefinedMed"/>
+      </reference>
+      <name value="DefinedMed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDMPPharmaceuticalProduct"/>
+      </reference>
+      <name value="Pharmaceutical Product Profile"/>
+      <description value="Pharmaceutical Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IntMedicationRequest"/>
+      </reference>
+      <name value="IntMedicationRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PTIdentifiableProduct"/>
+      </reference>
+      <name value="PT Identifiable Product Profile"/>
+      <description value="PT Identifiable Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PharmaceuticalProduct"/>
+      </reference>
+      <name value="Pharmaceutical Product Profile"/>
+      <description value="Pharmaceutical Product Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BoSS"/>
+      </reference>
+      <name value="BoSS"/>
+      <description value="Basis of Substance Strength."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConcentrationPresentation"/>
+      </reference>
+      <name value="ConcentrationPresentation"/>
+      <description value="Pattern for Concentration or Presentation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/definedMedication"/>
+      </reference>
+      <name value="DefinedMedication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/drugCharacteristic"/>
+      </reference>
+      <name value="Drug Characteristic"/>
+      <description value="Drug Characteristic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/artifact-jurisdiction"/>
+      </reference>
+      <name value="jurisdiction"/>
+      <description value="A legal or geographic region in which the {{title}} is intended to be used."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medRelation"/>
+      </reference>
+      <name value="MedRelation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationDefinition"/>
+      </reference>
+      <name value="Medication Definition extension"/>
+      <description value="Medication Definition extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relatedMedication"/>
+      </reference>
+      <name value="Related Medication"/>
+      <description value="Related Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StrengthPattern"/>
+      </reference>
+      <name value="StrengthPattern"/>
+      <description value="Pattern for Strength."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UnitOfPresentation"/>
+      </reference>
+      <name value="UnitOfPresentation"/>
+      <description value="Unit of Presentation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AMPModel"/>
+      </reference>
+      <name value="AMP logical model"/>
+      <description value="AMP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AMPPModel"/>
+      </reference>
+      <name value="AMPP logical model"/>
+      <description value="AMPP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEAMPModel"/>
+      </reference>
+      <name value="BE AMP logical model"/>
+      <description value="Belgium AMP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEAMPPModel"/>
+      </reference>
+      <name value="BE AMPP logical model"/>
+      <description value="Belgium AMPP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEDMPPModel"/>
+      </reference>
+      <name value="BE DMPP logical model"/>
+      <description value="Belgium DMPP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEVMPGroupModel"/>
+      </reference>
+      <name value="BE VMP Group logical model"/>
+      <description value="Belgium VMP Group logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BEVMPModel"/>
+      </reference>
+      <name value="BE VMP logical model"/>
+      <description value="Belgium VMP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDMPPhPModel"/>
+      </reference>
+      <name value="IDMP Pharmaceutical Product logical model"/>
+      <description value="IDMP Pharmaceutical Product logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDMPProductModel"/>
+      </reference>
+      <name value="IDMPIdentifiableProductModel"/>
+      <description value="IDMP Identifiable Product Model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VMPGroupModel"/>
+      </reference>
+      <name value="VMP Group logical model"/>
+      <description value="VMP Group logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VMPModel"/>
+      </reference>
+      <name value="VMP logical model"/>
+      <description value="VMP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VMPPModel"/>
+      </reference>
+      <name value="VMPP logical model"/>
+      <description value="VMPP logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BoSS-vs"/>
+      </reference>
+      <name value="BoSS - Basis of Substance Strength options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ConcPres-vs"/>
+      </reference>
+      <name value="Concentration or Presentation Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dose-form-ontology-cs"/>
+      </reference>
+      <name value="Dose Form ontology Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Pattern-vs"/>
+      </reference>
+      <name value="Presentation pattern Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/prod-type-vs"/>
+      </reference>
+      <name value="Product Types Value Set"/>
+      <description value="Product Types Value Set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-med-relation-types"/>
+      </reference>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BoSS-cs"/>
+      </reference>
+      <name value="BoSS - Basis of Substance Strength options Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Cs-med-relation-types"/>
+      </reference>
+      <name value="Marketing Authorization Holder"/>
+      <description value="Marketing Authorization Holder."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ConcPres-cs"/>
+      </reference>
+      <name value="Concentration or Presentation Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dose-form-ontology-cs"/>
+      </reference>
+      <name value="Dose Form Ontology Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/Pattern-cs"/>
+      </reference>
+      <name value="Presentation pattern Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/prod-type-cs"/>
+      </reference>
+      <name value="Product Types code system"/>
+      <description value="Product Types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/MedPrescription"/>
+      </reference>
+      <name value="Prescription - Amlor 1x day for 30 days"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/be-ampp-148303-02"/>
+      </reference>
+      <name value="be-ampp-148303-02"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/med-amlor"/>
+      </reference>
+      <name value="Medication - Amlor Harde Caps"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-100129"/>
+      </reference>
+      <name value="Amlodipina Ratiopharm 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-100136"/>
+      </reference>
+      <name value="Amlodipina Ratiopharm 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-100153"/>
+      </reference>
+      <name value="Amlodipina Ratiopharm 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-103192"/>
+      </reference>
+      <name value="Amlodipina Drime 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-103193"/>
+      </reference>
+      <name value="Amlodipina Drime 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-10424"/>
+      </reference>
+      <name value="Norvasc 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-10425"/>
+      </reference>
+      <name value="Norvasc 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-10426"/>
+      </reference>
+      <name value="Norvasc 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-107870"/>
+      </reference>
+      <name value="Amlodipina Wynn 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-107871"/>
+      </reference>
+      <name value="Amlodipina Wynn 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-111480"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 5 mg Comprimidos 5 mg Comprimido Blister - 28 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-111481"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 10 mg Comprimidos 10 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-113132"/>
+      </reference>
+      <name value="Amlodipina Vir 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-113133"/>
+      </reference>
+      <name value="Amlodipina Vir 5 mg Comprimido Blister - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-113134"/>
+      </reference>
+      <name value="Amlodipina Vir 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-113135"/>
+      </reference>
+      <name value="Amlodipina Vir 10 mg Comprimido Blister - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119081"/>
+      </reference>
+      <name value="Amlodipina IPCA 5 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119082"/>
+      </reference>
+      <name value="Amlodipina IPCA 5 mg Comprimido Blister - 28 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119083"/>
+      </reference>
+      <name value="Amlodipina IPCA 5 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119084"/>
+      </reference>
+      <name value="Amlodipina IPCA 5 mg Comprimido Blister - 84 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119085"/>
+      </reference>
+      <name value="Amlodipina IPCA 5 mg Comprimido Frasco - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119086"/>
+      </reference>
+      <name value="Amlodipina IPCA 5 mg Comprimido Frasco - 250 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119087"/>
+      </reference>
+      <name value="Amlodipina IPCA 5 mg Comprimido Frasco - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119088"/>
+      </reference>
+      <name value="Amlodipina IPCA 10 mg Comprimido Frasco - 250 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119089"/>
+      </reference>
+      <name value="Amlodipina IPCA 10 mg Comprimido Frasco - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119090"/>
+      </reference>
+      <name value="Amlodipina IPCA 10 mg Comprimido Frasco - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119091"/>
+      </reference>
+      <name value="Amlodipina IPCA 10 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119092"/>
+      </reference>
+      <name value="Amlodipina IPCA 10 mg Comprimido Blister - 28 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119093"/>
+      </reference>
+      <name value="Amlodipina IPCA 10 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119094"/>
+      </reference>
+      <name value="Amlodipina IPCA 10 mg Comprimido Blister - 84 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119443"/>
+      </reference>
+      <name value="Amlodipina Teva 5 mg Comprimido Blister - 15 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-119444"/>
+      </reference>
+      <name value="Amlodipina Teva 10 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127317"/>
+      </reference>
+      <name value="Amlodipina Vir 5 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127318"/>
+      </reference>
+      <name value="Amlodipina Vir 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127319"/>
+      </reference>
+      <name value="Amlodipina Vir 5 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127320"/>
+      </reference>
+      <name value="Amlodipina Vir 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127321"/>
+      </reference>
+      <name value="Amlodipina Vir 10 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127322"/>
+      </reference>
+      <name value="Amlodipina Vir 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127323"/>
+      </reference>
+      <name value="Amlodipina Vir 10 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127324"/>
+      </reference>
+      <name value="Amlodipina Vir 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127846"/>
+      </reference>
+      <name value="Amlodipina Teva 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127847"/>
+      </reference>
+      <name value="Amlodipina Teva 5 mg Comprimido Blister - 28 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127848"/>
+      </reference>
+      <name value="Amlodipina Teva 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127850"/>
+      </reference>
+      <name value="Amlodipina Teva 5 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127858"/>
+      </reference>
+      <name value="Amlodipina Teva 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127859"/>
+      </reference>
+      <name value="Amlodipina Teva 10 mg Comprimido Blister - 28 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127860"/>
+      </reference>
+      <name value="Amlodipina Teva 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-127904"/>
+      </reference>
+      <name value="Amlodipina Teva 10 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-138267"/>
+      </reference>
+      <name value="Amlodipina Upjohn 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-138268"/>
+      </reference>
+      <name value="Amlodipina Upjohn 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-138269"/>
+      </reference>
+      <name value="Amlodipina Upjohn 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-141710"/>
+      </reference>
+      <name value="Amlodipina Krka 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-141715"/>
+      </reference>
+      <name value="Amlodipina Krka 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-141725"/>
+      </reference>
+      <name value="Amlodipina Krka 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-141730"/>
+      </reference>
+      <name value="Amlodipina Krka 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-150243"/>
+      </reference>
+      <name value="Amlodipina Mylan 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-150248"/>
+      </reference>
+      <name value="Amlodipina Mylan 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-159438"/>
+      </reference>
+      <name value="Amlodipina Mylan 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-159452"/>
+      </reference>
+      <name value="Amlodipina Mylan 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-170800"/>
+      </reference>
+      <name value="Amlodipina Mepha 5 mg Comprimido Blister - 15 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-176582"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-176583"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179943"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179944"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 28 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179945"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179946"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 50 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179947"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 98 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179948"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179949"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179950"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 28 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179951"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179952"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 50 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179953"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179954"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 98 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-179955"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-182889"/>
+      </reference>
+      <name value="Amlodipina Zentiva 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-182891"/>
+      </reference>
+      <name value="Amlodipina Zentiva 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189849"/>
+      </reference>
+      <name value="Amlodipina Mepha 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189854"/>
+      </reference>
+      <name value="Amlodipina Mepha 5 mg Comprimido Blister - 50 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189855"/>
+      </reference>
+      <name value="Amlodipina Mepha 5 mg Comprimido Blister - 50 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189856"/>
+      </reference>
+      <name value="Amlodipina Mepha 5 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189863"/>
+      </reference>
+      <name value="Amlodipina Mepha 10 mg Comprimido Blister - 15 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189864"/>
+      </reference>
+      <name value="Amlodipina Mepha 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189869"/>
+      </reference>
+      <name value="Amlodipina Mepha 10 mg Comprimido Blister - 50 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189870"/>
+      </reference>
+      <name value="Amlodipina Mepha 10 mg Comprimido Blister - 50 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-189871"/>
+      </reference>
+      <name value="Amlodipina Mepha 10 mg Comprimido Blister - 56 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-195563"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-195564"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-195565"/>
+      </reference>
+      <name value="Amlodipina Accord 5 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-195566"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 14 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-195567"/>
+      </reference>
+      <name value="Amlodipina Accord 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-1987497"/>
+      </reference>
+      <name value="Amlodipina Basi 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-1987498"/>
+      </reference>
+      <name value="Amlodipina Basi 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-1988990"/>
+      </reference>
+      <name value="Amlodipina Zentiva 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-1988994"/>
+      </reference>
+      <name value="Amlodipina Zentiva 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-1989059"/>
+      </reference>
+      <name value="Amlodipina Zentiva 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-1989067"/>
+      </reference>
+      <name value="Amlodipina Zentiva 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2004277"/>
+      </reference>
+      <name value="Amlodipina Fair-Med 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2004283"/>
+      </reference>
+      <name value="Amlodipina Fair-Med 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2037478"/>
+      </reference>
+      <name value="Amlodipina Fair-Med 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2037537"/>
+      </reference>
+      <name value="Amlodipina Fair-Med 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2053397"/>
+      </reference>
+      <name value="Amlodipina Aurovitas 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2053401"/>
+      </reference>
+      <name value="Amlodipina Aurovitas 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2053415"/>
+      </reference>
+      <name value="Amlodipina Aurovitas 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2086874"/>
+      </reference>
+      <name value="Amlodipina Ciclum 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2086879"/>
+      </reference>
+      <name value="Amlodipina Ciclum 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2086920"/>
+      </reference>
+      <name value="Amlodipina Ciclum 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2119892"/>
+      </reference>
+      <name value="Amlodipina Labesfal 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2119893"/>
+      </reference>
+      <name value="Amlodipina Labesfal 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2119895"/>
+      </reference>
+      <name value="Amlodipina Labesfal 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2119899"/>
+      </reference>
+      <name value="Amlodipina Generis Phar 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2119900"/>
+      </reference>
+      <name value="Amlodipina Generis Phar 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2119901"/>
+      </reference>
+      <name value="Amlodipina Generis Phar 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2131670"/>
+      </reference>
+      <name value="Amlodipina Labesfal 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2151695"/>
+      </reference>
+      <name value="Amlodipina Mepha 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-2151696"/>
+      </reference>
+      <name value="Amlodipina Mepha 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42511"/>
+      </reference>
+      <name value="Amlodipina Farmoz 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42512"/>
+      </reference>
+      <name value="Amlodipina Farmoz 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42514"/>
+      </reference>
+      <name value="Amlodipina Farmoz 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42515"/>
+      </reference>
+      <name value="Amlodipina Basi 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42516"/>
+      </reference>
+      <name value="Amlodipina Basi 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42518"/>
+      </reference>
+      <name value="Amlodipina Basi 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42519"/>
+      </reference>
+      <name value="Amlodipina Mibral 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42520"/>
+      </reference>
+      <name value="Amlodipina Mibral 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-42522"/>
+      </reference>
+      <name value="Amlodipina Mibral 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-55502"/>
+      </reference>
+      <name value="Amlodipina Alter 5 mg comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-55503"/>
+      </reference>
+      <name value="Amlodipina Alter 5 mg comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-55506"/>
+      </reference>
+      <name value="Amlodipina Alter 10 mg comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-57678"/>
+      </reference>
+      <name value="Amlodipina Alter 10 mg comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58159"/>
+      </reference>
+      <name value="Amlodipina Farmoz 5 mg Comprimidos 5 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58160"/>
+      </reference>
+      <name value="Amlodipina Farmoz 10 mg Comprimidos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58161"/>
+      </reference>
+      <name value="Amlodipina Farmoz 10 mg Comprimidos 10 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58177"/>
+      </reference>
+      <name value="Amlodipina Basi 5 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58178"/>
+      </reference>
+      <name value="Amlodipina Basi 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58179"/>
+      </reference>
+      <name value="Amlodipina Basi 10 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58247"/>
+      </reference>
+      <name value="Amlodipina Mibral 5 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58248"/>
+      </reference>
+      <name value="Amlodipina Mibral 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-58249"/>
+      </reference>
+      <name value="Amlodipina Mibral 10 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-62698"/>
+      </reference>
+      <name value="Amlodipina Cardionox 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-62699"/>
+      </reference>
+      <name value="Amlodipina Cardionox 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-62700"/>
+      </reference>
+      <name value="Amlodipina Cardionox 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-62701"/>
+      </reference>
+      <name value="Amlodipina Cardionox 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63878"/>
+      </reference>
+      <name value="Amlodipina Jaba 5 mg comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63879"/>
+      </reference>
+      <name value="Amlodipina Jaba 5 mg comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63880"/>
+      </reference>
+      <name value="Amlodipina Jaba 5 mg comprimidos 5 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63881"/>
+      </reference>
+      <name value="Amlodipina Jaba 10 mg comprimidos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63882"/>
+      </reference>
+      <name value="Amlodipina Jaba 10 mg comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63883"/>
+      </reference>
+      <name value="Amlodipina Jaba 10 mg comprimidos 10 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63890"/>
+      </reference>
+      <name value="Amlodipina Generis 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63891"/>
+      </reference>
+      <name value="Amlodipina Generis 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63892"/>
+      </reference>
+      <name value="Amlodipina Generis 5 mg Comprimidos 5 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63893"/>
+      </reference>
+      <name value="Amlodipina Generis 10 mg Comprimidos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63894"/>
+      </reference>
+      <name value="Amlodipina Generis 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-63895"/>
+      </reference>
+      <name value="Amlodipina Generis 10 mg Comprimidos 10 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66758"/>
+      </reference>
+      <name value="Amlodipina toLife 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66759"/>
+      </reference>
+      <name value="Amlodipina toLife 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66760"/>
+      </reference>
+      <name value="Amlodipina toLife 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66761"/>
+      </reference>
+      <name value="Amlodipina toLife 10 mg Comprimidos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66762"/>
+      </reference>
+      <name value="Amlodipina toLife 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66763"/>
+      </reference>
+      <name value="Amlodipina toLife 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66766"/>
+      </reference>
+      <name value="Amlodipina Drime 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-66769"/>
+      </reference>
+      <name value="Amlodipina Drime 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-67981"/>
+      </reference>
+      <name value="Amlodipina Azevedos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-67982"/>
+      </reference>
+      <name value="Amlodipina Azevedos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-67983"/>
+      </reference>
+      <name value="Amlodipina Azevedos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-67986"/>
+      </reference>
+      <name value="Amlodipina Azevedos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-67987"/>
+      </reference>
+      <name value="Amlodipina Azevedos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-67988"/>
+      </reference>
+      <name value="Amlodipina Azevedos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-68453"/>
+      </reference>
+      <name value="Amlodipina Orexene 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-68454"/>
+      </reference>
+      <name value="Amlodipina Orexene 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-68455"/>
+      </reference>
+      <name value="Amlodipina Orexene 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-68456"/>
+      </reference>
+      <name value="Amlodipina Orexene 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-68457"/>
+      </reference>
+      <name value="Amlodipina Orexene 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-68458"/>
+      </reference>
+      <name value="Amlodipina Orexene 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69667"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69668"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 5 mg Comprimidos 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69669"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69670"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 10 mg Comprimidos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69671"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 10 mg Comprimidos 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69672"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69673"/>
+      </reference>
+      <name value="Amlodipina Vitória 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69674"/>
+      </reference>
+      <name value="Amlodipina Vitória 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69675"/>
+      </reference>
+      <name value="Amlodipina Vitória 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69676"/>
+      </reference>
+      <name value="Amlodipina Vitória 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69677"/>
+      </reference>
+      <name value="Amlodipina Vitória 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-69678"/>
+      </reference>
+      <name value="Amlodipina Vitória 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70107"/>
+      </reference>
+      <name value="Amlodipina Wynn 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70110"/>
+      </reference>
+      <name value="Amlodipina Wynn 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70664"/>
+      </reference>
+      <name value="Amlodipina GP 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70665"/>
+      </reference>
+      <name value="Amlodipina GP 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70666"/>
+      </reference>
+      <name value="Amlodipina GP 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70667"/>
+      </reference>
+      <name value="Amlodipina GP 10 mg Comprimidos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70668"/>
+      </reference>
+      <name value="Amlodipina GP 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70669"/>
+      </reference>
+      <name value="Amlodipina GP 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70670"/>
+      </reference>
+      <name value="Amlodipina Bluepharma 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70671"/>
+      </reference>
+      <name value="Amlodipina Bluepharma 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70672"/>
+      </reference>
+      <name value="Amlodipina Bluepharma 5 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70673"/>
+      </reference>
+      <name value="Amlodipina Bluepharma 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70674"/>
+      </reference>
+      <name value="Amlodipina Bluepharma 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70675"/>
+      </reference>
+      <name value="Amlodipina Bluepharma 10 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70779"/>
+      </reference>
+      <name value="Amlodipina Fresenius Kabi 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70780"/>
+      </reference>
+      <name value="Amlodipina Fresenius Kabi 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70781"/>
+      </reference>
+      <name value="Amlodipina Fresenius Kabi 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70782"/>
+      </reference>
+      <name value="Amlodipina Fresenius Kabi 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-70783"/>
+      </reference>
+      <name value="Amlodipina Fresenius Kabi 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71326"/>
+      </reference>
+      <name value="Amlodipina Atral 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71327"/>
+      </reference>
+      <name value="Amlodipina Atral 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71328"/>
+      </reference>
+      <name value="Amlodipina Atral 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71329"/>
+      </reference>
+      <name value="Amlodipina Atral 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71330"/>
+      </reference>
+      <name value="Amlodipina Atral 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71331"/>
+      </reference>
+      <name value="Amlodipina Atral 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71332"/>
+      </reference>
+      <name value="Amlodipina Amlocor 10 mg Comprimidos 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71333"/>
+      </reference>
+      <name value="Amlodipina Amlocor 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71334"/>
+      </reference>
+      <name value="Amlodipina Amlocor 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71335"/>
+      </reference>
+      <name value="Amlodipina Amlocor 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71336"/>
+      </reference>
+      <name value="Amlodipina Amlocor 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-71337"/>
+      </reference>
+      <name value="Amlodipina Amlocor 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72167"/>
+      </reference>
+      <name value="Amlodipina Pharmakern 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72168"/>
+      </reference>
+      <name value="Amlodipina Pharmakern 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72169"/>
+      </reference>
+      <name value="Amlodipina Pharmakern 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72170"/>
+      </reference>
+      <name value="Amlodipina Pharmakern 10 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72171"/>
+      </reference>
+      <name value="Amlodipina Pharmakern 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72172"/>
+      </reference>
+      <name value="Amlodipina Pharmakern 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72604"/>
+      </reference>
+      <name value="Amlodipina Alter 5 mg comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-72847"/>
+      </reference>
+      <name value="Amlodipina Cardionox 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-74956"/>
+      </reference>
+      <name value="Amlodipina Bluepharma 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-77662"/>
+      </reference>
+      <name value="Amlodipina toLife 10 mg Comprimidos 10 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-77663"/>
+      </reference>
+      <name value="Amlodipina toLife 5 mg Comprimidos 5 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-80574"/>
+      </reference>
+      <name value="Amlodipina Aristo 5 mg Comprimidos 5 mg Comprimido Blister - 10 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-80575"/>
+      </reference>
+      <name value="Amlodipina Aristo 5 mg Comprimidos 5 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-80576"/>
+      </reference>
+      <name value="Amlodipina Aristo 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-80577"/>
+      </reference>
+      <name value="Amlodipina Aristo 5 mg Comprimidos 5 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-80581"/>
+      </reference>
+      <name value="Amlodipina Aristo 10 mg Comprimidos 10 mg Comprimido Blister - 30 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-80582"/>
+      </reference>
+      <name value="Amlodipina Aristo 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-80583"/>
+      </reference>
+      <name value="Amlodipina Aristo 10 mg Comprimidos 10 mg Comprimido Blister - 90 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-84629"/>
+      </reference>
+      <name value="Amlodipina Aristo 5 mg Comprimidos 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-84630"/>
+      </reference>
+      <name value="Amlodipina Aristo 10 mg Comprimidos 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87365"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87366"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 5 mg Comprimidos 5 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87367"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 5 mg Comprimidos 5 mg Comprimido Blister - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87450"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 10 mg Comprimidos 10 mg Comprimido Blister - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87451"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87452"/>
+      </reference>
+      <name value="Amlodipina Tecnimede 10 mg Comprimidos 10 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87753"/>
+      </reference>
+      <name value="Amlodipina Orexene 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87872"/>
+      </reference>
+      <name value="Amlodipina Vitória 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87873"/>
+      </reference>
+      <name value="Amlodipina Vitória 5 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87874"/>
+      </reference>
+      <name value="Amlodipina Vitória 5 mg Comprimido Blister - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87875"/>
+      </reference>
+      <name value="Amlodipina Vitória 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87876"/>
+      </reference>
+      <name value="Amlodipina Vitória 10 mg Comprimido Blister - 100 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87877"/>
+      </reference>
+      <name value="Amlodipina Vitória 10 mg Comprimido Blister - 500 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87908"/>
+      </reference>
+      <name value="Amlodipina Generis 10 mg Comprimidos 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87909"/>
+      </reference>
+      <name value="Amlodipina Generis 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87910"/>
+      </reference>
+      <name value="Amlodipina Generis 5 mg Comprimidos 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87911"/>
+      </reference>
+      <name value="Amlodipina Generis 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87919"/>
+      </reference>
+      <name value="Amlodipina Jaba 5 mg comprimidos 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87920"/>
+      </reference>
+      <name value="Amlodipina Jaba 10 mg comprimidos 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87921"/>
+      </reference>
+      <name value="Amlodipina Jaba 5 mg comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87922"/>
+      </reference>
+      <name value="Amlodipina Jaba 10 mg comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-87988"/>
+      </reference>
+      <name value="Amlodipina Azevedos 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-91168"/>
+      </reference>
+      <name value="Amlodipina Mibral 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-91169"/>
+      </reference>
+      <name value="Amlodipina Mibral 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-91170"/>
+      </reference>
+      <name value="Amlodipina Farmoz 5 mg Comprimidos 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-91171"/>
+      </reference>
+      <name value="Amlodipina Farmoz 10 mg Comprimidos 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-91172"/>
+      </reference>
+      <name value="Amlodipina Basi 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-91173"/>
+      </reference>
+      <name value="Amlodipina Basi 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-92303"/>
+      </reference>
+      <name value="Amlodipina Amlocor 5 mg Comprimidos 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-92385"/>
+      </reference>
+      <name value="Amlodipina Atral 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-92921"/>
+      </reference>
+      <name value="Amlodipina GP 5 mg Comprimidos 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-92922"/>
+      </reference>
+      <name value="Amlodipina GP 10 mg Comprimidos 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-95877"/>
+      </reference>
+      <name value="Norvasc 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-95883"/>
+      </reference>
+      <name value="Norvasc 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-95884"/>
+      </reference>
+      <name value="Norvasc 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96525"/>
+      </reference>
+      <name value="Amlodipina Sandoz 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96530"/>
+      </reference>
+      <name value="Amlodipina Sandoz 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96535"/>
+      </reference>
+      <name value="Amlodipina Sandoz 5 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96539"/>
+      </reference>
+      <name value="Amlodipina Sandoz 5 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96542"/>
+      </reference>
+      <name value="Amlodipina Sandoz 5 mg Comprimido Frasco - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96545"/>
+      </reference>
+      <name value="Amlodipina Sandoz 5 mg Comprimido Frasco - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96579"/>
+      </reference>
+      <name value="Amlodipina Sandoz 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96585"/>
+      </reference>
+      <name value="Amlodipina Sandoz 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96590"/>
+      </reference>
+      <name value="Amlodipina Sandoz 10 mg Comprimido Blister - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96593"/>
+      </reference>
+      <name value="Amlodipina Sandoz 10 mg Comprimido Blister - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96596"/>
+      </reference>
+      <name value="Amlodipina Sandoz 10 mg Comprimido Frasco - 20 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/pt-pmp-96599"/>
+      </reference>
+      <name value="Amlodipina Sandoz 10 mg Comprimido Frasco - 60 unidade(s)"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/sp-meta-tag"/>
+      </reference>
+      <name value="sp-meta-tag"/>
+      <description value="Search by meta tag_"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/sp-phpid"/>
+      </reference>
+      <name value="sp-phpid"/>
+      <description value="Search by phpid"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/sp-prod-type"/>
+      </reference>
+      <name value="sp-prod-type"/>
+      <description value="Search by product type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="architecture.html"/>
+        <title value="Architecture"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="countries.html"/>
+        <title value="Member States"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="global.html"/>
+          <title value="Global"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="belgium.html"/>
+          <title value="Belgium"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

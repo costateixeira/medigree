@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MEDIGREE\jurisdiction - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4.26"}
+    h3,h4,h5,h6{--heading-prefix:"4.26"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="ig-nav">
+          <a id="hl7-logo" no-external="true" href="https://medigree.net">
+            <img height="65" alt="Medigree" src="assets/images/medigree-logo-small.png"/>
+          </a>
+        </div>
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <!-- <div id="ig-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div> -->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide: Medigree</span><br/>1.0.0 - STU1</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Models
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="global.html">Global</a>
+      </li>
+      <li>
+        <a href="belgium.html">Belgium</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifacts</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>jurisdiction</b></li>
+          
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide: Medigree - Local Development build (v1.0.0). See the <a href="http://medigree.net/eu/fhir/medigree/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-artifact-jurisdiction-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-artifact-jurisdiction-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-artifact-jurisdiction.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-artifact-jurisdiction.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-artifact-jurisdiction.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">Extension: jurisdiction
+
+  </h2>
+
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="1">
+        
+          Draft
+          
+            as of 2022-02-07
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
+        
+      </td>
+
+
+      <td>
+        <i>Responsible:</i> 
+
+        <a href="http://example.com/committees">My Organization</a>
+
+      </td>
+
+
+      <td>
+        <i>Realm:</i> <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+      </td>
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Jurisdiction</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>A legal or geographic region in which the {{title}} is intended to be used.</p>
+
+
+
+  <p><b>Context of Use</b></p>
+  <p>This extension may be used on the following  element(s):</p>
+  <ul>
+    
+    <li>Element</li>
+    
+  </ul>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p><b>Usage info</b></p>
+  <p><b>Usage:</b></p>
+<ul>
+ <li>Use this Extension: <a href="StructureDefinition-BEIdentifiableProduct.html">BE Identifiable Product Profile</a>, <a href="StructureDefinition-PTIdentifiableProduct.html">PT Identifiable Product Profile</a></li>
+ <li>Examples for this Extension: <a href="MedicationKnowledge-be-ampp-148303-02.html">MedicationKnowledge/be-ampp-148303-02</a>, <a href="MedicationKnowledge-pt-pmp-100129.html">MedicationKnowledge/pt-pmp-100129</a>, <a href="MedicationKnowledge-pt-pmp-100136.html">MedicationKnowledge/pt-pmp-100136</a>, <a href="MedicationKnowledge-pt-pmp-100153.html">MedicationKnowledge/pt-pmp-100153</a>, <a href="MedicationKnowledge-pt-pmp-103192.html">MedicationKnowledge/pt-pmp-103192</a>, <a href="MedicationKnowledge-pt-pmp-103193.html">MedicationKnowledge/pt-pmp-103193</a>, <a href="MedicationKnowledge-pt-pmp-10424.html">MedicationKnowledge/pt-pmp-10424</a>, <a href="MedicationKnowledge-pt-pmp-10425.html">MedicationKnowledge/pt-pmp-10425</a>, <a href="MedicationKnowledge-pt-pmp-10426.html">MedicationKnowledge/pt-pmp-10426</a>, <a href="MedicationKnowledge-pt-pmp-107870.html">MedicationKnowledge/pt-pmp-107870</a>, <a href="MedicationKnowledge-pt-pmp-107871.html">MedicationKnowledge/pt-pmp-107871</a>, <a href="MedicationKnowledge-pt-pmp-111480.html">MedicationKnowledge/pt-pmp-111480</a>, <a href="MedicationKnowledge-pt-pmp-111481.html">MedicationKnowledge/pt-pmp-111481</a>, <a href="MedicationKnowledge-pt-pmp-113132.html">MedicationKnowledge/pt-pmp-113132</a>, <a href="MedicationKnowledge-pt-pmp-113133.html">MedicationKnowledge/pt-pmp-113133</a>, <a href="MedicationKnowledge-pt-pmp-113134.html">MedicationKnowledge/pt-pmp-113134</a>, <a href="MedicationKnowledge-pt-pmp-113135.html">MedicationKnowledge/pt-pmp-113135</a>, <a href="MedicationKnowledge-pt-pmp-119081.html">MedicationKnowledge/pt-pmp-119081</a>, <a href="MedicationKnowledge-pt-pmp-119082.html">MedicationKnowledge/pt-pmp-119082</a>, <a href="MedicationKnowledge-pt-pmp-119083.html">MedicationKnowledge/pt-pmp-119083</a>, <a href="MedicationKnowledge-pt-pmp-119084.html">MedicationKnowledge/pt-pmp-119084</a>, <a href="MedicationKnowledge-pt-pmp-119085.html">MedicationKnowledge/pt-pmp-119085</a>, <a href="MedicationKnowledge-pt-pmp-119086.html">MedicationKnowledge/pt-pmp-119086</a>, <a href="MedicationKnowledge-pt-pmp-119087.html">MedicationKnowledge/pt-pmp-119087</a>, <a href="MedicationKnowledge-pt-pmp-119088.html">MedicationKnowledge/pt-pmp-119088</a>, <a href="MedicationKnowledge-pt-pmp-119089.html">MedicationKnowledge/pt-pmp-119089</a>, <a href="MedicationKnowledge-pt-pmp-119090.html">MedicationKnowledge/pt-pmp-119090</a>, <a href="MedicationKnowledge-pt-pmp-119091.html">MedicationKnowledge/pt-pmp-119091</a>, <a href="MedicationKnowledge-pt-pmp-119092.html">MedicationKnowledge/pt-pmp-119092</a>, <a href="MedicationKnowledge-pt-pmp-119093.html">MedicationKnowledge/pt-pmp-119093</a>, <a href="MedicationKnowledge-pt-pmp-119094.html">MedicationKnowledge/pt-pmp-119094</a>, <a href="MedicationKnowledge-pt-pmp-119443.html">MedicationKnowledge/pt-pmp-119443</a>, <a href="MedicationKnowledge-pt-pmp-119444.html">MedicationKnowledge/pt-pmp-119444</a>, <a href="MedicationKnowledge-pt-pmp-127317.html">MedicationKnowledge/pt-pmp-127317</a>, <a href="MedicationKnowledge-pt-pmp-127318.html">MedicationKnowledge/pt-pmp-127318</a>, <a href="MedicationKnowledge-pt-pmp-127319.html">MedicationKnowledge/pt-pmp-127319</a>, <a href="MedicationKnowledge-pt-pmp-127320.html">MedicationKnowledge/pt-pmp-127320</a>, <a href="MedicationKnowledge-pt-pmp-127321.html">MedicationKnowledge/pt-pmp-127321</a>, <a href="MedicationKnowledge-pt-pmp-127322.html">MedicationKnowledge/pt-pmp-127322</a>, <a href="MedicationKnowledge-pt-pmp-127323.html">MedicationKnowledge/pt-pmp-127323</a>, <a href="MedicationKnowledge-pt-pmp-127324.html">MedicationKnowledge/pt-pmp-127324</a>, <a href="MedicationKnowledge-pt-pmp-127846.html">MedicationKnowledge/pt-pmp-127846</a>, <a href="MedicationKnowledge-pt-pmp-127847.html">MedicationKnowledge/pt-pmp-127847</a>, <a href="MedicationKnowledge-pt-pmp-127848.html">MedicationKnowledge/pt-pmp-127848</a>, <a href="MedicationKnowledge-pt-pmp-127850.html">MedicationKnowledge/pt-pmp-127850</a>, <a href="MedicationKnowledge-pt-pmp-127858.html">MedicationKnowledge/pt-pmp-127858</a>, <a href="MedicationKnowledge-pt-pmp-127859.html">MedicationKnowledge/pt-pmp-127859</a>, <a href="MedicationKnowledge-pt-pmp-127860.html">MedicationKnowledge/pt-pmp-127860</a>, <a href="MedicationKnowledge-pt-pmp-127904.html">MedicationKnowledge/pt-pmp-127904</a>, <a href="MedicationKnowledge-pt-pmp-138267.html">MedicationKnowledge/pt-pmp-138267</a>, <a href="MedicationKnowledge-pt-pmp-138268.html">MedicationKnowledge/pt-pmp-138268</a>, <a href="MedicationKnowledge-pt-pmp-138269.html">MedicationKnowledge/pt-pmp-138269</a>, <a href="MedicationKnowledge-pt-pmp-141710.html">MedicationKnowledge/pt-pmp-141710</a>, <a href="MedicationKnowledge-pt-pmp-141715.html">MedicationKnowledge/pt-pmp-141715</a>, <a href="MedicationKnowledge-pt-pmp-141725.html">MedicationKnowledge/pt-pmp-141725</a>, <a href="MedicationKnowledge-pt-pmp-141730.html">MedicationKnowledge/pt-pmp-141730</a>, <a href="MedicationKnowledge-pt-pmp-150243.html">MedicationKnowledge/pt-pmp-150243</a>, <a href="MedicationKnowledge-pt-pmp-150248.html">MedicationKnowledge/pt-pmp-150248</a>, <a href="MedicationKnowledge-pt-pmp-159438.html">MedicationKnowledge/pt-pmp-159438</a>, <a href="MedicationKnowledge-pt-pmp-159452.html">MedicationKnowledge/pt-pmp-159452</a>, <a href="MedicationKnowledge-pt-pmp-170800.html">MedicationKnowledge/pt-pmp-170800</a>, <a href="MedicationKnowledge-pt-pmp-176582.html">MedicationKnowledge/pt-pmp-176582</a>, <a href="MedicationKnowledge-pt-pmp-176583.html">MedicationKnowledge/pt-pmp-176583</a>, <a href="MedicationKnowledge-pt-pmp-179943.html">MedicationKnowledge/pt-pmp-179943</a>, <a href="MedicationKnowledge-pt-pmp-179944.html">MedicationKnowledge/pt-pmp-179944</a>, <a href="MedicationKnowledge-pt-pmp-179945.html">MedicationKnowledge/pt-pmp-179945</a>, <a href="MedicationKnowledge-pt-pmp-179946.html">MedicationKnowledge/pt-pmp-179946</a>, <a href="MedicationKnowledge-pt-pmp-179947.html">MedicationKnowledge/pt-pmp-179947</a>, <a href="MedicationKnowledge-pt-pmp-179948.html">MedicationKnowledge/pt-pmp-179948</a>, <a href="MedicationKnowledge-pt-pmp-179949.html">MedicationKnowledge/pt-pmp-179949</a>, <a href="MedicationKnowledge-pt-pmp-179950.html">MedicationKnowledge/pt-pmp-179950</a>, <a href="MedicationKnowledge-pt-pmp-179951.html">MedicationKnowledge/pt-pmp-179951</a>, <a href="MedicationKnowledge-pt-pmp-179952.html">MedicationKnowledge/pt-pmp-179952</a>, <a href="MedicationKnowledge-pt-pmp-179953.html">MedicationKnowledge/pt-pmp-179953</a>, <a href="MedicationKnowledge-pt-pmp-179954.html">MedicationKnowledge/pt-pmp-179954</a>, <a href="MedicationKnowledge-pt-pmp-179955.html">MedicationKnowledge/pt-pmp-179955</a>, <a href="MedicationKnowledge-pt-pmp-182889.html">MedicationKnowledge/pt-pmp-182889</a>, <a href="MedicationKnowledge-pt-pmp-182891.html">MedicationKnowledge/pt-pmp-182891</a>, <a href="MedicationKnowledge-pt-pmp-189849.html">MedicationKnowledge/pt-pmp-189849</a>, <a href="MedicationKnowledge-pt-pmp-189854.html">MedicationKnowledge/pt-pmp-189854</a>, <a href="MedicationKnowledge-pt-pmp-189855.html">MedicationKnowledge/pt-pmp-189855</a>, <a href="MedicationKnowledge-pt-pmp-189856.html">MedicationKnowledge/pt-pmp-189856</a>, <a href="MedicationKnowledge-pt-pmp-189863.html">MedicationKnowledge/pt-pmp-189863</a>, <a href="MedicationKnowledge-pt-pmp-189864.html">MedicationKnowledge/pt-pmp-189864</a>, <a href="MedicationKnowledge-pt-pmp-189869.html">MedicationKnowledge/pt-pmp-189869</a>, <a href="MedicationKnowledge-pt-pmp-189870.html">MedicationKnowledge/pt-pmp-189870</a>, <a href="MedicationKnowledge-pt-pmp-189871.html">MedicationKnowledge/pt-pmp-189871</a>, <a href="MedicationKnowledge-pt-pmp-195563.html">MedicationKnowledge/pt-pmp-195563</a>, <a href="MedicationKnowledge-pt-pmp-195564.html">MedicationKnowledge/pt-pmp-195564</a>, <a href="MedicationKnowledge-pt-pmp-195565.html">MedicationKnowledge/pt-pmp-195565</a>, <a href="MedicationKnowledge-pt-pmp-195566.html">MedicationKnowledge/pt-pmp-195566</a>, <a href="MedicationKnowledge-pt-pmp-195567.html">MedicationKnowledge/pt-pmp-195567</a>, <a href="MedicationKnowledge-pt-pmp-1987497.html">MedicationKnowledge/pt-pmp-1987497</a>, <a href="MedicationKnowledge-pt-pmp-1987498.html">MedicationKnowledge/pt-pmp-1987498</a>, <a href="MedicationKnowledge-pt-pmp-1988990.html">MedicationKnowledge/pt-pmp-1988990</a>, <a href="MedicationKnowledge-pt-pmp-1988994.html">MedicationKnowledge/pt-pmp-1988994</a>, <a href="MedicationKnowledge-pt-pmp-1989059.html">MedicationKnowledge/pt-pmp-1989059</a>, <a href="MedicationKnowledge-pt-pmp-1989067.html">MedicationKnowledge/pt-pmp-1989067</a>, <a href="MedicationKnowledge-pt-pmp-2004277.html">MedicationKnowledge/pt-pmp-2004277</a>, <a href="MedicationKnowledge-pt-pmp-2004283.html">MedicationKnowledge/pt-pmp-2004283</a>, <a href="MedicationKnowledge-pt-pmp-2037478.html">MedicationKnowledge/pt-pmp-2037478</a>, <a href="MedicationKnowledge-pt-pmp-2037537.html">MedicationKnowledge/pt-pmp-2037537</a>, <a href="MedicationKnowledge-pt-pmp-2053397.html">MedicationKnowledge/pt-pmp-2053397</a>, <a href="MedicationKnowledge-pt-pmp-2053401.html">MedicationKnowledge/pt-pmp-2053401</a>, <a href="MedicationKnowledge-pt-pmp-2053415.html">MedicationKnowledge/pt-pmp-2053415</a>, <a href="MedicationKnowledge-pt-pmp-2086874.html">MedicationKnowledge/pt-pmp-2086874</a>, <a href="MedicationKnowledge-pt-pmp-2086879.html">MedicationKnowledge/pt-pmp-2086879</a>, <a href="MedicationKnowledge-pt-pmp-2086920.html">MedicationKnowledge/pt-pmp-2086920</a>, <a href="MedicationKnowledge-pt-pmp-2119892.html">MedicationKnowledge/pt-pmp-2119892</a>, <a href="MedicationKnowledge-pt-pmp-2119893.html">MedicationKnowledge/pt-pmp-2119893</a>, <a href="MedicationKnowledge-pt-pmp-2119895.html">MedicationKnowledge/pt-pmp-2119895</a>, <a href="MedicationKnowledge-pt-pmp-2119899.html">MedicationKnowledge/pt-pmp-2119899</a>, <a href="MedicationKnowledge-pt-pmp-2119900.html">MedicationKnowledge/pt-pmp-2119900</a>, <a href="MedicationKnowledge-pt-pmp-2119901.html">MedicationKnowledge/pt-pmp-2119901</a>, <a href="MedicationKnowledge-pt-pmp-2131670.html">MedicationKnowledge/pt-pmp-2131670</a>, <a href="MedicationKnowledge-pt-pmp-2151695.html">MedicationKnowledge/pt-pmp-2151695</a>, <a href="MedicationKnowledge-pt-pmp-2151696.html">MedicationKnowledge/pt-pmp-2151696</a>, <a href="MedicationKnowledge-pt-pmp-42511.html">MedicationKnowledge/pt-pmp-42511</a>, <a href="MedicationKnowledge-pt-pmp-42512.html">MedicationKnowledge/pt-pmp-42512</a>, <a href="MedicationKnowledge-pt-pmp-42514.html">MedicationKnowledge/pt-pmp-42514</a>, <a href="MedicationKnowledge-pt-pmp-42515.html">MedicationKnowledge/pt-pmp-42515</a>, <a href="MedicationKnowledge-pt-pmp-42516.html">MedicationKnowledge/pt-pmp-42516</a>, <a href="MedicationKnowledge-pt-pmp-42518.html">MedicationKnowledge/pt-pmp-42518</a>, <a href="MedicationKnowledge-pt-pmp-42519.html">MedicationKnowledge/pt-pmp-42519</a>, <a href="MedicationKnowledge-pt-pmp-42520.html">MedicationKnowledge/pt-pmp-42520</a>, <a href="MedicationKnowledge-pt-pmp-42522.html">MedicationKnowledge/pt-pmp-42522</a>, <a href="MedicationKnowledge-pt-pmp-55502.html">MedicationKnowledge/pt-pmp-55502</a>, <a href="MedicationKnowledge-pt-pmp-55503.html">MedicationKnowledge/pt-pmp-55503</a>, <a href="MedicationKnowledge-pt-pmp-55506.html">MedicationKnowledge/pt-pmp-55506</a>, <a href="MedicationKnowledge-pt-pmp-57678.html">MedicationKnowledge/pt-pmp-57678</a>, <a href="MedicationKnowledge-pt-pmp-58159.html">MedicationKnowledge/pt-pmp-58159</a>, <a href="MedicationKnowledge-pt-pmp-58160.html">MedicationKnowledge/pt-pmp-58160</a>, <a href="MedicationKnowledge-pt-pmp-58161.html">MedicationKnowledge/pt-pmp-58161</a>, <a href="MedicationKnowledge-pt-pmp-58177.html">MedicationKnowledge/pt-pmp-58177</a>, <a href="MedicationKnowledge-pt-pmp-58178.html">MedicationKnowledge/pt-pmp-58178</a>, <a href="MedicationKnowledge-pt-pmp-58179.html">MedicationKnowledge/pt-pmp-58179</a>, <a href="MedicationKnowledge-pt-pmp-58247.html">MedicationKnowledge/pt-pmp-58247</a>, <a href="MedicationKnowledge-pt-pmp-58248.html">MedicationKnowledge/pt-pmp-58248</a>, <a href="MedicationKnowledge-pt-pmp-58249.html">MedicationKnowledge/pt-pmp-58249</a>, <a href="MedicationKnowledge-pt-pmp-62698.html">MedicationKnowledge/pt-pmp-62698</a>, <a href="MedicationKnowledge-pt-pmp-62699.html">MedicationKnowledge/pt-pmp-62699</a>, <a href="MedicationKnowledge-pt-pmp-62700.html">MedicationKnowledge/pt-pmp-62700</a>, <a href="MedicationKnowledge-pt-pmp-62701.html">MedicationKnowledge/pt-pmp-62701</a>, <a href="MedicationKnowledge-pt-pmp-63878.html">MedicationKnowledge/pt-pmp-63878</a>, <a href="MedicationKnowledge-pt-pmp-63879.html">MedicationKnowledge/pt-pmp-63879</a>, <a href="MedicationKnowledge-pt-pmp-63880.html">MedicationKnowledge/pt-pmp-63880</a>, <a href="MedicationKnowledge-pt-pmp-63881.html">MedicationKnowledge/pt-pmp-63881</a>, <a href="MedicationKnowledge-pt-pmp-63882.html">MedicationKnowledge/pt-pmp-63882</a>, <a href="MedicationKnowledge-pt-pmp-63883.html">MedicationKnowledge/pt-pmp-63883</a>, <a href="MedicationKnowledge-pt-pmp-63890.html">MedicationKnowledge/pt-pmp-63890</a>, <a href="MedicationKnowledge-pt-pmp-63891.html">MedicationKnowledge/pt-pmp-63891</a>, <a href="MedicationKnowledge-pt-pmp-63892.html">MedicationKnowledge/pt-pmp-63892</a>, <a href="MedicationKnowledge-pt-pmp-63893.html">MedicationKnowledge/pt-pmp-63893</a>, <a href="MedicationKnowledge-pt-pmp-63894.html">MedicationKnowledge/pt-pmp-63894</a>, <a href="MedicationKnowledge-pt-pmp-63895.html">MedicationKnowledge/pt-pmp-63895</a>, <a href="MedicationKnowledge-pt-pmp-66758.html">MedicationKnowledge/pt-pmp-66758</a>, <a href="MedicationKnowledge-pt-pmp-66759.html">MedicationKnowledge/pt-pmp-66759</a>, <a href="MedicationKnowledge-pt-pmp-66760.html">MedicationKnowledge/pt-pmp-66760</a>, <a href="MedicationKnowledge-pt-pmp-66761.html">MedicationKnowledge/pt-pmp-66761</a>, <a href="MedicationKnowledge-pt-pmp-66762.html">MedicationKnowledge/pt-pmp-66762</a>, <a href="MedicationKnowledge-pt-pmp-66763.html">MedicationKnowledge/pt-pmp-66763</a>, <a href="MedicationKnowledge-pt-pmp-66766.html">MedicationKnowledge/pt-pmp-66766</a>, <a href="MedicationKnowledge-pt-pmp-66769.html">MedicationKnowledge/pt-pmp-66769</a>, <a href="MedicationKnowledge-pt-pmp-67981.html">MedicationKnowledge/pt-pmp-67981</a>, <a href="MedicationKnowledge-pt-pmp-67982.html">MedicationKnowledge/pt-pmp-67982</a>, <a href="MedicationKnowledge-pt-pmp-67983.html">MedicationKnowledge/pt-pmp-67983</a>, <a href="MedicationKnowledge-pt-pmp-67986.html">MedicationKnowledge/pt-pmp-67986</a>, <a href="MedicationKnowledge-pt-pmp-67987.html">MedicationKnowledge/pt-pmp-67987</a>, <a href="MedicationKnowledge-pt-pmp-67988.html">MedicationKnowledge/pt-pmp-67988</a>, <a href="MedicationKnowledge-pt-pmp-68453.html">MedicationKnowledge/pt-pmp-68453</a>, <a href="MedicationKnowledge-pt-pmp-68454.html">MedicationKnowledge/pt-pmp-68454</a>, <a href="MedicationKnowledge-pt-pmp-68455.html">MedicationKnowledge/pt-pmp-68455</a>, <a href="MedicationKnowledge-pt-pmp-68456.html">MedicationKnowledge/pt-pmp-68456</a>, <a href="MedicationKnowledge-pt-pmp-68457.html">MedicationKnowledge/pt-pmp-68457</a>, <a href="MedicationKnowledge-pt-pmp-68458.html">MedicationKnowledge/pt-pmp-68458</a>, <a href="MedicationKnowledge-pt-pmp-69667.html">MedicationKnowledge/pt-pmp-69667</a>, <a href="MedicationKnowledge-pt-pmp-69668.html">MedicationKnowledge/pt-pmp-69668</a>, <a href="MedicationKnowledge-pt-pmp-69669.html">MedicationKnowledge/pt-pmp-69669</a>, <a href="MedicationKnowledge-pt-pmp-69670.html">MedicationKnowledge/pt-pmp-69670</a>, <a href="MedicationKnowledge-pt-pmp-69671.html">MedicationKnowledge/pt-pmp-69671</a>, <a href="MedicationKnowledge-pt-pmp-69672.html">MedicationKnowledge/pt-pmp-69672</a>, <a href="MedicationKnowledge-pt-pmp-69673.html">MedicationKnowledge/pt-pmp-69673</a>, <a href="MedicationKnowledge-pt-pmp-69674.html">MedicationKnowledge/pt-pmp-69674</a>, <a href="MedicationKnowledge-pt-pmp-69675.html">MedicationKnowledge/pt-pmp-69675</a>, <a href="MedicationKnowledge-pt-pmp-69676.html">MedicationKnowledge/pt-pmp-69676</a>, <a href="MedicationKnowledge-pt-pmp-69677.html">MedicationKnowledge/pt-pmp-69677</a>, <a href="MedicationKnowledge-pt-pmp-69678.html">MedicationKnowledge/pt-pmp-69678</a>, <a href="MedicationKnowledge-pt-pmp-70107.html">MedicationKnowledge/pt-pmp-70107</a>, <a href="MedicationKnowledge-pt-pmp-70110.html">MedicationKnowledge/pt-pmp-70110</a>, <a href="MedicationKnowledge-pt-pmp-70664.html">MedicationKnowledge/pt-pmp-70664</a>, <a href="MedicationKnowledge-pt-pmp-70665.html">MedicationKnowledge/pt-pmp-70665</a>, <a href="MedicationKnowledge-pt-pmp-70666.html">MedicationKnowledge/pt-pmp-70666</a>, <a href="MedicationKnowledge-pt-pmp-70667.html">MedicationKnowledge/pt-pmp-70667</a>, <a href="MedicationKnowledge-pt-pmp-70668.html">MedicationKnowledge/pt-pmp-70668</a>, <a href="MedicationKnowledge-pt-pmp-70669.html">MedicationKnowledge/pt-pmp-70669</a>, <a href="MedicationKnowledge-pt-pmp-70670.html">MedicationKnowledge/pt-pmp-70670</a>, <a href="MedicationKnowledge-pt-pmp-70671.html">MedicationKnowledge/pt-pmp-70671</a>, <a href="MedicationKnowledge-pt-pmp-70672.html">MedicationKnowledge/pt-pmp-70672</a>, <a href="MedicationKnowledge-pt-pmp-70673.html">MedicationKnowledge/pt-pmp-70673</a>, <a href="MedicationKnowledge-pt-pmp-70674.html">MedicationKnowledge/pt-pmp-70674</a>, <a href="MedicationKnowledge-pt-pmp-70675.html">MedicationKnowledge/pt-pmp-70675</a>, <a href="MedicationKnowledge-pt-pmp-70779.html">MedicationKnowledge/pt-pmp-70779</a>, <a href="MedicationKnowledge-pt-pmp-70780.html">MedicationKnowledge/pt-pmp-70780</a>, <a href="MedicationKnowledge-pt-pmp-70781.html">MedicationKnowledge/pt-pmp-70781</a>, <a href="MedicationKnowledge-pt-pmp-70782.html">MedicationKnowledge/pt-pmp-70782</a>, <a href="MedicationKnowledge-pt-pmp-70783.html">MedicationKnowledge/pt-pmp-70783</a>, <a href="MedicationKnowledge-pt-pmp-71326.html">MedicationKnowledge/pt-pmp-71326</a>, <a href="MedicationKnowledge-pt-pmp-71327.html">MedicationKnowledge/pt-pmp-71327</a>, <a href="MedicationKnowledge-pt-pmp-71328.html">MedicationKnowledge/pt-pmp-71328</a>, <a href="MedicationKnowledge-pt-pmp-71329.html">MedicationKnowledge/pt-pmp-71329</a>, <a href="MedicationKnowledge-pt-pmp-71330.html">MedicationKnowledge/pt-pmp-71330</a>, <a href="MedicationKnowledge-pt-pmp-71331.html">MedicationKnowledge/pt-pmp-71331</a>, <a href="MedicationKnowledge-pt-pmp-71332.html">MedicationKnowledge/pt-pmp-71332</a>, <a href="MedicationKnowledge-pt-pmp-71333.html">MedicationKnowledge/pt-pmp-71333</a>, <a href="MedicationKnowledge-pt-pmp-71334.html">MedicationKnowledge/pt-pmp-71334</a>, <a href="MedicationKnowledge-pt-pmp-71335.html">MedicationKnowledge/pt-pmp-71335</a>, <a href="MedicationKnowledge-pt-pmp-71336.html">MedicationKnowledge/pt-pmp-71336</a>, <a href="MedicationKnowledge-pt-pmp-71337.html">MedicationKnowledge/pt-pmp-71337</a>, <a href="MedicationKnowledge-pt-pmp-72167.html">MedicationKnowledge/pt-pmp-72167</a>, <a href="MedicationKnowledge-pt-pmp-72168.html">MedicationKnowledge/pt-pmp-72168</a>, <a href="MedicationKnowledge-pt-pmp-72169.html">MedicationKnowledge/pt-pmp-72169</a>, <a href="MedicationKnowledge-pt-pmp-72170.html">MedicationKnowledge/pt-pmp-72170</a>, <a href="MedicationKnowledge-pt-pmp-72171.html">MedicationKnowledge/pt-pmp-72171</a>, <a href="MedicationKnowledge-pt-pmp-72172.html">MedicationKnowledge/pt-pmp-72172</a>, <a href="MedicationKnowledge-pt-pmp-72604.html">MedicationKnowledge/pt-pmp-72604</a>, <a href="MedicationKnowledge-pt-pmp-72847.html">MedicationKnowledge/pt-pmp-72847</a>, <a href="MedicationKnowledge-pt-pmp-74956.html">MedicationKnowledge/pt-pmp-74956</a>, <a href="MedicationKnowledge-pt-pmp-77662.html">MedicationKnowledge/pt-pmp-77662</a>, <a href="MedicationKnowledge-pt-pmp-77663.html">MedicationKnowledge/pt-pmp-77663</a>, <a href="MedicationKnowledge-pt-pmp-80574.html">MedicationKnowledge/pt-pmp-80574</a>, <a href="MedicationKnowledge-pt-pmp-80575.html">MedicationKnowledge/pt-pmp-80575</a>, <a href="MedicationKnowledge-pt-pmp-80576.html">MedicationKnowledge/pt-pmp-80576</a>, <a href="MedicationKnowledge-pt-pmp-80577.html">MedicationKnowledge/pt-pmp-80577</a>, <a href="MedicationKnowledge-pt-pmp-80581.html">MedicationKnowledge/pt-pmp-80581</a>, <a href="MedicationKnowledge-pt-pmp-80582.html">MedicationKnowledge/pt-pmp-80582</a>, <a href="MedicationKnowledge-pt-pmp-80583.html">MedicationKnowledge/pt-pmp-80583</a>, <a href="MedicationKnowledge-pt-pmp-84629.html">MedicationKnowledge/pt-pmp-84629</a>, <a href="MedicationKnowledge-pt-pmp-84630.html">MedicationKnowledge/pt-pmp-84630</a>, <a href="MedicationKnowledge-pt-pmp-87365.html">MedicationKnowledge/pt-pmp-87365</a>, <a href="MedicationKnowledge-pt-pmp-87366.html">MedicationKnowledge/pt-pmp-87366</a>, <a href="MedicationKnowledge-pt-pmp-87367.html">MedicationKnowledge/pt-pmp-87367</a>, <a href="MedicationKnowledge-pt-pmp-87450.html">MedicationKnowledge/pt-pmp-87450</a>, <a href="MedicationKnowledge-pt-pmp-87451.html">MedicationKnowledge/pt-pmp-87451</a>, <a href="MedicationKnowledge-pt-pmp-87452.html">MedicationKnowledge/pt-pmp-87452</a>, <a href="MedicationKnowledge-pt-pmp-87753.html">MedicationKnowledge/pt-pmp-87753</a>, <a href="MedicationKnowledge-pt-pmp-87872.html">MedicationKnowledge/pt-pmp-87872</a>, <a href="MedicationKnowledge-pt-pmp-87873.html">MedicationKnowledge/pt-pmp-87873</a>, <a href="MedicationKnowledge-pt-pmp-87874.html">MedicationKnowledge/pt-pmp-87874</a>, <a href="MedicationKnowledge-pt-pmp-87875.html">MedicationKnowledge/pt-pmp-87875</a>, <a href="MedicationKnowledge-pt-pmp-87876.html">MedicationKnowledge/pt-pmp-87876</a>, <a href="MedicationKnowledge-pt-pmp-87877.html">MedicationKnowledge/pt-pmp-87877</a>, <a href="MedicationKnowledge-pt-pmp-87908.html">MedicationKnowledge/pt-pmp-87908</a>, <a href="MedicationKnowledge-pt-pmp-87909.html">MedicationKnowledge/pt-pmp-87909</a>, <a href="MedicationKnowledge-pt-pmp-87910.html">MedicationKnowledge/pt-pmp-87910</a>, <a href="MedicationKnowledge-pt-pmp-87911.html">MedicationKnowledge/pt-pmp-87911</a>, <a href="MedicationKnowledge-pt-pmp-87919.html">MedicationKnowledge/pt-pmp-87919</a>, <a href="MedicationKnowledge-pt-pmp-87920.html">MedicationKnowledge/pt-pmp-87920</a>, <a href="MedicationKnowledge-pt-pmp-87921.html">MedicationKnowledge/pt-pmp-87921</a>, <a href="MedicationKnowledge-pt-pmp-87922.html">MedicationKnowledge/pt-pmp-87922</a>, <a href="MedicationKnowledge-pt-pmp-87988.html">MedicationKnowledge/pt-pmp-87988</a>, <a href="MedicationKnowledge-pt-pmp-91168.html">MedicationKnowledge/pt-pmp-91168</a>, <a href="MedicationKnowledge-pt-pmp-91169.html">MedicationKnowledge/pt-pmp-91169</a>, <a href="MedicationKnowledge-pt-pmp-91170.html">MedicationKnowledge/pt-pmp-91170</a>, <a href="MedicationKnowledge-pt-pmp-91171.html">MedicationKnowledge/pt-pmp-91171</a>, <a href="MedicationKnowledge-pt-pmp-91172.html">MedicationKnowledge/pt-pmp-91172</a>, <a href="MedicationKnowledge-pt-pmp-91173.html">MedicationKnowledge/pt-pmp-91173</a>, <a href="MedicationKnowledge-pt-pmp-92303.html">MedicationKnowledge/pt-pmp-92303</a>, <a href="MedicationKnowledge-pt-pmp-92385.html">MedicationKnowledge/pt-pmp-92385</a>, <a href="MedicationKnowledge-pt-pmp-92921.html">MedicationKnowledge/pt-pmp-92921</a>, <a href="MedicationKnowledge-pt-pmp-92922.html">MedicationKnowledge/pt-pmp-92922</a>, <a href="MedicationKnowledge-pt-pmp-95877.html">MedicationKnowledge/pt-pmp-95877</a>, <a href="MedicationKnowledge-pt-pmp-95883.html">MedicationKnowledge/pt-pmp-95883</a>, <a href="MedicationKnowledge-pt-pmp-95884.html">MedicationKnowledge/pt-pmp-95884</a>, <a href="MedicationKnowledge-pt-pmp-96525.html">MedicationKnowledge/pt-pmp-96525</a>, <a href="MedicationKnowledge-pt-pmp-96530.html">MedicationKnowledge/pt-pmp-96530</a>, <a href="MedicationKnowledge-pt-pmp-96535.html">MedicationKnowledge/pt-pmp-96535</a>, <a href="MedicationKnowledge-pt-pmp-96539.html">MedicationKnowledge/pt-pmp-96539</a>, <a href="MedicationKnowledge-pt-pmp-96542.html">MedicationKnowledge/pt-pmp-96542</a>, <a href="MedicationKnowledge-pt-pmp-96545.html">MedicationKnowledge/pt-pmp-96545</a>, <a href="MedicationKnowledge-pt-pmp-96579.html">MedicationKnowledge/pt-pmp-96579</a>, <a href="MedicationKnowledge-pt-pmp-96585.html">MedicationKnowledge/pt-pmp-96585</a>, <a href="MedicationKnowledge-pt-pmp-96590.html">MedicationKnowledge/pt-pmp-96590</a>, <a href="MedicationKnowledge-pt-pmp-96593.html">MedicationKnowledge/pt-pmp-96593</a>, <a href="MedicationKnowledge-pt-pmp-96596.html">MedicationKnowledge/pt-pmp-96596</a>, <a href="MedicationKnowledge-pt-pmp-96599.html">MedicationKnowledge/pt-pmp-96599</a></li>
+</ul>
+
+
+  <!-- no uri -->
+  <a name="profile"> </a>
+  <h3 id="profile">Formal Views of Extension Content</h3>
+  <p>
+    <a href="http://hl7.org/fhir/R4/profiling.html#representation">Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work</a>.
+  </p>
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-summ">Text Summary</a>
+      </li>
+      <li>
+        <a href="#tabs-diff">Differential Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Snapshot Table</a>
+      </li>
+
+      <!--<li>
+        <a href="#tabs-xml">Pseudo-XML</a>
+      </li>-->
+
+
+      <!--<li>
+        <a href="#tabs-json">Pseudo-JSON</a>
+      </li>-->
+
+
+      <!--<li>
+        <a href="#tabs-ttl">Pseudo-TTL</a>
+      </li>-->
+
+      <li>
+        <a href="#tabs-all">All</a>
+      </li>
+    </ul>
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+        </p>
+        <div id="tbl-summ-inner">
+          <a name="summary"> </a>
+          <a name="summary"> </a>
+<p><b>
+Summary
+</b></p>
+<p>Mandatory: 1 element<br/> Fixed Value: 1 element<br/> Prohibited: 1 element</p><p><b><a class="fmm" href="http://hl7.org/fhir/versions.html#maturity" title="Maturity Level">Maturity</a></b>: 1</p>
+
+        </div>
+      </div>
+    </div>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      <div id="tbl-diff">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+        </p>
+        <div id="tbl-diff-inner">
+          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="artifact-jurisdictiond"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" onload="fhirTableInit(this)"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension" title="A legal or geographic region in which the {{title}} is intended to be used.">Extension</a><a name="Extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Intended jurisdiction for {{title}} (if applicable)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="text-decoration:line-through">extension</span><a name="Extension.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.url">url</a><a name="Extension.url"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction"</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.value[x]">value[x]</a><a name="Extension.value_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): Countries and regions within which this artifact is targeted for use.<br/><br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+        </div>
+      </div>
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      <div id="tbl-snap">
+        <div id="tbl-snap-inner">
+          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="artifact-jurisdictions"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" onload="fhirTableInit(this)"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension" title="A legal or geographic region in which the {{title}} is intended to be used.">Extension</a><a name="Extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Intended jurisdiction for {{title}} (if applicable)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="Extension.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique id for inter-element referencing</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.extension" title="An Extension">extension</a><a name="Extension.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL.">url</a><a name="Extension.url"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction"</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).">value[x]</a><a name="Extension.value_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): Countries and regions within which this artifact is targeted for use.<br/><br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+        </div>
+      </div>
+    </div>
+
+    <!--<a name="tabs-xml"> </a>
+    <div id="tabs-xml">
+      <div id="xml">
+        <div id="xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div>
+    </div>-->
+
+
+    <!--<a name="tabs-json"> </a>
+    <div id="tabs-json">
+      <div id="json">
+        <div id="json-inner">
+           // <span style="color: navy; opacity: 0.8">jurisdiction</span>
+ {
+    "<a href="StructureDefinition-artifact-jurisdiction.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
+    "<a href="StructureDefinition-artifact-jurisdiction.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
+    "<a href="StructureDefinition-artifact-jurisdiction.html#Extension.valueCodeableConcept" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCodeableConcept</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Value of extension</a></span>
+  }
+
+        </div>
+      </div>
+    </div>-->
+
+
+    <!--<a name="tabs-ttl"> </a>
+    <div id="tabs-ttl">
+      <div id="ttl">
+        <div id="ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div>
+    </div>-->
+
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
+      <div id="all-summ">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+        </p>
+        <div id="all-summ-inner">
+          <a name="summary"> </a>
+<p><b>
+Summary
+</b></p>
+<p>Mandatory: 1 element<br/> Fixed Value: 1 element<br/> Prohibited: 1 element</p><p><b><a class="fmm" href="http://hl7.org/fhir/versions.html#maturity" title="Maturity Level">Maturity</a></b>: 1</p>
+
+        </div>
+      </div>
+      <div id="all-tbl-diff">
+        <p>
+          <b>Differential View</b>
+        </p>
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+        </p>
+        <div id="all-tbl-diff-inner">
+          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="artifact-jurisdictiond"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" onload="fhirTableInit(this)"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension" title="A legal or geographic region in which the {{title}} is intended to be used.">Extension</a><a name="Extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Intended jurisdiction for {{title}} (if applicable)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="text-decoration:line-through">extension</span><a name="Extension.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.url">url</a><a name="Extension.url"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction"</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.value[x]">value[x]</a><a name="Extension.value_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): Countries and regions within which this artifact is targeted for use.<br/><br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+        </div>
+      </div>
+      <div id="all-tbl-snap">
+        <p>
+          <b>Snapshot View</b>
+        </p>
+        <div id="all-tbl-snap-inner">
+          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="artifact-jurisdictions"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" onload="fhirTableInit(this)"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension" title="A legal or geographic region in which the {{title}} is intended to be used.">Extension</a><a name="Extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Intended jurisdiction for {{title}} (if applicable)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="Extension.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique id for inter-element referencing</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.extension" title="An Extension">extension</a><a name="Extension.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL.">url</a><a name="Extension.url"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction"</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-artifact-jurisdiction-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).">value[x]</a><a name="Extension.value_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): Countries and regions within which this artifact is targeted for use.<br/><br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+        </div>
+      </div>
+
+      <!--<div id="all-xml">
+        <p>
+          <b>XML Template</b>
+        </p>
+        <div id="all-xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div>-->
+
+
+      <!--<div id="all-json">
+        <p>
+          <b>JSON Template</b>
+        </p>
+        <div id="all-json-inner">
+           // <span style="color: navy; opacity: 0.8">jurisdiction</span>
+ {
+    "<a href="StructureDefinition-artifact-jurisdiction.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
+    "<a href="StructureDefinition-artifact-jurisdiction.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
+    "<a href="StructureDefinition-artifact-jurisdiction.html#Extension.valueCodeableConcept" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCodeableConcept</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Value of extension</a></span>
+  }
+
+        </div>
+      </div>-->
+
+
+      <!--<div id="all-ttl">
+        <p>
+          <b>TTL Template</b>
+        </p>
+        <div id="all-ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div>-->
+
+    </div>
+  </div>
+  <p>&#160;</p>
+  <p>Other representations of profile: <a href="StructureDefinition-artifact-jurisdiction.csv">CSV</a>, <a href="StructureDefinition-artifact-jurisdiction.xlsx">Excel</a>, <a href="StructureDefinition-artifact-jurisdiction.sch">Schematron</a>
+  </p>
+  <a name="tx"> </a>
+  <!--Terminology Bindings heading in the fragment -->
+  <h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td></tr>
+<tr><td>Extension.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Countries and regions within which this artifact is targeted for use."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-jurisdiction.html">Jurisdiction ValueSet</a></td></tr>
+</table>
+
+
+
+<!-- 218 is size of empty table -->
+
+  <a name="inv"> </a>
+  <!--Constraints  heading in the fragment -->
+  <h4>Constraints</h4>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Extension.value[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+</table>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 20, 2022 14:38+0000">2022-06-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

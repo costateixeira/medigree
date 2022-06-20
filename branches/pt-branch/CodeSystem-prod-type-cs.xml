@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="prod-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://medigree.github.io/mpd/CodeSystem/prod-type-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">IDMP_PhP<a name="prod-type-cs-IDMP_PhP"> </a></td><td>IDMP Pharmaceutical Product</td></tr><tr><td style="white-space:nowrap">IDMP_MP<a name="prod-type-cs-IDMP_MP"> </a></td><td>IDMP Medicinal Product</td></tr><tr><td style="white-space:nowrap">IDMP_PP<a name="prod-type-cs-IDMP_PP"> </a></td><td>IDMP Packaged Medicinal Product</td></tr><tr><td style="white-space:nowrap">BE_MP<a name="prod-type-cs-BE_MP"> </a></td><td>Belgian Medicinal Product</td></tr><tr><td style="white-space:nowrap">BE_VMP<a name="prod-type-cs-BE_VMP"> </a></td><td>Belgian Virtual Medicinal Product</td></tr><tr><td style="white-space:nowrap">ePI<a name="prod-type-cs-ePI"> </a></td><td>ePI</td></tr></table></div>
+  </text>
+  <url value="https://medigree.github.io/mpd/CodeSystem/prod-type-cs"/>
+  <version value="1.0.0"/>
+  <name value="ProductTypeCS"/>
+  <title value="Product Types code system"/>
+  <status value="active"/>
+  <date value="2022-06-20T14:38:33+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Product Types"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="IDMP_PhP"/>
+    <display value="IDMP Pharmaceutical Product"/>
+  </concept>
+  <concept>
+    <code value="IDMP_MP"/>
+    <display value="IDMP Medicinal Product"/>
+  </concept>
+  <concept>
+    <code value="IDMP_PP"/>
+    <display value="IDMP Packaged Medicinal Product"/>
+  </concept>
+  <concept>
+    <code value="BE_MP"/>
+    <display value="Belgian Medicinal Product"/>
+  </concept>
+  <concept>
+    <code value="BE_VMP"/>
+    <display value="Belgian Virtual Medicinal Product"/>
+    <property>
+      <code value="template"/>
+      <valueString value="{&quot;&lt;&gt;&quot;:&quot;div&quot;,&quot;id&quot;:&quot;${synonym}&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;table&quot;,&quot;class&quot;:&quot;table table-striped table-sm&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;thead&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;th&quot;,&quot;scope&quot;:&quot;col&quot;,&quot;html&quot;:&quot;${resourceType}&quot;},{&quot;&lt;&gt;&quot;:&quot;th&quot;,&quot;scope&quot;:&quot;col&quot;,&quot;html&quot;:&quot;&quot;}]}]},{&quot;&lt;&gt;&quot;:&quot;tbody&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;style&quot;:&quot;width: 90px;&quot;,&quot;scope&quot;:&quot;row&quot;,&quot;html&quot;:&quot;Name&quot;},{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;html&quot;:&quot;${synonym}&quot;}]},{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;scope&quot;:&quot;row&quot;,&quot;html&quot;:&quot;ID&quot;},{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;html&quot;:&quot;${id}&quot;}]},{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;scope&quot;:&quot;row&quot;,&quot;html&quot;:&quot;Status&quot;},{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;html&quot;:&quot;${status}&quot;}]}]}]}]}"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ePI"/>
+    <display value="ePI"/>
+    <property>
+      <code value="template"/>
+      <valueString value="{&quot;&lt;&gt;&quot;:&quot;div&quot;,&quot;id&quot;:&quot;${synonym}&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;table&quot;,&quot;class&quot;:&quot;table table-striped table-sm&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;thead&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;th&quot;,&quot;scope&quot;:&quot;col&quot;,&quot;html&quot;:&quot;${resourceType}&quot;},{&quot;&lt;&gt;&quot;:&quot;th&quot;,&quot;scope&quot;:&quot;col&quot;,&quot;html&quot;:&quot;&quot;}]}]},{&quot;&lt;&gt;&quot;:&quot;tbody&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;style&quot;:&quot;width: 90px;&quot;,&quot;scope&quot;:&quot;row&quot;,&quot;html&quot;:&quot;Name&quot;},{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;html&quot;:&quot;${synonym}&quot;}]},{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;scope&quot;:&quot;row&quot;,&quot;html&quot;:&quot;ID&quot;},{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;html&quot;:&quot;${id}&quot;}]},{&quot;&lt;&gt;&quot;:&quot;tr&quot;,&quot;html&quot;:[{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;scope&quot;:&quot;row&quot;,&quot;html&quot;:&quot;Status&quot;},{&quot;&lt;&gt;&quot;:&quot;td&quot;,&quot;html&quot;:&quot;${status}&quot;}]}]}]}]}"/>
+    </property>
+  </concept>
+</CodeSystem>

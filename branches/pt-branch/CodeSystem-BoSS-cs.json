@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BoSS-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">base<a name=\"BoSS-cs-base\"> </a></td><td>Base</td><td>The strength corresponds to the strength of the base substance</td></tr><tr><td style=\"white-space:nowrap\">base-modifier<a name=\"BoSS-cs-base-modifier\"> </a></td><td>Base and modifier</td><td>The strength corresponds to the strength of the modifier</td></tr><tr><td style=\"white-space:nowrap\">ref-substance<a name=\"BoSS-cs-ref-substance\"> </a></td><td>Reference Substance</td><td>The strength corresponds to the associated reference substance</td></tr></table></div>"
+  },
+  "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs",
+  "version": "1.0.0",
+  "name": "BoSSCS",
+  "title": "BoSS - Basis of Substance Strength options Code System",
+  "status": "active",
+  "date": "2022-06-20T14:38:33+00:00",
+  "publisher": "My Organization",
+  "contact": [
+    {
+      "name": "My Organization",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "base",
+      "display": "Base",
+      "definition": "The strength corresponds to the strength of the base substance"
+    },
+    {
+      "code": "base-modifier",
+      "display": "Base and modifier",
+      "definition": "The strength corresponds to the strength of the modifier"
+    },
+    {
+      "code": "ref-substance",
+      "display": "Reference Substance",
+      "definition": "The strength corresponds to the associated reference substance"
+    }
+  ]
+}
