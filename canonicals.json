@@ -147,6 +147,13 @@
     "name": "IntMedicationRequest"
   },
   {
+    "id": "PTIdentifiableProduct",
+    "type": "StructureDefinition",
+    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct",
+    "version": "1.0.0",
+    "name": "PTIdentifiableProduct"
+  },
+  {
     "id": "PharmaceuticalProduct",
     "type": "StructureDefinition",
     "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",

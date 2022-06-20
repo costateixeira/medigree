@@ -196,6 +196,10 @@
   "profiles": {
     "MedicationKnowledge": [
       {
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct",
+        "title": "PT Identifiable Product Profile"
+      },
+      {
         "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
         "title": "Pharmaceutical Product Profile"
       }
