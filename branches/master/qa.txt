@@ -2,9 +2,9 @@
 =========================================
 
 err = 0, warn = 46, info = 15
-IG Publisher Version: 1.1.121
-Generated Mon Jun 13 16:58:29 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
- Build Errors : 0 / 15 / 0
+IG Publisher Version: 1.1.122
+Generated Tue Jun 28 09:18:23 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
+ Build Errors : 2 / 15 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types : 0 / 0 / 2
@@ -68,6 +68,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/MedPrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationKnowledge/be-ampp-148303-02.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-BEIdentifiableProduct.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1957, column 256: The link '??' for "Jurisdiction ValueSet (missing link)" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-artifact-jurisdiction.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 495, column 223: The link '??' for "Jurisdiction ValueSet (missing link)" cannot be resolved
 == fsh-generated/resources/CodeSystem-BoSS-cs.json ==
 INFORMATION: CodeSystem/BoSS-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-ConcPres-cs.json ==
