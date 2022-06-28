@@ -1,0 +1,52 @@
+@startuml
+hide footbox
+title IDMP for Substitution
+actor Pharmacist
+participant App
+participant "Local\nMPD" as MPD
+participant "Central\nMPD" as CMPD
+participant "Prescription server" as Presc
+
+
+
+group Update Local MPD
+  MPD -> MPD : Import national data \nin IDMP format ([[./spec5.html Specs]])
+end
+
+'group Sync MPDs
+'  MPD -> CMPD : Request updates for product data ([[http://google.com Specs]])
+'end
+
+group Get IDMP prescription
+  App -> Presc : Get Prescription ([[http://google.com Specs]])
+end
+
+
+App -> App : Obtain original\nproduct attributes (IDMP)
+
+group Find matching product
+  App -> MPD : Obtain exact matching local product(s)
+  App -> Pharmacist : Display local product(s)
+end
+
+group Find equivalents
+
+group Apply substitution rules
+  App -> MPD : S1: Get parent substance ([[./spec1.html Specs]])
+  App -> MPD : S2: Get parent dose form ([[./spec2.html Specs]])
+  App -> MPD : S3: Get sibling substances ([[./spec3.html Specs]])
+  App -> MPD : S4: Get sibling dose forms ([[./spec4.html Specs]])
+end
+
+group Query local server for matching equivalents
+  App -> MPD: Search for matches on sibling dose forms, substances ([[./spec6.html Specs]])
+end
+  App -> Pharmacist : Display local matching product(s)
+
+
+
+end
+
+
+
+@enduml
