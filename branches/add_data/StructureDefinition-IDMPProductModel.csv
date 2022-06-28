@@ -1,0 +1,63 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"IDMPProductModel","IDMPProductModel","","","",0,*,"","","","","IDMPIdentifiableProductModel","IDMP Identifiable Product Model","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"IDMPProductModel.id","IDMPProductModel.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"IDMPProductModel.extension","IDMPProductModel.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"IDMPProductModel.name","IDMPProductModel.name","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Product Name","Product Name","","","","","","","","","",,,,,"",,,,"IDMPProductModel.name",0,*,"",""
+"IDMPProductModel.name.nameType","IDMPProductModel.name.nameType","","","",1,1,"","","","Coding {[]} {[]}
+","Name type","Name type","","","","","","","","","",,,,,"",,,,"IDMPProductModel.name.nameType",1,1,"",""
+"IDMPProductModel.name.name","IDMPProductModel.name.name","","","",0,1,"","","","string {[]} {[]}
+","Name","Name","","","","","","","","","",,,,,"",,,,"IDMPProductModel.name.name",0,1,"",""
+"IDMPProductModel.classification","IDMPProductModel.classification","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Classification","Classification","","","","","","","","","",,,,,"",,,,"IDMPProductModel.classification",0,*,"",""
+"IDMPProductModel.identifier","IDMPProductModel.identifier","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Identifiers","Identifiers","","","","","","","","","",,,,,"",,,,"IDMPProductModel.identifier",0,*,"",""
+"IDMPProductModel.identifier.pcid","IDMPProductModel.identifier.pcid","","","",0,1,"","","","Identifier {[]} {[]}
+","IDMP PCID","IDMP PCID","","","","","","","","","",,,,,"",,,,"IDMPProductModel.identifier.pcid",0,1,"",""
+"IDMPProductModel.identifier.mpid","IDMPProductModel.identifier.mpid","","","",0,1,"","","","Identifier {[]} {[]}
+","IDMP MPID","IDMP MPID","","","","","","","","","",,,,,"",,,,"IDMPProductModel.identifier.mpid",0,1,"",""
+"IDMPProductModel.identifier.phpid4","IDMPProductModel.identifier.phpid4","","","",0,1,"","","","Identifier {[]} {[]}
+","IDMP PhPID Level 4","IDMP PhPID Level 4","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""0x073AF2E5B92AE19E8B67635AFFB3D6CA""/>","","",,,,,"",,,,"IDMPProductModel.identifier.phpid4",0,1,"",""
+"IDMPProductModel.identifier.id","IDMPProductModel.identifier.id","","","",0,*,"","","","Identifier {[]} {[]}
+","Any other identifier","Any other identifier","","","","","","","","","",,,,,"",,,,"IDMPProductModel.identifier.id",0,*,"",""
+"IDMPProductModel.marketingAuthorizationHolder","IDMPProductModel.marketingAuthorizationHolder","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Authorized Dose Form","Authorized Dose Form","","","","","","","","","",,,,,"",,,,"IDMPProductModel.marketingAuthorizationHolder",0,1,"",""
+"IDMPProductModel.doseForm","IDMPProductModel.doseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Authorized Dose Form","Authorized Dose Form","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""10210000 capsule, hard""/>","","",,,,,"",,,,"IDMPProductModel.doseForm",1,1,"",""
+"IDMPProductModel.unitOfPresentation","IDMPProductModel.unitOfPresentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Unit of presentation","Unit of presentation","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""15012000 capsule""/>","","",,,,,"",,,,"IDMPProductModel.unitOfPresentation",1,1,"",""
+"IDMPProductModel.routeOfAdministration","IDMPProductModel.routeOfAdministration","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Route of administration","Route of administration","","","","","","","","","",,,,,"",,,,"IDMPProductModel.routeOfAdministration",1,1,"",""
+"IDMPProductModel.ingredient","IDMPProductModel.ingredient","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Ingredient(s) that are part of the product, with therapeutical usage or not","Ingredient(s) that are part of the product, with therapeutical usage or not","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient",1,*,"",""
+"IDMPProductModel.ingredient.substance","IDMPProductModel.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Codification of the substance","Codification of the substance","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Amlodipine Besilate""/>","","",,,,,"",,,,"IDMPProductModel.ingredient.substance",1,1,"",""
+"IDMPProductModel.ingredient.strength","IDMPProductModel.ingredient.strength","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Authorized strength of the substance","Authorized strength of the substance","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.strength",1,1,"",""
+"IDMPProductModel.ingredient.strength.strengthValue","IDMPProductModel.ingredient.strength.strengthValue","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Strength of the substance in this product","Strength of the substance in this product","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue",1,1,"",""
+"IDMPProductModel.ingredient.strength.strengthValue.numerator","IDMPProductModel.ingredient.strength.strengthValue.numerator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
+","Strength numerator","Strength numerator","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""5 mg""/>","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue.numerator",1,1,"",""
+"IDMPProductModel.ingredient.strength.strengthValue.denominator","IDMPProductModel.ingredient.strength.strengthValue.denominator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
+","Strength denominator","Strength denominator","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.strength.strengthValue.denominator",1,1,"",""
+"IDMPProductModel.ingredient.referenceStrength","IDMPProductModel.ingredient.referenceStrength","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Authorized strength of the substance","Authorized strength of the substance","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.referenceStrength",1,1,"",""
+"IDMPProductModel.ingredient.referenceStrength.referenceStrengthSubstance","IDMPProductModel.ingredient.referenceStrength.referenceStrengthSubstance","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","The substance used to determine the strength","The substance used to determine the strength","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.referenceStrength.referenceStrengthSubstance",1,1,"",""
+"IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue","IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Strength of the substance in this product","Strength of the substance in this product","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue",1,1,"",""
+"IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.numerator","IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.numerator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
+","Strength numerator","Strength numerator","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""5 mg""/>","","",,,,,"",,,,"IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.numerator",1,1,"",""
+"IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.denominator","IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.denominator","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
+","Strength denominator","Strength denominator","","","","","","","","","",,,,,"",,,,"IDMPProductModel.ingredient.referenceStrength.referenceStrengthValue.denominator",1,1,"",""
+"IDMPProductModel.packaging","IDMPProductModel.packaging","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Packaging","Packaging","","","","","","","","","",,,,,"",,,,"IDMPProductModel.packaging",0,*,"",""
+"IDMPProductModel.packaging.packageSize","IDMPProductModel.packaging.packageSize","","","",0,1,"","","","Quantity {[]} {[]}
+","Package Size","Package Size","","","","","","","","","",,,,,"",,,,"IDMPProductModel.packaging.packageSize",0,1,"",""

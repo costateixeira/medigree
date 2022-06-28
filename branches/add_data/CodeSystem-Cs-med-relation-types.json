@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "Cs-med-relation-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">package-of<a name=\"Cs-med-relation-types-package-of\"> </a></td><td>Package of</td></tr><tr><td style=\"white-space:nowrap\">contains<a name=\"Cs-med-relation-types-contains\"> </a></td><td>Contains</td></tr><tr><td style=\"white-space:nowrap\">matches<a name=\"Cs-med-relation-types-matches\"> </a></td><td>Matches</td></tr></table></div>"
+  },
+  "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types",
+  "version": "1.0.0",
+  "name": "CSMedRelationTypes",
+  "title": "Marketing Authorization Holder",
+  "status": "active",
+  "date": "2022-06-28T12:41:32+00:00",
+  "publisher": "My Organization",
+  "contact": [
+    {
+      "name": "My Organization",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Marketing Authorization Holder.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "package-of",
+      "display": "Package of"
+    },
+    {
+      "code": "contains",
+      "display": "Contains"
+    },
+    {
+      "code": "matches",
+      "display": "Matches"
+    }
+  ]
+}

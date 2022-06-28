@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="sp-meta-tag"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "sp-meta-tag" </p></div><p><b>url</b>: <code>https://medigree.github.io/mpd/SearchParameter/sp-meta-tag</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: META-TAG-SEARCH-PARAMETER</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-05-05</p><p><b>publisher</b>: My Organization</p><p><b>contact</b>: My Organization: <a href="http://example.com/committees">http://example.com/committees</a>,<a href="mailto:my-group@example.com">my-group@example.com</a>, Bob Smith: <a href="mailto:bobsmith@example.com">bobsmith@example.com</a></p><p><b>description</b>: Search by meta tag_</p><p><b>jurisdiction</b>: World <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (m49.htm#001)</span></p><p><b>purpose</b>: Search by Meta tag</p><p><b>code</b>: meta</p><p><b>base</b>: Resource</p><p><b>type</b>: token</p><p><b>expression</b>: Resource.meta.tag</p><p><b>xpath</b>: f:Resource/f:meta/f:tag</p><p><b>xpathUsage</b>: normal</p></div>
+  </text>
+  <url value="https://medigree.github.io/mpd/SearchParameter/sp-meta-tag"/>
+  <version value="1.0.0"/>
+  <name value="META-TAG-SEARCH-PARAMETER"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-05-05"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Search by meta tag_"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Search by Meta tag"/>
+  <code value="meta"/>
+  <base value="Resource"/>
+  <type value="token"/>
+  <expression value="Resource.meta.tag"/>
+  <xpath value="f:Resource/f:meta/f:tag"/>
+  <xpathUsage value="normal"/>
+</SearchParameter>

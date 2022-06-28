@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BoSS-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">base<a name=\"BoSS-cs-base\"> </a></td><td>Base</td><td>The strength corresponds to the strength of the base substance</td></tr><tr><td style=\"white-space:nowrap\">base-modifier<a name=\"BoSS-cs-base-modifier\"> </a></td><td>Base and modifier</td><td>The strength corresponds to the strength of the modifier</td></tr><tr><td style=\"white-space:nowrap\">ref-substance<a name=\"BoSS-cs-ref-substance\"> </a></td><td>Reference Substance</td><td>The strength corresponds to the associated reference substance</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
+  fhir:CodeSystem.name [ fhir:value "BoSSCS"];
+  fhir:CodeSystem.title [ fhir:value "BoSS - Basis of Substance Strength options Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-06-28T12:41:32+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "My Organization"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "My Organization" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://example.com/committees" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "my-group@example.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Bob Smith" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "bobsmith@example.com" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "base" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Base" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The strength corresponds to the strength of the base substance" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "base-modifier" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Base and modifier" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The strength corresponds to the strength of the modifier" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "ref-substance" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Reference Substance" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The strength corresponds to the associated reference substance" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

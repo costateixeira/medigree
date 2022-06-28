@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Pattern-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">oral-solid<a name="Pattern-cs-oral-solid"> </a></td><td>Oral Solid</td><td>Oral Solid</td></tr><tr><td style="white-space:nowrap">injectable<a name="Pattern-cs-injectable"> </a></td><td>Injectable</td><td>Injectable</td></tr></table></div>
+  </text>
+  <url value="http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs"/>
+  <version value="1.0.0"/>
+  <name value="PatternCS"/>
+  <title value="Presentation pattern Code System"/>
+  <status value="active"/>
+  <date value="2022-06-28T12:41:32+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="oral-solid"/>
+    <display value="Oral Solid"/>
+    <definition value="Oral Solid"/>
+  </concept>
+  <concept>
+    <code value="injectable"/>
+    <display value="Injectable"/>
+    <definition value="Injectable"/>
+  </concept>
+</CodeSystem>

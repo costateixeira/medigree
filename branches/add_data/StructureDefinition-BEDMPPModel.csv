@@ -1,0 +1,31 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BEDMPPModel","BEDMPPModel","","","",0,*,"","","","","BE DMPP logical model","Belgium DMPP logical model","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"BEDMPPModel.id","BEDMPPModel.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"BEDMPPModel.extension","BEDMPPModel.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"BEDMPPModel.identifier","BEDMPPModel.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","CNK identifier for this medication","Business identifier for this medication","","","","","","","","","",,,,,"",,,,"BEDMPPModel.identifier",0,*,"",""
+"BEDMPPModel.ingredient","BEDMPPModel.ingredient","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Ingredient(s) that are part of the product, with therapeutical usage or not","Ingredient(s) that are part of the product, with therapeutical usage or not","","","","","","","","","",,,,,"",,,,"BEDMPPModel.ingredient",1,*,"",""
+"BEDMPPModel.ingredient.substance","BEDMPPModel.ingredient.substance","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Codification of the substance","Codification of the substance","","","","","","","","","",,,,,"",,,,"BEDMPPModel.ingredient.substance",1,1,"",""
+"BEDMPPModel.ingredient.role","BEDMPPModel.ingredient.role","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Role the substance has in this product (active principle, excipient, ...)","Role the substance has in this product (active principle, excipient, ...)","","","","","","","","","",,,,,"",,,,"BEDMPPModel.ingredient.role",1,1,"",""
+"BEDMPPModel.ingredient.strength","BEDMPPModel.ingredient.strength","","","",1,1,"","","","Quantity {[]} {[]}
+","Strength of the substance in this product","Strength of the substance in this product","","","","","","","","","",,,,,"",,,,"BEDMPPModel.ingredient.strength",1,1,"",""
+"BEDMPPModel.routeOfAdministration","BEDMPPModel.routeOfAdministration","","","",1,*,"","","","CodeableConcept {[]} {[]}
+","The approved route of administration","The approved route of administration","","","","","","","","","",,,,,"",,,,"BEDMPPModel.routeOfAdministration",1,*,"",""
+"BEDMPPModel.pharmaceuticalDoseForm","BEDMPPModel.pharmaceuticalDoseForm","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Dose form of the product - tablet, powder, solution...","Dose form of the product - tablet, powder, solution...","","","","","","","","","",,,,,"",,,,"BEDMPPModel.pharmaceuticalDoseForm",1,1,"",""
+"BEDMPPModel.packaging","BEDMPPModel.packaging","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Details about packaged medications","Details about packaged medications","","","","","","","","","",,,,,"",,,,"BEDMPPModel.packaging",1,1,"",""
+"BEDMPPModel.packaging.type","BEDMPPModel.packaging.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","A code that defines the specific type of packaging that the medication can be found in","A code that defines the specific type of packaging that the medication can be found in","","","","","","","","","",,,,,"",,,,"BEDMPPModel.packaging.type",0,1,"",""
+"BEDMPPModel.packaging.quantity","BEDMPPModel.packaging.quantity","","","",0,1,"","","","Quantity {[]} {[]}
+","The number of product units the package would contain if fully loaded","The number of product units the package would contain if fully loaded","","","","","","","","","",,,,,"",,,,"BEDMPPModel.packaging.quantity",0,1,"",""
