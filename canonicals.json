@@ -1,267 +1,267 @@
 [
   {
+    "id": "medigree",
+    "type": "ImplementationGuide",
+    "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd",
+    "version": "1.0.0",
+    "name": "MedigreeMPD"
+  },
+  {
     "id": "BoSS-cs",
     "type": "CodeSystem",
-    "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs",
+    "url": "http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs",
     "version": "1.0.0",
     "name": "BoSSCS"
   },
   {
     "id": "ConcPres-cs",
     "type": "CodeSystem",
-    "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs",
+    "url": "http://medigree.net/eu/fhir/mpd/CodeSystem/ConcPres-cs",
     "version": "1.0.0",
     "name": "ConcPresCS"
   },
   {
     "id": "Cs-med-relation-types",
     "type": "CodeSystem",
-    "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types",
+    "url": "http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types",
     "version": "1.0.0",
     "name": "CSMedRelationTypes"
   },
   {
     "id": "Pattern-cs",
     "type": "CodeSystem",
-    "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs",
+    "url": "http://medigree.net/eu/fhir/mpd/CodeSystem/Pattern-cs",
     "version": "1.0.0",
     "name": "PatternCS"
   },
   {
     "id": "dose-form-ontology-cs",
     "type": "CodeSystem",
-    "url": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
+    "url": "http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs",
     "version": "1.0.0",
     "name": "DoseFormOntologyCS"
   },
   {
-    "id": "medigree",
-    "type": "ImplementationGuide",
-    "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree",
-    "version": "1.0.0",
-    "name": "Medigree"
-  },
-  {
     "id": "AMPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPModel",
     "version": "1.0.0",
     "name": "AMPModel"
   },
   {
     "id": "AMPPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPPModel",
     "version": "1.0.0",
     "name": "AMPPModel"
   },
   {
     "id": "BEAMPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEAMPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPModel",
     "version": "1.0.0",
     "name": "BEAMPModel"
   },
   {
     "id": "BEAMPPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEAMPPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPPModel",
     "version": "1.0.0",
     "name": "BEAMPPModel"
   },
   {
     "id": "BEDMPPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEDMPPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEDMPPModel",
     "version": "1.0.0",
     "name": "BEDMPPModel"
   },
   {
     "id": "BEIdentifiableProduct",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct",
     "version": "1.0.0",
     "name": "BEIdentifiableProduct"
   },
   {
     "id": "BEVMPGroupModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEVMPGroupModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPGroupModel",
     "version": "1.0.0",
     "name": "BEVMPGroupModel"
   },
   {
     "id": "BEVMPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEVMPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPModel",
     "version": "1.0.0",
     "name": "BEVMPModel"
   },
   {
     "id": "BoSS",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS",
     "version": "1.0.0",
     "name": "BoSS"
   },
   {
     "id": "ConcentrationPresentation",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation",
     "version": "1.0.0",
     "name": "ConcentrationPresentation"
   },
   {
     "id": "DefinedMed",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/DefinedMed",
     "version": "1.0.0",
     "name": "DefinedMed"
   },
   {
     "id": "IDMPPhPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPhPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPhPModel",
     "version": "1.0.0",
     "name": "IDMPPhPModel"
   },
   {
     "id": "IDMPPharmaceuticalProduct",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPharmaceuticalProduct",
     "version": "1.0.0",
     "name": "IDMPPharmaceuticalProduct"
   },
   {
     "id": "IDMPProductModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPProductModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPProductModel",
     "version": "1.0.0",
     "name": "IDMPProductModel"
   },
   {
     "id": "IntMedicationRequest",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/IntMedicationRequest",
     "version": "1.0.0",
     "name": "IntMedicationRequest"
   },
   {
     "id": "PharmaceuticalProduct",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct",
     "version": "1.0.0",
     "name": "PharmaceuticalProduct"
   },
   {
     "id": "StrengthPattern",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern",
     "version": "1.0.0",
     "name": "StrengthPattern"
   },
   {
     "id": "UnitOfPresentation",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation",
     "version": "1.0.0",
     "name": "UnitOfPresentation"
   },
   {
     "id": "VMPGroupModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPGroupModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPGroupModel",
     "version": "1.0.0",
     "name": "VMPGroupModel"
   },
   {
     "id": "VMPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPModel",
     "version": "1.0.0",
     "name": "VMPModel"
   },
   {
     "id": "VMPPModel",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPPModel",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPPModel",
     "version": "1.0.0",
     "name": "VMPPModel"
   },
   {
     "id": "artifact-jurisdiction",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction",
     "version": "1.0.0",
     "name": "Jurisdiction"
   },
   {
     "id": "definedMedication",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication",
     "version": "1.0.0",
     "name": "DefinedMedication"
   },
   {
     "id": "drugCharacteristic",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic",
     "version": "1.0.0",
     "name": "DrugCharacteristic"
   },
   {
     "id": "medRelation",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation",
     "version": "1.0.0",
     "name": "MedRelation"
   },
   {
     "id": "medicationDefinition",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition",
     "version": "1.0.0",
     "name": "MedicationDefinition"
   },
   {
     "id": "relatedMedication",
     "type": "StructureDefinition",
-    "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication",
+    "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication",
     "version": "1.0.0",
     "name": "RelatedMedication"
   },
   {
     "id": "BoSS-vs",
     "type": "ValueSet",
-    "url": "http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs",
+    "url": "http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs",
     "version": "1.0.0",
     "name": "BoSSVS"
   },
   {
     "id": "ConcPres-vs",
     "type": "ValueSet",
-    "url": "http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs",
+    "url": "http://medigree.net/eu/fhir/mpd/ValueSet/ConcPres-vs",
     "version": "1.0.0",
     "name": "ConcPresVS"
   },
   {
     "id": "Pattern-vs",
     "type": "ValueSet",
-    "url": "http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs",
+    "url": "http://medigree.net/eu/fhir/mpd/ValueSet/Pattern-vs",
     "version": "1.0.0",
     "name": "PatternVS"
   },
   {
     "id": "dose-form-ontology-cs",
     "type": "ValueSet",
-    "url": "http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs",
+    "url": "http://medigree.net/eu/fhir/mpd/ValueSet/dose-form-ontology-cs",
     "version": "1.0.0",
     "name": "DoseFormOntologyCS"
   },
   {
     "id": "vs-med-relation-types",
     "type": "ValueSet",
-    "url": "http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types",
+    "url": "http://medigree.net/eu/fhir/mpd/ValueSet/vs-med-relation-types",
     "version": "1.0.0",
     "name": "VSMedRelationTypes"
   },
