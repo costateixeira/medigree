@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="BoSS-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-BoSS-cs.html"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-BoSS-cs.html"><code>http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs</code></a></li></ul></div>
   </text>
-  <url value="http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs"/>
+  <url value="http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs"/>
   <version value="1.0.0"/>
   <name value="BoSSVS"/>
   <title value="BoSS - Basis of Substance Strength options"/>
   <status value="active"/>
-  <date value="2022-06-28T09:17:31+00:00"/>
+  <date value="2022-06-28T12:38:26+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>
@@ -40,7 +40,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs"/>
+      <system value="http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs"/>
     </include>
   </compose>
 </ValueSet>

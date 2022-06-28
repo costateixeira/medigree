@@ -1,17 +1,17 @@
-﻿Medigree : Validation Results
+﻿MedigreeMPD : Validation Results
 =========================================
 
-err = 0, warn = 46, info = 15
+err = 3, warn = 46, info = 15
 IG Publisher Version: 1.1.122
-Generated Tue Jun 28 09:18:23 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
- Build Errors : 2 / 15 / 0
+Generated Tue Jun 28 12:39:09 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
+ Build Errors : 3 / 15 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-medigree : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-medigree : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-med-amlor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02 : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/MedicationRequest-MedPrescription : 0 / 0 / 1
@@ -70,6 +70,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/StructureDefinition-BEIdentifiableProduct.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 1957, column 256: The link '??' for "Jurisdiction ValueSet (missing link)" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-artifact-jurisdiction.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 495, column 223: The link '??' for "Jurisdiction ValueSet (missing link)" cannot be resolved
+ERROR: /github/workspace/output/substitution.html#/html/body/div/div/div/div/div/div/img at Line 175, column 3: The image source 'uc1-substitution.svg' cannot be resolved
 == fsh-generated/resources/CodeSystem-BoSS-cs.json ==
 INFORMATION: CodeSystem/BoSS-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-ConcPres-cs.json ==
@@ -83,6 +84,9 @@ INFORMATION: CodeSystem/dose-form-ontology-cs: CodeSystem: CodeSystems SHOULD ha
 == fsh-generated/resources/CodeSystem-prod-type-cs.json ==
 INFORMATION: CodeSystem/prod-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/ImplementationGuide-medigree.json ==
+ERROR: ImplementationGuide.where(url = 'http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-medigree.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree) does not match the URL (http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: medigree/http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-medigree: URL Mismatch http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree vs http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd
 == fsh-generated/resources/Medication-med-amlor.json ==
 WARNING: Medication/med-amlor: Medication.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02.json ==
@@ -113,11 +117,11 @@ INFORMATION: StructureDefinition/BEIdentifiableProduct: StructureDefinition.diff
 WARNING: StructureDefinition/BEVMPModel: StructureDefinition.snapshot.element[8]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/BEVMPModel: StructureDefinition.differential.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 == fsh-generated/resources/StructureDefinition-BoSS.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ConcentrationPresentation.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-IDMPPhPModel.json ==
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -132,30 +136,30 @@ WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.elem
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[14]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[15]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 == fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-IDMPProductModel.json ==
 == fsh-generated/resources/StructureDefinition-IntMedicationRequest.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IntMedicationRequest'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-StrengthPattern.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-UnitOfPresentation.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-VMPGroupModel.json ==
 == fsh-generated/resources/StructureDefinition-VMPModel.json ==
 == fsh-generated/resources/StructureDefinition-VMPPModel.json ==
 == fsh-generated/resources/StructureDefinition-artifact-jurisdiction.json ==
 == fsh-generated/resources/StructureDefinition-definedMedication.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-drugCharacteristic.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-medRelation.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-medicationDefinition.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-relatedMedication.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-BoSS-vs.json ==
 == fsh-generated/resources/ValueSet-ConcPres-vs.json ==
 == fsh-generated/resources/ValueSet-Pattern-vs.json ==

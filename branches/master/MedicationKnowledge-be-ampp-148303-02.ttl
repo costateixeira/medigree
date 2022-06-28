@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "be-ampp-148303-02"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct";
+       fhir:value "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct";
        fhir:index 0;
-       fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct>
+       fhir:link <http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct>
      ]
   ];
   fhir:DomainResource.text [
@@ -21,7 +21,7 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction" ];
+     fhir:Extension.url [ fhir:value "http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
