@@ -3,12 +3,12 @@
   "id": "medigree",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedigreeMPD</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd</pre><div><p>MPD on FHIR</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree</pre><div><p>Example IG</p>\n</div></div>"
   },
-  "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd",
+  "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree",
   "version": "1.0.0",
-  "name": "MedigreeMPD",
-  "title": "FHIR Implementation Guide: Medigree MPD",
+  "name": "Medigree",
+  "title": "FHIR Implementation Guide: Medigree",
   "status": "active",
   "date": "2022-05-26",
   "publisher": "My Organization",
@@ -37,7 +37,7 @@
       ]
     }
   ],
-  "description": "MPD on FHIR",
+  "description": "Example IG",
   "jurisdiction": [
     {
       "coding": [
@@ -910,7 +910,7 @@
           "reference": "MedicationKnowledge/be-ampp-148303-02"
         },
         "name": "be-ampp-148303-02",
-        "exampleCanonical": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct"
+        "exampleCanonical": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"
       },
       {
         "extension": [
@@ -976,16 +976,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
-          "generation": "markdown"
+          "generation": "html"
         },
         {
           "nameUrl": "architecture.html",
           "title": "Architecture",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "substitution.html",
-          "title": "Susbtitution",
           "generation": "markdown"
         },
         {

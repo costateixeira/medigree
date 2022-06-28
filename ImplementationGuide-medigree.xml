@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="medigree"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MedigreeMPD</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd</pre><div><p>MPD on FHIR</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree</pre><div><p>Example IG</p>
 </div></div>
   </text>
-  <url value="http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd"/>
+  <url value="http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree"/>
   <version value="1.0.0"/>
-  <name value="MedigreeMPD"/>
-  <title value="FHIR Implementation Guide: Medigree MPD"/>
+  <name value="Medigree"/>
+  <title value="FHIR Implementation Guide: Medigree"/>
   <status value="active"/>
   <date value="2022-05-26"/>
   <publisher value="My Organization"/>
@@ -32,7 +32,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="MPD on FHIR"/>
+  <description value="Example IG"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -660,7 +660,7 @@
         <reference value="MedicationKnowledge/be-ampp-148303-02"/>
       </reference>
       <name value="be-ampp-148303-02"/>
-      <exampleCanonical value="http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -712,16 +712,11 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Home"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="architecture.html"/>
         <title value="Architecture"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="substitution.html"/>
-        <title value="Susbtitution"/>
         <generation value="markdown"/>
       </page>
       <page>

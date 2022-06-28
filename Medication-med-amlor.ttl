@@ -21,7 +21,7 @@
   fhir:Medication.form [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs" ];
+       fhir:Coding.system [ fhir:value "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs" ];
        fhir:Coding.code [ fhir:value "10220000" ]
      ]
   ] .

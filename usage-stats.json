@@ -5,7 +5,7 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS",
       "title": "BoSS",
       "types": [
         "code",
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation",
       "title": "ConcentrationPresentation",
       "types": [
         "code",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern",
       "title": "StrengthPattern",
       "types": [
         "code",
@@ -29,21 +29,21 @@
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation",
       "title": "UnitOfPresentation",
       "types": [
         "code"
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction",
       "title": "jurisdiction",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication",
       "title": "DefinedMedication",
       "types": [
         "CodeableConcept",
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic",
       "title": "Drug Characteristic",
       "types": [
         "CodeableConcept",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation",
       "title": "MedRelation",
       "types": [
         "Coding",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition",
       "title": "Medication Definition extension",
       "types": [
         "Reference",
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication",
       "title": "Related Medication",
       "types": [
         "base64Binary",
@@ -196,19 +196,19 @@
   "profiles": {
     "MedicationKnowledge": [
       {
-        "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct",
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
         "title": "Pharmaceutical Product Profile"
       }
     ],
     "Medication": [
       {
-        "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/DefinedMed",
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed",
         "title": "DefinedMed"
       }
     ],
     "MedicationRequest": [
       {
-        "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/IntMedicationRequest",
+        "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest",
         "title": "IntMedicationRequest"
       }
     ]
@@ -254,34 +254,34 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS": [
       "MedicationKnowledge.ingredient.strength"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation": [
       "MedicationKnowledge.ingredient.strength"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern": [
       "MedicationKnowledge.ingredient.strength"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation": [
       "MedicationKnowledge.ingredient.strength"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction": [
       "MedicationKnowledge"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication": [
       "Extension"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic": [
       "Medication"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation": [
       "Extension"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition": [
       "Medication"
     ],
-    "http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication": [
+    "http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication": [
       "MedicationRequest"
     ]
   }

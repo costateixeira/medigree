@@ -3,7 +3,7 @@
   "id": "be-ampp-148303-02",
   "meta": {
     "profile": [
-      "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct"
+      "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"
     ]
   },
   "text": {
@@ -12,7 +12,7 @@
   },
   "extension": [
     {
-      "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction",
+      "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction",
       "valueCodeableConcept": {
         "coding": [
           {

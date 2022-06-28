@@ -23,11 +23,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Medication.extension:drugCharacteristic","Medication.extension","drugCharacteristic","","",0,*,"","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic]]} {[]}
+"Medication.extension:drugCharacteristic","Medication.extension","drugCharacteristic","","",0,*,"","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic]]} {[]}
 ","Drug Characteristic","Drug Characteristic","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Medication.extension:medicationDefinition","Medication.extension","medicationDefinition","","",0,*,"","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition]]} {[]}
+"Medication.extension:medicationDefinition","Medication.extension","medicationDefinition","","",0,*,"","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition]]} {[]}
 ","Medication Definition extension","Medication Definition extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
