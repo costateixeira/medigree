@@ -23,6 +23,12 @@
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <!-- Placeholder for child template CSS declarations -->
+<!-- My Organization -->
+<!-- active -->
+
+<!-- no fitting stylesheet found (status/publisher)-->
+
+<!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -51,8 +57,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.1"}
-    h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -70,7 +76,7 @@
         </div> -->
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide: Medigree</span><br/>1.0.0 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide: Medigree MPD</span><br/>1.0.0 - STU1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -144,7 +150,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide: Medigree - Local Development build (v1.0.0). See the <a href="http://medigree.net/eu/fhir/medigree/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide: Medigree MPD - Local Development build (v1.0.0). See the <a href="http://medigree.net/eu/fhir/medigree/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -213,13 +219,13 @@
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">SearchParameter</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;sp-meta-tag&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: SearchParameter&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource SearchParameter &quot;sp-meta-tag&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;https://medigree.github.io/mpd/SearchParameter/sp-meta-tag&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: META-TAG-SEARCH-PARAMETER&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;experimental&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-05-05&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: My Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: My Organization: &lt;a href=&quot;http://example.com/committees&quot;&gt;http://example.com/committees&lt;/a&gt;,&lt;a href=&quot;mailto:my-group@example.com&quot;&gt;my-group@example.com&lt;/a&gt;, Bob Smith: &lt;a href=&quot;mailto:bobsmith@example.com&quot;&gt;bobsmith@example.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Search by meta tag_&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: World &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (m49.htm#001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;purpose&lt;/b&gt;: Search by Meta tag&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: meta&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: Resource&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: token&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: Resource.meta.tag&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpath&lt;/b&gt;: f:Resource/f:meta/f:tag&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpathUsage&lt;/b&gt;: normal&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: SearchParameter&lt;/b&gt;&lt;a name=&quot;sp-meta-tag&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource SearchParameter &quot;sp-meta-tag&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;https://medigree.github.io/mpd/SearchParameter/sp-meta-tag&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: META-TAG-SEARCH-PARAMETER&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;experimental&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-05-05&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: My Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: My Organization: &lt;a href=&quot;http://example.com/committees&quot;&gt;http://example.com/committees&lt;/a&gt;,&lt;a href=&quot;mailto:my-group@example.com&quot;&gt;my-group@example.com&lt;/a&gt;, Bob Smith: &lt;a href=&quot;mailto:bobsmith@example.com&quot;&gt;bobsmith@example.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Search by meta tag_&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: World &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (m49.htm#001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;purpose&lt;/b&gt;: Search by Meta tag&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: meta&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: Resource&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: token&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: Resource.meta.tag&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpathUsage&lt;/b&gt;: normal&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://medigree.github.io/mpd/SearchParameter/sp-meta-tag&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
@@ -260,7 +266,6 @@
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Resource&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;token&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resource.meta.tag&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;f:Resource/f:meta/f:tag&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.xpathUsage">xpathUsage</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;normal&quot;/&gt;
 &lt;/SearchParameter&gt;</code></pre>
 
@@ -292,13 +297,15 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 13, 2022 20:35+0000">2022-08-13</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 30, 2022 13:06+0000">2022-09-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
+            <!-- My Organization -->
+<!-- active -->
+
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

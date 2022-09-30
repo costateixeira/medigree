@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct"];
+  fhir:StructureDefinition.url [ fhir:value "http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct"];
   fhir:StructureDefinition.version [ fhir:value "1.0.0"];
   fhir:StructureDefinition.name [ fhir:value "PharmaceuticalProduct"];
   fhir:StructureDefinition.title [ fhir:value "Pharmaceutical Product Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-13T20:35:38+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-30T13:06:24+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "My Organization"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -199,7 +199,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
-           fhir:Extension.valueUrl [ fhir:value "string" ]
+           fhir:Extension.valueUrl [ fhir:value "id" ]
          ];
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ];

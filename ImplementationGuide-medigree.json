@@ -3,12 +3,12 @@
   "id": "medigree",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree</pre><div><p>Example IG</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MedigreeMPD</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd</pre><div><p>MPD on FHIR</p>\n</div></div>"
   },
-  "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree",
+  "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd",
   "version": "1.0.0",
-  "name": "Medigree",
-  "title": "FHIR Implementation Guide: Medigree",
+  "name": "MedigreeMPD",
+  "title": "FHIR Implementation Guide: Medigree MPD",
   "status": "active",
   "date": "2022-05-26",
   "publisher": "My Organization",
@@ -37,7 +37,7 @@
       ]
     }
   ],
-  "description": "Example IG",
+  "description": "MPD on FHIR",
   "jurisdiction": [
     {
       "coding": [
@@ -56,10 +56,16 @@
   ],
   "dependsOn": [
     {
+      "id": "higtools",
+      "uri": "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
+      "packageId": "hl7.fhir.uv.tools",
+      "version": "current"
+    },
+    {
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "3.1.0"
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -910,7 +916,7 @@
           "reference": "MedicationKnowledge/be-ampp-148303-02"
         },
         "name": "be-ampp-148303-02",
-        "exampleCanonical": "http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"
+        "exampleCanonical": "http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct"
       },
       {
         "extension": [
@@ -969,31 +975,78 @@
       }
     ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
-          "generation": "html"
+          "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "architecture.html"
+            }
+          ],
           "nameUrl": "architecture.html",
           "title": "Architecture",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "substitution.html"
+            }
+          ],
+          "nameUrl": "substitution.html",
+          "title": "Susbtitution",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "countries.html"
+            }
+          ],
           "nameUrl": "countries.html",
           "title": "Member States",
           "generation": "markdown",
           "page": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl": "global.html"
+                }
+              ],
               "nameUrl": "global.html",
               "title": "Global",
               "generation": "markdown"
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl": "belgium.html"
+                }
+              ],
               "nameUrl": "belgium.html",
               "title": "Belgium",
               "generation": "markdown"

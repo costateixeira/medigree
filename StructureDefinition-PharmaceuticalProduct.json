@@ -15,12 +15,12 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
+  "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct",
   "version": "1.0.0",
   "name": "PharmaceuticalProduct",
   "title": "Pharmaceutical Product Profile",
   "status": "active",
-  "date": "2022-08-13T20:35:38+00:00",
+  "date": "2022-09-30T13:06:24+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -184,7 +184,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"

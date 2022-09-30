@@ -3,14 +3,14 @@
   "id": "ConcPres-vs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ConcPres-cs.html\"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ConcPres-cs.html\"><code>http://medigree.net/eu/fhir/mpd/CodeSystem/ConcPres-cs</code></a></li></ul></div>"
   },
-  "url": "http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs",
+  "url": "http://medigree.net/eu/fhir/mpd/ValueSet/ConcPres-vs",
   "version": "1.0.0",
   "name": "ConcPresVS",
   "title": "Concentration or Presentation Value Set",
   "status": "active",
-  "date": "2022-08-13T20:35:38+00:00",
+  "date": "2022-09-30T13:06:24+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -51,7 +51,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs"
+        "system": "http://medigree.net/eu/fhir/mpd/CodeSystem/ConcPres-cs"
       }
     ]
   }

@@ -1,56 +1,56 @@
-﻿Medigree : Validation Results
+﻿MedigreeMPD : Validation Results
 =========================================
 
-err = 0, warn = 46, info = 15
-IG Publisher Version: 1.1.128
-Generated Sat Aug 13 20:36:35 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
- Build Errors : 0 / 15 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-medigree : 0 / 0 / 1
+err = 90, warn = 72, info = 15
+IG Publisher Version: 1.2.4
+Generated Fri Sep 30 13:07:07 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
+ Build Errors : 1 / 15 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-medigree : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-med-amlor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02 : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/MedicationRequest-MedPrescription : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-AMPModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-AMPPModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPPModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BEDMPPModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BEIdentifiableProduct : 0 / 0 / 5
- /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPGroupModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPModel : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BoSS : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ConcentrationPresentation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPhPModel : 0 / 12 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-IDMPProductModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-IntMedicationRequest : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-StrengthPattern : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-UnitOfPresentation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-VMPGroupModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-VMPModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-VMPPModel : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-artifact-jurisdiction : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-definedMedication : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-medRelation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-medicationDefinition : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-BoSS-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-ConcPres-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-Pattern-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AMPModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AMPPModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPPModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BEDMPPModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BEIdentifiableProduct : 2 / 0 / 5
+ /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPGroupModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPModel : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BoSS : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConcentrationPresentation : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPhPModel : 2 / 12 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IDMPProductModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IntMedicationRequest : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-StrengthPattern : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-UnitOfPresentation : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VMPGroupModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VMPModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VMPPModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-artifact-jurisdiction : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-definedMedication : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-medRelation : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-medicationDefinition : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BoSS-vs : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ConcPres-vs : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-Pattern-vs : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs : 2 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types : 2 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -68,19 +68,51 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/MedPrescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationKnowledge/be-ampp-148303-02.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/med-amlor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/substitution.html#/html/body/div/div/div/div/div/div/img at Line 181, column 3: The image source 'uc1-substitution.svg' cannot be resolved
 == fsh-generated/resources/CodeSystem-BoSS-cs.json ==
+ERROR: CodeSystem.where(url = 'http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs) does not match the URL (http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs)
 INFORMATION: CodeSystem/BoSS-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/BoSS-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/BoSS-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/BoSS-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs: URL Mismatch http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs vs http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs
 == fsh-generated/resources/CodeSystem-ConcPres-cs.json ==
+ERROR: CodeSystem.where(url = 'http://medigree.net/eu/fhir/mpd/CodeSystem/ConcPres-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs) does not match the URL (http://medigree.net/eu/fhir/mpd/CodeSystem/ConcPres-cs)
 INFORMATION: CodeSystem/ConcPres-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ConcPres-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ConcPres-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ConcPres-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs: URL Mismatch http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs vs http://medigree.net/eu/fhir/mpd/CodeSystem/ConcPres-cs
 == fsh-generated/resources/CodeSystem-Cs-med-relation-types.json ==
+ERROR: CodeSystem.where(url = 'http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types.json - the canonical URL (http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types) does not match the URL (http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types)
 INFORMATION: CodeSystem/Cs-med-relation-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/Cs-med-relation-types: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/Cs-med-relation-types: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types: URL Mismatch http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types vs http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types
 == fsh-generated/resources/CodeSystem-Pattern-cs.json ==
+ERROR: CodeSystem.where(url = 'http://medigree.net/eu/fhir/mpd/CodeSystem/Pattern-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs) does not match the URL (http://medigree.net/eu/fhir/mpd/CodeSystem/Pattern-cs)
 INFORMATION: CodeSystem/Pattern-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/Pattern-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/Pattern-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/Pattern-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs: URL Mismatch http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs vs http://medigree.net/eu/fhir/mpd/CodeSystem/Pattern-cs
 == fsh-generated/resources/CodeSystem-dose-form-ontology-cs.json ==
+ERROR: CodeSystem.where(url = 'http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs) does not match the URL (http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs)
 INFORMATION: CodeSystem/dose-form-ontology-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/dose-form-ontology-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/dose-form-ontology-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/dose-form-ontology-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs: URL Mismatch http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs vs http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs
 == fsh-generated/resources/CodeSystem-prod-type-cs.json ==
+ERROR: CodeSystem.where(url = 'https://medigree.github.io/mpd/CodeSystem/prod-type-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/CodeSystem/prod-type-cs) does not match the URL (https://medigree.github.io/mpd/CodeSystem/prod-type-cs)
 INFORMATION: CodeSystem/prod-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/prod-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/prod-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs: URL Mismatch http://medigree.net/eu/fhir/medigree/CodeSystem/prod-type-cs vs https://medigree.github.io/mpd/CodeSystem/prod-type-cs
 == fsh-generated/resources/ImplementationGuide-medigree.json ==
+ERROR: ImplementationGuide.where(url = 'http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-medigree.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree) does not match the URL (http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: medigree/http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-medigree: URL Mismatch http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree vs http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd
 == fsh-generated/resources/Medication-med-amlor.json ==
 WARNING: Medication/med-amlor: Medication.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02.json ==
@@ -91,32 +123,64 @@ INFORMATION: MedicationKnowledge/be-ampp-148303-02: MedicationKnowledge.medicine
 INFORMATION: MedicationKnowledge/be-ampp-148303-02: MedicationKnowledge.medicineClassification[0].classification[0].coding[0]: Code System URI 'http://www.who.no/atc' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-MedPrescription.json ==
 == fsh-generated/resources/SearchParameter-sp-meta-tag.json ==
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-meta-tag'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-meta-tag) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-meta-tag)
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-meta-tag'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-meta-tag) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-meta-tag)
 WARNING: SearchParameter/sp-meta-tag: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag: URL Mismatch http://medigree.net/eu/fhir/medigree/SearchParameter/sp-meta-tag vs https://medigree.github.io/mpd/SearchParameter/sp-meta-tag
 == fsh-generated/resources/SearchParameter-sp-phpid.json ==
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-phpid'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-phpid) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-phpid)
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-phpid'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-phpid) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-phpid)
 WARNING: SearchParameter/sp-phpid: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid: URL Mismatch http://medigree.net/eu/fhir/medigree/SearchParameter/sp-phpid vs https://medigree.github.io/mpd/SearchParameter/sp-phpid
 == fsh-generated/resources/SearchParameter-sp-prod-type.json ==
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-prod-type'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-prod-type) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-prod-type)
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-prod-type'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-prod-type) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-prod-type)
 WARNING: SearchParameter/sp-prod-type: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type: URL Mismatch http://medigree.net/eu/fhir/medigree/SearchParameter/sp-prod-type vs https://medigree.github.io/mpd/SearchParameter/sp-prod-type
 == fsh-generated/resources/StructureDefinition-AMPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-AMPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-AMPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPModel
 == fsh-generated/resources/StructureDefinition-AMPPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-AMPPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPPModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-AMPPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/AMPPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/AMPPModel
 == fsh-generated/resources/StructureDefinition-BEAMPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/BEAMPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/BEAMPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPModel
 == fsh-generated/resources/StructureDefinition-BEAMPPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/BEAMPPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPPModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/BEAMPPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/BEAMPPModel
 == fsh-generated/resources/StructureDefinition-BEDMPPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BEDMPPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-BEDMPPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/BEDMPPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/BEDMPPModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-BEDMPPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/BEDMPPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/BEDMPPModel
 == fsh-generated/resources/StructureDefinition-BEIdentifiableProduct.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-BEIdentifiableProduct.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct)
 INFORMATION: StructureDefinition/BEIdentifiableProduct: StructureDefinition.snapshot.element[197].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.medigree.net/classifications' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/BEIdentifiableProduct: StructureDefinition.snapshot.element[226].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.medigree.net/drugcharacteristics' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/BEIdentifiableProduct: StructureDefinition.differential.element[36].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.medigree.net/classifications' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/BEIdentifiableProduct: StructureDefinition.differential.element[44].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.medigree.net/drugcharacteristics' is unknown so the code cannot be validated
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-BEIdentifiableProduct: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct vs http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct
 == fsh-generated/resources/StructureDefinition-BEVMPGroupModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPGroupModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPGroupModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/BEVMPGroupModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPGroupModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPGroupModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/BEVMPGroupModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPGroupModel
 == fsh-generated/resources/StructureDefinition-BEVMPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/BEVMPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPModel)
 WARNING: StructureDefinition/BEVMPModel: StructureDefinition.snapshot.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/BEVMPModel: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-BEVMPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/BEVMPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/BEVMPModel
 == fsh-generated/resources/StructureDefinition-BoSS.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-BoSS.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-BoSS: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS vs http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS
 == fsh-generated/resources/StructureDefinition-ConcentrationPresentation.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ConcentrationPresentation.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-ConcentrationPresentation: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation vs http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/DefinedMed'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/DefinedMed)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-DefinedMed: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed vs http://medigree.net/eu/fhir/mpd/StructureDefinition/DefinedMed
 == fsh-generated/resources/StructureDefinition-IDMPPhPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPhPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPhPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPhPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPhPModel)
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -129,34 +193,87 @@ WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.elem
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[14]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[15]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPhPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPhPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPhPModel
 == fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPharmaceuticalProduct'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPharmaceuticalProduct)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct vs http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPharmaceuticalProduct
 == fsh-generated/resources/StructureDefinition-IDMPProductModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPProductModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IDMPProductModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPProductModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPProductModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IDMPProductModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPProductModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPProductModel
 == fsh-generated/resources/StructureDefinition-IntMedicationRequest.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IntMedicationRequest'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IntMedicationRequest.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/IntMedicationRequest)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/IntMedicationRequest'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IntMedicationRequest: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/IntMedicationRequest vs http://medigree.net/eu/fhir/mpd/StructureDefinition/IntMedicationRequest
 == fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct vs http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct
 == fsh-generated/resources/StructureDefinition-StrengthPattern.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-StrengthPattern.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-StrengthPattern: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern vs http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern
 == fsh-generated/resources/StructureDefinition-UnitOfPresentation.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-UnitOfPresentation.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-UnitOfPresentation: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation vs http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation
 == fsh-generated/resources/StructureDefinition-VMPGroupModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPGroupModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-VMPGroupModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPGroupModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPGroupModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-VMPGroupModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPGroupModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPGroupModel
 == fsh-generated/resources/StructureDefinition-VMPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-VMPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-VMPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPModel
 == fsh-generated/resources/StructureDefinition-VMPPModel.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPPModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-VMPPModel.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPPModel) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPPModel)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-VMPPModel: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/VMPPModel vs http://medigree.net/eu/fhir/mpd/StructureDefinition/VMPPModel
 == fsh-generated/resources/StructureDefinition-artifact-jurisdiction.json ==
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-artifact-jurisdiction.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-artifact-jurisdiction: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction vs http://medigree.net/eu/fhir/mpd/StructureDefinition/artifact-jurisdiction
 == fsh-generated/resources/StructureDefinition-definedMedication.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-definedMedication.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-definedMedication: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication vs http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication
 == fsh-generated/resources/StructureDefinition-drugCharacteristic.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-drugCharacteristic: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/drugCharacteristic vs http://medigree.net/eu/fhir/mpd/StructureDefinition/drugCharacteristic
 == fsh-generated/resources/StructureDefinition-medRelation.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-medRelation.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-medRelation: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation vs http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation
 == fsh-generated/resources/StructureDefinition-medicationDefinition.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-medicationDefinition.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-medicationDefinition: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/medicationDefinition vs http://medigree.net/eu/fhir/mpd/StructureDefinition/medicationDefinition
 == fsh-generated/resources/StructureDefinition-relatedMedication.json ==
-WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication.json - the canonical URL (http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication) does not match the URL (http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication)
+WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication: URL Mismatch http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication vs http://medigree.net/eu/fhir/mpd/StructureDefinition/relatedMedication
 == fsh-generated/resources/ValueSet-BoSS-vs.json ==
+ERROR: ValueSet.where(url = 'http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-BoSS-vs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs) does not match the URL (http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs)
+WARNING: ValueSet/BoSS-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/BoSS-vs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-BoSS-vs: URL Mismatch http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs vs http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs
 == fsh-generated/resources/ValueSet-ConcPres-vs.json ==
+ERROR: ValueSet.where(url = 'http://medigree.net/eu/fhir/mpd/ValueSet/ConcPres-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ConcPres-vs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs) does not match the URL (http://medigree.net/eu/fhir/mpd/ValueSet/ConcPres-vs)
+WARNING: ValueSet/ConcPres-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/ConcPres-vs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-ConcPres-vs: URL Mismatch http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs vs http://medigree.net/eu/fhir/mpd/ValueSet/ConcPres-vs
 == fsh-generated/resources/ValueSet-Pattern-vs.json ==
+ERROR: ValueSet.where(url = 'http://medigree.net/eu/fhir/mpd/ValueSet/Pattern-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-Pattern-vs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs) does not match the URL (http://medigree.net/eu/fhir/mpd/ValueSet/Pattern-vs)
+WARNING: ValueSet/Pattern-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/Pattern-vs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-Pattern-vs: URL Mismatch http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs vs http://medigree.net/eu/fhir/mpd/ValueSet/Pattern-vs
 == fsh-generated/resources/ValueSet-dose-form-ontology-cs.json ==
+ERROR: ValueSet.where(url = 'http://medigree.net/eu/fhir/mpd/ValueSet/dose-form-ontology-cs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs) does not match the URL (http://medigree.net/eu/fhir/mpd/ValueSet/dose-form-ontology-cs)
+WARNING: ValueSet/dose-form-ontology-cs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/dose-form-ontology-cs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs: URL Mismatch http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs vs http://medigree.net/eu/fhir/mpd/ValueSet/dose-form-ontology-cs
 == fsh-generated/resources/ValueSet-prod-type-vs.json ==
+ERROR: ValueSet.where(url = 'https://medigree.github.io/mpd/ValueSet/prod-type-cs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ValueSet/prod-type-vs) does not match the URL (https://medigree.github.io/mpd/ValueSet/prod-type-cs)
+WARNING: ValueSet/prod-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs: URL Mismatch http://medigree.net/eu/fhir/medigree/ValueSet/prod-type-vs vs https://medigree.github.io/mpd/ValueSet/prod-type-cs
 == fsh-generated/resources/ValueSet-vs-med-relation-types.json ==
+ERROR: ValueSet.where(url = 'http://medigree.net/eu/fhir/mpd/ValueSet/vs-med-relation-types'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types) does not match the URL (http://medigree.net/eu/fhir/mpd/ValueSet/vs-med-relation-types)
+WARNING: ValueSet/vs-med-relation-types: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types: URL Mismatch http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types vs http://medigree.net/eu/fhir/mpd/ValueSet/vs-med-relation-types

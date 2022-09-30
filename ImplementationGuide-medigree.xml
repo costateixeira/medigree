@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="medigree"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Medigree</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree</pre><div><p>Example IG</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MedigreeMPD</h2><p>The official URL for this implementation guide is: </p><pre>http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd</pre><div><p>MPD on FHIR</p>
 </div></div>
   </text>
-  <url value="http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree"/>
+  <url value="http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd"/>
   <version value="1.0.0"/>
-  <name value="Medigree"/>
-  <title value="FHIR Implementation Guide: Medigree"/>
+  <name value="MedigreeMPD"/>
+  <title value="FHIR Implementation Guide: Medigree MPD"/>
   <status value="active"/>
   <date value="2022-05-26"/>
   <publisher value="My Organization"/>
@@ -32,7 +32,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Example IG"/>
+  <description value="MPD on FHIR"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -43,10 +43,15 @@
   <packageId value="medigree"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="higtools">
+    <uri value="http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools"/>
+    <packageId value="hl7.fhir.uv.tools"/>
+    <version value="current"/>
+  </dependsOn>
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="3.1.0"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -660,7 +665,7 @@
         <reference value="MedicationKnowledge/be-ampp-148303-02"/>
       </reference>
       <name value="be-ampp-148303-02"/>
-      <exampleCanonical value="http://medigree.net/eu/fhir/medigree/StructureDefinition/BEIdentifiableProduct"/>
+      <exampleCanonical value="http://medigree.net/eu/fhir/mpd/StructureDefinition/BEIdentifiableProduct"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -706,29 +711,55 @@
       <exampleBoolean value="false"/>
     </resource>
     <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="architecture.html"/>
+        </extension>
         <nameUrl value="architecture.html"/>
         <title value="Architecture"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="substitution.html"/>
+        </extension>
+        <nameUrl value="substitution.html"/>
+        <title value="Susbtitution"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="countries.html"/>
+        </extension>
         <nameUrl value="countries.html"/>
         <title value="Member States"/>
         <generation value="markdown"/>
         <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="global.html"/>
+          </extension>
           <nameUrl value="global.html"/>
           <title value="Global"/>
           <generation value="markdown"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="belgium.html"/>
+          </extension>
           <nameUrl value="belgium.html"/>
           <title value="Belgium"/>
           <generation value="markdown"/>
