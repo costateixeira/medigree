@@ -3,14 +3,14 @@
   "id": "Pattern-cs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medigree.net/eu/fhir/mpd/CodeSystem/Pattern-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">oral-solid<a name=\"Pattern-cs-oral-solid\"> </a></td><td>Oral Solid</td><td>Oral Solid</td></tr><tr><td style=\"white-space:nowrap\">injectable<a name=\"Pattern-cs-injectable\"> </a></td><td>Injectable</td><td>Injectable</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://medigree.net/eu/fhir/mpd/CodeSystem/Pattern-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">oral-solid<a name=\"Pattern-cs-oral-solid\"> </a></td><td>Oral Solid</td><td>Oral Solid</td></tr><tr><td style=\"white-space:nowrap\">injectable<a name=\"Pattern-cs-injectable\"> </a></td><td>Injectable</td><td>Injectable</td></tr></table></div>"
   },
   "url": "http://medigree.net/eu/fhir/mpd/CodeSystem/Pattern-cs",
   "version": "1.0.0",
   "name": "PatternCS",
   "title": "Presentation pattern Code System",
   "status": "active",
-  "date": "2022-06-28T12:38:26+00:00",
+  "date": "2022-09-30T13:06:24+00:00",
   "publisher": "My Organization",
   "contact": [
     {

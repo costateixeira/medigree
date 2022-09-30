@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="prod-type-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://medigree.github.io/mpd/CodeSystem/prod-type-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">IDMP_PhP<a name="prod-type-cs-IDMP_PhP"> </a></td><td>IDMP Pharmaceutical Product</td></tr><tr><td style="white-space:nowrap">IDMP_MP<a name="prod-type-cs-IDMP_MP"> </a></td><td>IDMP Medicinal Product</td></tr><tr><td style="white-space:nowrap">IDMP_PP<a name="prod-type-cs-IDMP_PP"> </a></td><td>IDMP Packaged Medicinal Product</td></tr><tr><td style="white-space:nowrap">BE_MP<a name="prod-type-cs-BE_MP"> </a></td><td>Belgian Medicinal Product</td></tr><tr><td style="white-space:nowrap">BE_VMP<a name="prod-type-cs-BE_VMP"> </a></td><td>Belgian Virtual Medicinal Product</td></tr><tr><td style="white-space:nowrap">ePI<a name="prod-type-cs-ePI"> </a></td><td>ePI</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">IDMP_PhP<a name="prod-type-cs-IDMP_PhP"> </a></td><td>IDMP Pharmaceutical Product</td></tr><tr><td style="white-space:nowrap">IDMP_MP<a name="prod-type-cs-IDMP_MP"> </a></td><td>IDMP Medicinal Product</td></tr><tr><td style="white-space:nowrap">IDMP_PP<a name="prod-type-cs-IDMP_PP"> </a></td><td>IDMP Packaged Medicinal Product</td></tr><tr><td style="white-space:nowrap">BE_MP<a name="prod-type-cs-BE_MP"> </a></td><td>Belgian Medicinal Product</td></tr><tr><td style="white-space:nowrap">BE_VMP<a name="prod-type-cs-BE_VMP"> </a></td><td>Belgian Virtual Medicinal Product</td></tr><tr><td style="white-space:nowrap">ePI<a name="prod-type-cs-ePI"> </a></td><td>ePI</td></tr></table></div>
   </text>
   <url value="https://medigree.github.io/mpd/CodeSystem/prod-type-cs"/>
   <version value="1.0.0"/>
   <name value="ProductTypeCS"/>
   <title value="Product Types code system"/>
   <status value="active"/>
-  <date value="2022-06-28T12:38:26+00:00"/>
+  <date value="2022-09-30T13:06:24+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>

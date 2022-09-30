@@ -56,10 +56,16 @@
   ],
   "dependsOn": [
     {
+      "id": "higtools",
+      "uri": "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
+      "packageId": "hl7.fhir.uv.tools",
+      "version": "current"
+    },
+    {
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "3.1.0"
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -969,36 +975,78 @@
       }
     ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "architecture.html"
+            }
+          ],
           "nameUrl": "architecture.html",
           "title": "Architecture",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "substitution.html"
+            }
+          ],
           "nameUrl": "substitution.html",
           "title": "Susbtitution",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "countries.html"
+            }
+          ],
           "nameUrl": "countries.html",
           "title": "Member States",
           "generation": "markdown",
           "page": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl": "global.html"
+                }
+              ],
               "nameUrl": "global.html",
               "title": "Global",
               "generation": "markdown"
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl": "belgium.html"
+                }
+              ],
               "nameUrl": "belgium.html",
               "title": "Belgium",
               "generation": "markdown"

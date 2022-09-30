@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="Cs-med-relation-types"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">package-of<a name="Cs-med-relation-types-package-of"> </a></td><td>Package of</td></tr><tr><td style="white-space:nowrap">contains<a name="Cs-med-relation-types-contains"> </a></td><td>Contains</td></tr><tr><td style="white-space:nowrap">matches<a name="Cs-med-relation-types-matches"> </a></td><td>Matches</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">package-of<a name="Cs-med-relation-types-package-of"> </a></td><td>Package of</td></tr><tr><td style="white-space:nowrap">contains<a name="Cs-med-relation-types-contains"> </a></td><td>Contains</td></tr><tr><td style="white-space:nowrap">matches<a name="Cs-med-relation-types-matches"> </a></td><td>Matches</td></tr></table></div>
   </text>
   <url value="http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types"/>
   <version value="1.0.0"/>
   <name value="CSMedRelationTypes"/>
   <title value="Marketing Authorization Holder"/>
   <status value="active"/>
-  <date value="2022-06-28T12:38:26+00:00"/>
+  <date value="2022-09-30T13:06:24+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>

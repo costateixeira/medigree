@@ -19,7 +19,7 @@
   <version value="1.0.0"/>
   <name value="IntMedicationRequest"/>
   <status value="active"/>
-  <date value="2022-06-28T12:38:26+00:00"/>
+  <date value="2022-09-30T13:06:24+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>
@@ -171,7 +171,7 @@
       </base>
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
+          <valueUrl value="id"/>
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
@@ -800,7 +800,7 @@
           <path value="$this"/>
         </discriminator>
         <ordered value="false"/>
-        <rules value="closed"/>
+        <rules value="open"/>
       </slicing>
       <short value="Medication to be taken"/>
       <definition value="Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."/>
@@ -813,7 +813,11 @@
         <max value="1"/>
       </base>
       <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
         <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -825,6 +829,14 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationCode"/>
+        </extension>
+        <strength value="example"/>
+        <description value="A coded concept identifying substance or product that can be ordered."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-codes"/>
+      </binding>
       <mapping>
         <identity value="workflow"/>
         <map value="Request.code"/>
