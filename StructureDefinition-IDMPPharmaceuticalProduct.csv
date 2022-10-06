@@ -203,16 +203,16 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationKnowledge.ingredient.strength.extension:boss","MedicationKnowledge.ingredient.strength.extension","boss","","",1,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS]]} {[]}
+"MedicationKnowledge.ingredient.strength.extension:boss","MedicationKnowledge.ingredient.strength.extension","boss","","",1,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS]]} {[]}
 ","Extension","Basis of Substance Strength.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationKnowledge.ingredient.strength.extension:pattern","MedicationKnowledge.ingredient.strength.extension","pattern","","",1,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern]]} {[]}
+"MedicationKnowledge.ingredient.strength.extension:pattern","MedicationKnowledge.ingredient.strength.extension","pattern","","",1,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern]]} {[]}
 ","Extension","Pattern for Strength.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationKnowledge.ingredient.strength.extension:concentration_presentation","MedicationKnowledge.ingredient.strength.extension","concentration_presentation","","",1,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation]]} {[]}
+"MedicationKnowledge.ingredient.strength.extension:concentration_presentation","MedicationKnowledge.ingredient.strength.extension","concentration_presentation","","",1,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation]]} {[]}
 ","Extension","Pattern for Concentration or Presentation.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationKnowledge.ingredient.strength.extension:unit_presentation","MedicationKnowledge.ingredient.strength.extension","unit_presentation","","",0,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation]]} {[]}
+"MedicationKnowledge.ingredient.strength.extension:unit_presentation","MedicationKnowledge.ingredient.strength.extension","unit_presentation","","",0,1,"Y","","","Extension {[CanonicalType[http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation]]} {[]}
 ","Extension","Unit of Presentation.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationKnowledge.ingredient.strength.numerator","MedicationKnowledge.ingredient.strength.numerator","","","",0,1,"","","Y","Quantity {[]} {[]}

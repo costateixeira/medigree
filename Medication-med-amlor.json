@@ -15,7 +15,7 @@
   "form": {
     "coding": [
       {
-        "system": "http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs",
+        "system": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs",
         "code": "10220000"
       }
     ]

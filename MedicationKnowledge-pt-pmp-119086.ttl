@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medigree.net/eu/fhir/medigree/MedicationKnowledge/pt-pmp-119086> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pt-pmp-119086"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct";
+       fhir:index 0;
+       fhir:link <http://medigree.net/eu/fhir/medigree/StructureDefinition/PTIdentifiableProduct>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationKnowledge</b><a name=\"pt-pmp-119086\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationKnowledge \"pt-pmp-119086\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PTIdentifiableProduct.html\">PT Identifiable Product Profile</a></p></div><p><b>jurisdiction</b>: Portugal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#PT)</span></p><p><b>code</b>: Amlodipina IPCA 5 mg Comprimido Frasco - 250 unidade(s) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (identifiable-product-identifier-type#119086)</span></p><p><b>manufacturer</b>: <span></span></p><p><b>doseForm</b>: 10219000 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (dose-forms#10219000; dose-forms#271)</span></p><p><b>synonym</b>: Amlodipina IPCA 5 mg Comprimido Frasco - 250 unidade(s)</p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Amlodipina <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 U<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code U = 'U')</span></td></tr></table><p><b>intendedRoute</b>: Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (routes#20053000)</span>, Via oral <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (routes#48)</span></p><h3>MedicineClassifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Classification</b></td></tr><tr><td>*</td><td>atc <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (classifications#atc)</span></td><td>C08CA01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (atc#C08CA01)</span></td></tr></table><h3>Packagings</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>250</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://medigree.net/eu/fhir/medigree/StructureDefinition/artifact-jurisdiction" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+         fhir:Coding.code [ fhir:value "PT" ]
+       ]
+     ]
+  ];
+  fhir:MedicationKnowledge.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.medigree.net/identifiable-product-identifier-type" ];
+       fhir:Coding.code [ fhir:value "119086" ];
+       fhir:Coding.display [ fhir:value "Amlodipina IPCA 5 mg Comprimido Frasco - 250 unidade(s)" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.manufacturer [
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "IPCA - Produtos Farmacêuticos Unipessoal, Lda." ]
+     ]
+  ];
+  fhir:MedicationKnowledge.doseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.edqm.eu/dose-forms" ];
+       fhir:Coding.code [ fhir:value "10219000" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://www.belgium.be/dose-forms" ];
+       fhir:Coding.code [ fhir:value "271" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.synonym [
+     fhir:value "Amlodipina IPCA 5 mg Comprimido Frasco - 250 unidade(s)";
+     fhir:index 0
+  ];
+  fhir:MedicationKnowledge.ingredient [
+     fhir:index 0;
+     fhir:MedicationKnowledge.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.text [ fhir:value "Amlodipina" ]
+     ];
+     fhir:MedicationKnowledge.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "U" ]
+       ]
+     ]
+  ];
+  fhir:MedicationKnowledge.intendedRoute [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.edqm.eu/routes" ];
+       fhir:Coding.code [ fhir:value "20053000" ];
+       fhir:Coding.display [ fhir:value "Oral use" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.belgium.be/routes" ];
+       fhir:Coding.code [ fhir:value "48" ];
+       fhir:Coding.display [ fhir:value "Via oral" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.medicineClassification [
+     fhir:index 0;
+     fhir:MedicationKnowledge.medicineClassification.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.medigree.net/classifications" ];
+         fhir:Coding.code [ fhir:value "atc" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.medicineClassification.classification [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.who.no/atc" ];
+         fhir:Coding.code [ fhir:value "C08CA01" ]
+       ]
+     ]
+  ];
+  fhir:MedicationKnowledge.packaging [
+     fhir:MedicationKnowledge.packaging.quantity [
+       fhir:Quantity.value [ fhir:value "250"^^xsd:decimal ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medigree.net/eu/fhir/medigree/MedicationKnowledge/pt-pmp-119086.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

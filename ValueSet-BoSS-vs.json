@@ -3,14 +3,14 @@
   "id": "BoSS-vs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BoSS-cs.html\"><code>http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BoSS-cs.html\"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</code></a></li></ul></div>"
   },
-  "url": "http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs",
+  "url": "http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs",
   "version": "1.0.0",
   "name": "BoSSVS",
   "title": "BoSS - Basis of Substance Strength options",
   "status": "active",
-  "date": "2022-09-30T13:06:24+00:00",
+  "date": "2022-10-06T17:30:01+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -51,7 +51,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs"
+        "system": "http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs"
       }
     ]
   }

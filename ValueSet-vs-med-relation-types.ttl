@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "vs-med-relation-types"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-Cs-med-relation-types.html\"><code>http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-Cs-med-relation-types.html\"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://medigree.net/eu/fhir/mpd/ValueSet/vs-med-relation-types"];
+  fhir:ValueSet.url [ fhir:value "http://medigree.net/eu/fhir/medigree/ValueSet/vs-med-relation-types"];
   fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "VSMedRelationTypes"];
   fhir:ValueSet.title [ fhir:value "Marketing Authorization Holder"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-30T13:06:24+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-10-06T17:30:01+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "My Organization"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -54,7 +54,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://medigree.net/eu/fhir/mpd/CodeSystem/Cs-med-relation-types" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types" ]
      ]
   ] .
 

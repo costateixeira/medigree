@@ -15,12 +15,12 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://medigree.net/eu/fhir/mpd/StructureDefinition/PharmaceuticalProduct",
+  "url": "http://medigree.net/eu/fhir/medigree/StructureDefinition/PharmaceuticalProduct",
   "version": "1.0.0",
   "name": "PharmaceuticalProduct",
   "title": "Pharmaceutical Product Profile",
   "status": "active",
-  "date": "2022-09-30T13:06:24+00:00",
+  "date": "2022-10-06T17:30:01+00:00",
   "publisher": "My Organization",
   "contact": [
     {

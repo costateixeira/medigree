@@ -22,12 +22,12 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-IDMPPhPModel-definitions.html#IDMPPhPModel.ingredient.doseForm" title="Authorized Dose Form">doseForm</a><a name="IDMPPhPModel.ingredient.doseForm"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Authorized Dose Form<br/><span style="font-weight:bold">Example (edqm): </span><span style="color: darkgreen">10210000 capsule, hard</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
-  <url value="http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPhPModel"/>
+  <url value="http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPhPModel"/>
   <version value="1.0.0"/>
   <name value="IDMPPhPModel"/>
   <title value="IDMP Pharmaceutical Product logical model"/>
   <status value="active"/>
-  <date value="2022-09-30T13:06:24+00:00"/>
+  <date value="2022-10-06T17:30:01+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>
@@ -64,7 +64,7 @@
   </mapping>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://medigree.net/eu/fhir/mpd/StructureDefinition/IDMPPhPModel"/>
+  <type value="http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPhPModel"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>
@@ -363,7 +363,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs"/>
+        <valueSet value="http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs"/>
       </binding>
     </element>
     <element id="IDMPPhPModel.ingredient.strength.pattern">
@@ -383,7 +383,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://medigree.net/eu/fhir/mpd/ValueSet/Pattern-vs"/>
+        <valueSet value="http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs"/>
       </binding>
     </element>
     <element id="IDMPPhPModel.ingredient.strength.concentration-presentation">
@@ -403,7 +403,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://medigree.net/eu/fhir/mpd/ValueSet/ConcPres-vs"/>
+        <valueSet value="http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs"/>
       </binding>
     </element>
     <element id="IDMPPhPModel.ingredient.strength.unit-of-presentation">
@@ -588,7 +588,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://medigree.net/eu/fhir/mpd/ValueSet/BoSS-vs"/>
+        <valueSet value="http://medigree.net/eu/fhir/medigree/ValueSet/BoSS-vs"/>
       </binding>
     </element>
     <element id="IDMPPhPModel.ingredient.strength.pattern">
@@ -603,7 +603,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://medigree.net/eu/fhir/mpd/ValueSet/Pattern-vs"/>
+        <valueSet value="http://medigree.net/eu/fhir/medigree/ValueSet/Pattern-vs"/>
       </binding>
     </element>
     <element id="IDMPPhPModel.ingredient.strength.concentration-presentation">
@@ -618,7 +618,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://medigree.net/eu/fhir/mpd/ValueSet/ConcPres-vs"/>
+        <valueSet value="http://medigree.net/eu/fhir/medigree/ValueSet/ConcPres-vs"/>
       </binding>
     </element>
     <element id="IDMPPhPModel.ingredient.strength.unit-of-presentation">
