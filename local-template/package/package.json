@@ -5,8 +5,8 @@
     "license": "CC0-1.0",
     "description": "Local template extension for FHIR IG",
     "author": "http://hl7belgium.org",
-      "base":  "hl7.be.fhir.template",
+      "base":  "openhie.fhir.template",
     "dependencies": {
-      "hl7.be.fhir.template": "current"
+      "openhie.fhir.template": "current"
     }
   }
