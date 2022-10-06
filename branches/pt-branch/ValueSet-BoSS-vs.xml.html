@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<link href="assets/css/openhie.css" rel="stylesheet"/>
 <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/colors.css" rel="stylesheet"/>
 
@@ -197,7 +197,7 @@
         
           Active
           
-            as of 2022-06-20
+            as of 2022-10-06
           
         
       </td>
@@ -213,7 +213,7 @@
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BoSS-vs&quot;/&gt;
@@ -226,7 +226,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BoSSVS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BoSS - Basis of Substance Strength options&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-06-20T14:38:33+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-10-06T17:30:01+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;My Organization&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;My Organization&quot;/&gt;
@@ -256,7 +256,8 @@
   &lt;/jurisdiction&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs&quot;/&gt;
     &lt;/include&gt;
   &lt;/compose&gt;
 &lt;/ValueSet&gt;</code></pre>
@@ -287,15 +288,20 @@
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+           
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 20, 2022 14:38+0000">2022-06-20</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="http://example.com/committees">My Organization</a>.  Package medigree#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 6, 2022 17:30+0000">2022-10-06</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                
+                 <a style="color: #81BEF7" target="_blank" href="http://medigree.net/eu/fhir/medigree/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -319,7 +325,7 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-<!-- feedback form - Google forms -->
+  <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
 
 

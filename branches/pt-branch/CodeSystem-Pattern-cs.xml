@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="Pattern-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">oral-solid<a name="Pattern-cs-oral-solid"> </a></td><td>Oral Solid</td><td>Oral Solid</td></tr><tr><td style="white-space:nowrap">injectable<a name="Pattern-cs-injectable"> </a></td><td>Injectable</td><td>Injectable</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">oral-solid<a name="Pattern-cs-oral-solid"> </a></td><td>Oral Solid</td><td>Oral Solid</td></tr><tr><td style="white-space:nowrap">injectable<a name="Pattern-cs-injectable"> </a></td><td>Injectable</td><td>Injectable</td></tr></table></div>
   </text>
   <url value="http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs"/>
   <version value="1.0.0"/>
   <name value="PatternCS"/>
   <title value="Presentation pattern Code System"/>
   <status value="active"/>
-  <date value="2022-06-20T14:38:33+00:00"/>
+  <date value="2022-10-06T17:30:01+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>

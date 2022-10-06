@@ -19,7 +19,7 @@
   "version": "1.0.0",
   "name": "IntMedicationRequest",
   "status": "active",
-  "date": "2022-06-20T14:38:33+00:00",
+  "date": "2022-10-06T17:30:01+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -199,7 +199,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"
@@ -967,7 +967,7 @@
             }
           ],
           "ordered": false,
-          "rules": "closed"
+          "rules": "open"
         },
         "short": "Medication to be taken",
         "definition": "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.",
@@ -981,7 +981,13 @@
         },
         "type": [
           {
-            "code": "Reference"
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
           }
         ],
         "constraint": [
@@ -996,6 +1002,17 @@
         ],
         "isModifier": false,
         "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationCode"
+            }
+          ],
+          "strength": "example",
+          "description": "A coded concept identifying substance or product that can be ordered.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-codes"
+        },
         "mapping": [
           {
             "identity": "workflow",

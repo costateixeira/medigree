@@ -19,7 +19,7 @@
   "version": "1.0.0",
   "name": "DefinedMed",
   "status": "active",
-  "date": "2022-06-20T14:38:33+00:00",
+  "date": "2022-10-06T17:30:01+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -186,7 +186,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"

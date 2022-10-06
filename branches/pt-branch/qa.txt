@@ -1,16 +1,16 @@
 ﻿Medigree : Validation Results
 =========================================
 
-err = 0, warn = 330, info = 2007
-IG Publisher Version: 1.1.121
-Generated Mon Jun 20 14:40:05 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
+err = 13, warn = 356, info = 2007
+IG Publisher Version: 1.2.4
+Generated Thu Oct 06 17:31:22 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
  Build Errors : 0 / 299 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-Cs-med-relation-types : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-Pattern-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-dose-form-ontology-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-medigree : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Medication-med-amlor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-ampp-148303-02 : 0 / 0 / 6
@@ -299,9 +299,9 @@ Generated Mon Jun 20 14:40:05 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (c
  /github/workspace/fsh-generated/resources/MedicationKnowledge-pt-pmp-96596 : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/MedicationKnowledge-pt-pmp-96599 : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/MedicationRequest-MedPrescription : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AMPModel : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AMPPModel : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BEAMPModel : 0 / 0 / 1
@@ -330,12 +330,12 @@ Generated Mon Jun 20 14:40:05 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (c
  /github/workspace/fsh-generated/resources/StructureDefinition-medRelation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-medicationDefinition : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-relatedMedication : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-BoSS-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-ConcPres-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-Pattern-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BoSS-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ConcPres-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-Pattern-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-dose-form-ontology-cs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-med-relation-types : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DefinedMed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -639,16 +639,34 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationKnowledge/pt-pmp-96599.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/CodeSystem-BoSS-cs.json ==
 INFORMATION: CodeSystem/BoSS-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/BoSS-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/BoSS-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/BoSS-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-ConcPres-cs.json ==
 INFORMATION: CodeSystem/ConcPres-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ConcPres-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ConcPres-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ConcPres-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-Cs-med-relation-types.json ==
 INFORMATION: CodeSystem/Cs-med-relation-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/Cs-med-relation-types: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/Cs-med-relation-types: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-Pattern-cs.json ==
 INFORMATION: CodeSystem/Pattern-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/Pattern-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/Pattern-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/Pattern-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-dose-form-ontology-cs.json ==
 INFORMATION: CodeSystem/dose-form-ontology-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/dose-form-ontology-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/dose-form-ontology-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/dose-form-ontology-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-prod-type-cs.json ==
+ERROR: CodeSystem.where(url = 'https://medigree.github.io/mpd/CodeSystem/prod-type-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/CodeSystem/prod-type-cs) does not match the URL (https://medigree.github.io/mpd/CodeSystem/prod-type-cs)
 INFORMATION: CodeSystem/prod-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/prod-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/prod-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-prod-type-cs: URL Mismatch http://medigree.net/eu/fhir/medigree/CodeSystem/prod-type-cs vs https://medigree.github.io/mpd/CodeSystem/prod-type-cs
 == fsh-generated/resources/ImplementationGuide-medigree.json ==
 == fsh-generated/resources/Medication-med-amlor.json ==
 WARNING: Medication/med-amlor: Medication.code.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -2932,11 +2950,20 @@ INFORMATION: MedicationKnowledge/pt-pmp-96599: MedicationKnowledge.medicineClass
 INFORMATION: MedicationKnowledge/pt-pmp-96599: MedicationKnowledge.medicineClassification[0].classification[0].coding[0]: Code System URI 'http://www.who.no/atc' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-MedPrescription.json ==
 == fsh-generated/resources/SearchParameter-sp-meta-tag.json ==
-WARNING: SearchParameter/sp-meta-tag: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-meta-tag'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-meta-tag) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-meta-tag)
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-meta-tag'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-meta-tag) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-meta-tag)
+WARNING: SearchParameter/sp-meta-tag: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/SearchParameter-sp-meta-tag: URL Mismatch http://medigree.net/eu/fhir/medigree/SearchParameter/sp-meta-tag vs https://medigree.github.io/mpd/SearchParameter/sp-meta-tag
 == fsh-generated/resources/SearchParameter-sp-phpid.json ==
-WARNING: SearchParameter/sp-phpid: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-phpid'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-phpid) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-phpid)
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-phpid'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-phpid) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-phpid)
+WARNING: SearchParameter/sp-phpid: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/SearchParameter-sp-phpid: URL Mismatch http://medigree.net/eu/fhir/medigree/SearchParameter/sp-phpid vs https://medigree.github.io/mpd/SearchParameter/sp-phpid
 == fsh-generated/resources/SearchParameter-sp-prod-type.json ==
-WARNING: SearchParameter/sp-prod-type: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-prod-type'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-prod-type) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-prod-type)
+ERROR: SearchParameter.where(url = 'https://medigree.github.io/mpd/SearchParameter/sp-prod-type'): Conformance resource /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type.json - the canonical URL (http://medigree.net/eu/fhir/medigree/SearchParameter/sp-prod-type) does not match the URL (https://medigree.github.io/mpd/SearchParameter/sp-prod-type)
+WARNING: SearchParameter/sp-prod-type: SearchParameter: Rule spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/SearchParameter-sp-prod-type: URL Mismatch http://medigree.net/eu/fhir/medigree/SearchParameter/sp-prod-type vs https://medigree.github.io/mpd/SearchParameter/sp-prod-type
 == fsh-generated/resources/StructureDefinition-AMPModel.json ==
 == fsh-generated/resources/StructureDefinition-AMPPModel.json ==
 == fsh-generated/resources/StructureDefinition-BEAMPModel.json ==
@@ -2949,8 +2976,8 @@ INFORMATION: StructureDefinition/BEIdentifiableProduct: StructureDefinition.diff
 INFORMATION: StructureDefinition/BEIdentifiableProduct: StructureDefinition.differential.element[44].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.medigree.net/drugcharacteristics' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-BEVMPGroupModel.json ==
 == fsh-generated/resources/StructureDefinition-BEVMPModel.json ==
-WARNING: StructureDefinition/BEVMPModel: StructureDefinition.snapshot.element[8]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/BEVMPModel: StructureDefinition.differential.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/BEVMPModel: StructureDefinition.snapshot.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/BEVMPModel: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 == fsh-generated/resources/StructureDefinition-BoSS.json ==
 WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ConcentrationPresentation.json ==
@@ -2958,18 +2985,18 @@ WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/S
 == fsh-generated/resources/StructureDefinition-DefinedMed.json ==
 WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/DefinedMed'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-IDMPPhPModel.json ==
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[16]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[17]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[14]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[15]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[16]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.snapshot.element[17]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[14]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/IDMPPhPModel: StructureDefinition.differential.element[15]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 == fsh-generated/resources/StructureDefinition-IDMPPharmaceuticalProduct.json ==
 WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/IDMPPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-IDMPProductModel.json ==
@@ -3001,8 +3028,20 @@ WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/S
 == fsh-generated/resources/StructureDefinition-relatedMedication.json ==
 WARNING: StructureDefinition.where(url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/relatedMedication'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-BoSS-vs.json ==
+WARNING: ValueSet/BoSS-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/BoSS-vs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-ConcPres-vs.json ==
+WARNING: ValueSet/ConcPres-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/ConcPres-vs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-Pattern-vs.json ==
+WARNING: ValueSet/Pattern-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/Pattern-vs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-dose-form-ontology-cs.json ==
+WARNING: ValueSet/dose-form-ontology-cs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/dose-form-ontology-cs: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-prod-type-vs.json ==
+ERROR: ValueSet.where(url = 'https://medigree.github.io/mpd/ValueSet/prod-type-cs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs.json - the canonical URL (http://medigree.net/eu/fhir/medigree/ValueSet/prod-type-vs) does not match the URL (https://medigree.github.io/mpd/ValueSet/prod-type-cs)
+WARNING: ValueSet/prod-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-prod-type-vs: URL Mismatch http://medigree.net/eu/fhir/medigree/ValueSet/prod-type-vs vs https://medigree.github.io/mpd/ValueSet/prod-type-cs
 == fsh-generated/resources/ValueSet-vs-med-relation-types.json ==
+WARNING: ValueSet/vs-med-relation-types: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

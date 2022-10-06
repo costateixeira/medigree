@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d516de82-91ac-48c0-844f-ac3e8386b025"/>
+  <id value="1c94b7d3-a8bd-452e-982f-078e62c502e6"/>
   <meta>
-    <lastUpdated value="2022-06-20T14:38:33.043+00:00"/>
+    <lastUpdated value="2022-10-06T17:30:01.452+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,15 +18,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-BoSS-cs.html">BoSS - Basis of Substance Strength options Code System v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-BoSS-cs.html">
-                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -40,24 +38,42 @@
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-BoSS-cs-base"> </a>  
                   <a href="CodeSystem-BoSS-cs.html#BoSS-cs-base">base</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</td>
                 <td>Base</td>
-                <td>The strength corresponds to the strength of the base substance</td>
+                <td>
+                  <div>
+                    <p>The strength corresponds to the strength of the base substance</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-BoSS-cs-base-modifier"> </a>  
                   <a href="CodeSystem-BoSS-cs.html#BoSS-cs-base-modifier">base-modifier</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</td>
                 <td>Base and modifier</td>
-                <td>The strength corresponds to the strength of the modifier</td>
+                <td>
+                  <div>
+                    <p>The strength corresponds to the strength of the modifier</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-BoSS-cs-ref-substance"> </a>  
                   <a href="CodeSystem-BoSS-cs.html#BoSS-cs-ref-substance">ref-substance</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</td>
                 <td>Reference Substance</td>
-                <td>The strength corresponds to the associated reference substance</td>
+                <td>
+                  <div>
+                    <p>The strength corresponds to the associated reference substance</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -67,7 +83,7 @@
         <name value="BoSSVS"/>
         <title value="BoSS - Basis of Substance Strength options"/>
         <status value="active"/>
-        <date value="2022-06-20T14:38:33+00:00"/>
+        <date value="2022-10-06T17:30:01+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -96,8 +112,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8425f745-4331-478b-bf08-3c1eb5ec8a7a"/>
-          <timestamp value="2022-06-20T14:39:18+00:00"/>
+          <identifier value="urn:uuid:23ab4e82-dd6c-4e08-ae32-cef0f72f8a60"/>
+          <timestamp value="2022-10-06T17:30:41+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -138,15 +154,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-ConcPres-cs.html">Concentration or Presentation Code System v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-ConcPres-cs.html">
-                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -160,16 +174,28 @@
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-ConcPres-cs-concentration"> </a>  
                   <a href="CodeSystem-ConcPres-cs.html#ConcPres-cs-concentration">concentration</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs</td>
                 <td>Concentration</td>
-                <td>Concentration</td>
+                <td>
+                  <div>
+                    <p>Concentration</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-ConcPres-cs-presentation"> </a>  
                   <a href="CodeSystem-ConcPres-cs.html#ConcPres-cs-presentation">presentation</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/ConcPres-cs</td>
                 <td>Presentation</td>
-                <td>Presentation</td>
+                <td>
+                  <div>
+                    <p>Presentation</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -179,7 +205,7 @@
         <name value="ConcPresVS"/>
         <title value="Concentration or Presentation Value Set"/>
         <status value="active"/>
-        <date value="2022-06-20T14:38:33+00:00"/>
+        <date value="2022-10-06T17:30:01+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -208,8 +234,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40034954-7255-44b6-b888-016cb882c760"/>
-          <timestamp value="2022-06-20T14:39:18+00:00"/>
+          <identifier value="urn:uuid:c5dec194-526c-490f-9e8a-66e0eb3bc706"/>
+          <timestamp value="2022-10-06T17:30:41+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -245,11 +271,6 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-dose-form-ontology-cs.html">Dose Form Ontology Code System v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-dose-form-ontology-cs.html">
-                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td>
@@ -257,6 +278,9 @@
                 </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -272,8 +296,14 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-20053000">20053000</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</td>
                 <td>Oral use</td>
-                <td>Oral Use</td>
+                <td>
+                  <div>
+                    <p>Oral Use</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -282,8 +312,14 @@
                 <td style="white-space:nowrap">    
                   <a href="CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-10220XXX">10220XXX</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</td>
                 <td>Capsule</td>
-                <td>Capsule</td>
+                <td>
+                  <div>
+                    <p>Capsule</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -292,8 +328,14 @@
                 <td style="white-space:nowrap">    
                   <a href="CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-10220000">10220000</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</td>
                 <td>Tablet</td>
-                <td>Tablet</td>
+                <td>
+                  <div>
+                    <p>Tablet</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -302,8 +344,14 @@
                 <td style="white-space:nowrap">      
                   <a href="CodeSystem-dose-form-ontology-cs.html#dose-form-ontology-cs-10318000">10318000</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</td>
                 <td>Sublingual tablet</td>
-                <td>Sublingual tablet</td>
+                <td>
+                  <div>
+                    <p>Sublingual tablet</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -313,7 +361,7 @@
         <name value="DoseFormOntologyCS"/>
         <title value="Dose Form ontology Value Set"/>
         <status value="active"/>
-        <date value="2022-06-20T14:38:33+00:00"/>
+        <date value="2022-10-06T17:30:01+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -342,8 +390,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:31a63bf6-68d8-42f0-b422-855f31a0bf63"/>
-          <timestamp value="2022-06-20T14:39:18+00:00"/>
+          <identifier value="urn:uuid:b9b43846-b9c7-4136-baf6-0ab7204768eb"/>
+          <timestamp value="2022-10-06T17:30:41+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -389,15 +437,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-Pattern-cs.html">Presentation pattern Code System v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-Pattern-cs.html">
-                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -411,16 +457,28 @@
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Pattern-cs-oral-solid"> </a>  
                   <a href="CodeSystem-Pattern-cs.html#Pattern-cs-oral-solid">oral-solid</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs</td>
                 <td>Oral Solid</td>
-                <td>Oral Solid</td>
+                <td>
+                  <div>
+                    <p>Oral Solid</p>
+
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Pattern-cs-injectable"> </a>  
                   <a href="CodeSystem-Pattern-cs.html#Pattern-cs-injectable">injectable</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/Pattern-cs</td>
                 <td>Injectable</td>
-                <td>Injectable</td>
+                <td>
+                  <div>
+                    <p>Injectable</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -430,7 +488,7 @@
         <name value="PatternVS"/>
         <title value="Presentation pattern Value Set"/>
         <status value="active"/>
-        <date value="2022-06-20T14:38:33+00:00"/>
+        <date value="2022-10-06T17:30:01+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -459,8 +517,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e11f2178-c096-4ef0-807d-486aed7e813e"/>
-          <timestamp value="2022-06-20T14:39:18+00:00"/>
+          <identifier value="urn:uuid:3e498d6f-0c87-495c-9763-252e295fc0ee"/>
+          <timestamp value="2022-10-06T17:30:41+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -496,15 +554,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-prod-type-cs.html">Product Types code system v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-prod-type-cs.html">
-                <code>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -515,6 +571,7 @@
                   <a name="https---medigree.github.io-mpd-CodeSystem-prod-type-cs-IDMP-PhP"> </a>  
                   <a href="CodeSystem-prod-type-cs.html#prod-type-cs-IDMP_PhP">IDMP_PhP</a>
                 </td>
+                <td>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</td>
                 <td>IDMP Pharmaceutical Product</td>
               </tr>
               <tr>
@@ -522,6 +579,7 @@
                   <a name="https---medigree.github.io-mpd-CodeSystem-prod-type-cs-IDMP-MP"> </a>  
                   <a href="CodeSystem-prod-type-cs.html#prod-type-cs-IDMP_MP">IDMP_MP</a>
                 </td>
+                <td>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</td>
                 <td>IDMP Medicinal Product</td>
               </tr>
               <tr>
@@ -529,6 +587,7 @@
                   <a name="https---medigree.github.io-mpd-CodeSystem-prod-type-cs-IDMP-PP"> </a>  
                   <a href="CodeSystem-prod-type-cs.html#prod-type-cs-IDMP_PP">IDMP_PP</a>
                 </td>
+                <td>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</td>
                 <td>IDMP Packaged Medicinal Product</td>
               </tr>
               <tr>
@@ -536,6 +595,7 @@
                   <a name="https---medigree.github.io-mpd-CodeSystem-prod-type-cs-BE-MP"> </a>  
                   <a href="CodeSystem-prod-type-cs.html#prod-type-cs-BE_MP">BE_MP</a>
                 </td>
+                <td>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</td>
                 <td>Belgian Medicinal Product</td>
               </tr>
               <tr>
@@ -543,6 +603,7 @@
                   <a name="https---medigree.github.io-mpd-CodeSystem-prod-type-cs-BE-VMP"> </a>  
                   <a href="CodeSystem-prod-type-cs.html#prod-type-cs-BE_VMP">BE_VMP</a>
                 </td>
+                <td>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</td>
                 <td>Belgian Virtual Medicinal Product</td>
               </tr>
               <tr>
@@ -550,6 +611,7 @@
                   <a name="https---medigree.github.io-mpd-CodeSystem-prod-type-cs-ePI"> </a>  
                   <a href="CodeSystem-prod-type-cs.html#prod-type-cs-ePI">ePI</a>
                 </td>
+                <td>https://medigree.github.io/mpd/CodeSystem/prod-type-cs</td>
                 <td>ePI</td>
               </tr>
             </table>
@@ -560,7 +622,7 @@
         <name value="ProductTypeVS"/>
         <title value="Product Types Value Set"/>
         <status value="active"/>
-        <date value="2022-06-20T14:38:33+00:00"/>
+        <date value="2022-10-06T17:30:01+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -590,8 +652,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd69c4e6-43e9-4e80-b015-53fe4a44cc27"/>
-          <timestamp value="2022-06-20T14:39:18+00:00"/>
+          <identifier value="urn:uuid:dad10c9f-1b02-46c2-b458-42633355e15b"/>
+          <timestamp value="2022-10-06T17:30:41+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -647,15 +709,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-Cs-med-relation-types.html">Marketing Authorization Holder v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-Cs-med-relation-types.html">
-                <code>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -666,6 +726,7 @@
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Cs-med-relation-types-package-of"> </a>  
                   <a href="CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-package-of">package-of</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</td>
                 <td>Package of</td>
               </tr>
               <tr>
@@ -673,6 +734,7 @@
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Cs-med-relation-types-contains"> </a>  
                   <a href="CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-contains">contains</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</td>
                 <td>Contains</td>
               </tr>
               <tr>
@@ -680,6 +742,7 @@
                   <a name="http---medigree.net-eu-fhir-medigree-CodeSystem-Cs-med-relation-types-matches"> </a>  
                   <a href="CodeSystem-Cs-med-relation-types.html#Cs-med-relation-types-matches">matches</a>
                 </td>
+                <td>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</td>
                 <td>Matches</td>
               </tr>
             </table>
@@ -690,7 +753,7 @@
         <name value="VSMedRelationTypes"/>
         <title value="Marketing Authorization Holder"/>
         <status value="active"/>
-        <date value="2022-06-20T14:38:33+00:00"/>
+        <date value="2022-10-06T17:30:01+00:00"/>
         <publisher value="My Organization"/>
         <contact>
           <name value="My Organization"/>
@@ -720,8 +783,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:88f3d1c4-3afb-4b6d-b99b-12ba8fbdfb22"/>
-          <timestamp value="2022-06-20T14:39:18+00:00"/>
+          <identifier value="urn:uuid:f5f8a2a6-3106-4d90-8e5b-9365ab1d2d67"/>
+          <timestamp value="2022-10-06T17:30:41+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

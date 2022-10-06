@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "Cs-med-relation-types"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">package-of<a name=\"Cs-med-relation-types-package-of\"> </a></td><td>Package of</td></tr><tr><td style=\"white-space:nowrap\">contains<a name=\"Cs-med-relation-types-contains\"> </a></td><td>Contains</td></tr><tr><td style=\"white-space:nowrap\">matches<a name=\"Cs-med-relation-types-matches\"> </a></td><td>Matches</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">package-of<a name=\"Cs-med-relation-types-package-of\"> </a></td><td>Package of</td></tr><tr><td style=\"white-space:nowrap\">contains<a name=\"Cs-med-relation-types-contains\"> </a></td><td>Contains</td></tr><tr><td style=\"white-space:nowrap\">matches<a name=\"Cs-med-relation-types-matches\"> </a></td><td>Matches</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://medigree.net/eu/fhir/medigree/CodeSystem/Cs-med-relation-types"];
   fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "CSMedRelationTypes"];
   fhir:CodeSystem.title [ fhir:value "Marketing Authorization Holder"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-06-20T14:38:33+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-06T17:30:01+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "My Organization"];
   fhir:CodeSystem.contact [
      fhir:index 0;
