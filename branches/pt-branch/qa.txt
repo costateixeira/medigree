@@ -3,7 +3,7 @@
 
 err = 13, warn = 356, info = 2007
 IG Publisher Version: 1.2.4
-Generated Thu Oct 06 17:31:22 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
+Generated Thu Oct 06 17:33:03 UTC 2022. FHIR version 4.0.1 for medigree#1.0.0 (canonical = http://medigree.net/eu/fhir/medigree)
  Build Errors : 0 / 299 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BoSS-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-ConcPres-cs : 0 / 3 / 2
