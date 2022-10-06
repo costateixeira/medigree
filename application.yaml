@@ -65,7 +65,7 @@ hapi:
     install_transitive_ig_dependencies: false
     implementationguides:
       my-ig:
-        url: https://medigree.github.io/mpd/package.tgz
+        url: https://medigree.github.io/mpd/branches/pt-branch/package.tgz
         name: medigree
         version: 1.0.0
     ###    example from registry (packages.fhir.org)
