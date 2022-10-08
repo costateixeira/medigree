@@ -1,4 +1,10 @@
 <!--badges-->
+### IG Status
+![qa-errs](https://img.shields.io/github/workflow/status/medigree/mpd/ig-build?label=Build%20status)
+
+![issues](https://img.shields.io/github/issues/medigree/mpd)
+![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/medigree/mpd/master/status/qa-errs.json)
+![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/medigree/mpd/master/status/qa-warns.json)
 
 <!--/badges-->
 
