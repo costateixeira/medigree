@@ -8,11 +8,11 @@
 
 
 id: medigree
-canonical: http://medigree.net/eu/fhir/medigree
-url: http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree
-name: Medigree
-title: "FHIR Implementation Guide: Medigree"
-description: Example IG
+canonical: http://medigree.net/eu/fhir/mpd
+url: http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd
+name: MedigreeMPD
+title: "FHIR Implementation Guide: Medigree MPD"
+description: MPD on FHIR
 status: active
 license: CC0-1.0
 date: 2022-05-26
@@ -129,10 +129,12 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.xml:
+  index.md:
     title: Home
   architecture.md:
     title: Architecture
+  substitution.md:
+    title: Susbtitution
   countries.md:
     title: Member States
     global.md:
