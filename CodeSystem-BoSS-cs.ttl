@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "BoSS-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">base<a name=\"BoSS-cs-base\"> </a></td><td>Base</td><td>The strength corresponds to the strength of the base substance</td></tr><tr><td style=\"white-space:nowrap\">base-modifier<a name=\"BoSS-cs-base-modifier\"> </a></td><td>Base and modifier</td><td>The strength corresponds to the strength of the modifier</td></tr><tr><td style=\"white-space:nowrap\">ref-substance<a name=\"BoSS-cs-ref-substance\"> </a></td><td>Reference Substance</td><td>The strength corresponds to the associated reference substance</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">base<a name=\"BoSS-cs-base\"> </a></td><td>Base</td><td>The strength corresponds to the strength of the base substance</td></tr><tr><td style=\"white-space:nowrap\">base-modifier<a name=\"BoSS-cs-base-modifier\"> </a></td><td>Base and modifier</td><td>The strength corresponds to the strength of the modifier</td></tr><tr><td style=\"white-space:nowrap\">ref-substance<a name=\"BoSS-cs-ref-substance\"> </a></td><td>Reference Substance</td><td>The strength corresponds to the associated reference substance</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://medigree.net/eu/fhir/medigree/CodeSystem/BoSS-cs"];
+  fhir:CodeSystem.url [ fhir:value "http://medigree.net/eu/fhir/mpd/CodeSystem/BoSS-cs"];
   fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "BoSSCS"];
   fhir:CodeSystem.title [ fhir:value "BoSS - Basis of Substance Strength options Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-10-06T17:31:26+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-08T08:36:27+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "My Organization"];
   fhir:CodeSystem.contact [
      fhir:index 0;

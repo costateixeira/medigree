@@ -3,14 +3,14 @@
   "id": "dose-form-ontology-cs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-dose-form-ontology-cs.html\"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-dose-form-ontology-cs.html\"><code>http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs</code></a></li></ul></div>"
   },
-  "url": "http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs",
+  "url": "http://medigree.net/eu/fhir/mpd/ValueSet/dose-form-ontology-cs",
   "version": "1.0.0",
   "name": "DoseFormOntologyCS",
   "title": "Dose Form ontology Value Set",
   "status": "active",
-  "date": "2022-10-06T17:31:26+00:00",
+  "date": "2022-10-08T08:36:27+00:00",
   "publisher": "My Organization",
   "contact": [
     {
@@ -51,7 +51,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"
+        "system": "http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs"
       }
     ]
   }

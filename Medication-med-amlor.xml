@@ -12,7 +12,7 @@
   </code>
   <form>
     <coding>
-      <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"/>
+      <system value="http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs"/>
       <code value="10220000"/>
     </coding>
   </form>

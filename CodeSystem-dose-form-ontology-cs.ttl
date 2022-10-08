@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "dose-form-ontology-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">20053000<a name=\"dose-form-ontology-cs-20053000\"> </a></td><td>Oral use</td><td>Oral Use</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  10220XXX<a name=\"dose-form-ontology-cs-10220XXX\"> </a></td><td>Capsule</td><td>Capsule</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  10220000<a name=\"dose-form-ontology-cs-10220000\"> </a></td><td>Tablet</td><td>Tablet</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    10318000<a name=\"dose-form-ontology-cs-10318000\"> </a></td><td>Sublingual tablet</td><td>Sublingual tablet</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>20053000</td><td>Oral use</td><td>Voie orale</td><td>Oraal gebruik</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">20053000<a name=\"dose-form-ontology-cs-20053000\"> </a></td><td>Oral use</td><td>Oral Use</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  10220XXX<a name=\"dose-form-ontology-cs-10220XXX\"> </a></td><td>Capsule</td><td>Capsule</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  10220000<a name=\"dose-form-ontology-cs-10220000\"> </a></td><td>Tablet</td><td>Tablet</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    10318000<a name=\"dose-form-ontology-cs-10318000\"> </a></td><td>Sublingual tablet</td><td>Sublingual tablet</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>20053000</td><td>Oral use</td><td>Voie orale</td><td>Oraal gebruik</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"];
+  fhir:CodeSystem.url [ fhir:value "http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs"];
   fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "DoseFormOntologyCS"];
   fhir:CodeSystem.title [ fhir:value "Dose Form Ontology Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-10-06T17:31:26+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-08T08:36:27+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "My Organization"];
   fhir:CodeSystem.contact [
      fhir:index 0;

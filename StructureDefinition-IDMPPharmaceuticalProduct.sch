@@ -16,16 +16,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge</sch:title>
-    <sch:rule context="f:MedicationKnowledge">
-      <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
-      <sch:assert test="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))">If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource (inherited)</sch:assert>
-      <sch:assert test="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))">If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (inherited)</sch:assert>
-      <sch:assert test="not(exists(f:contained/*/f:meta/f:security))">If a resource is contained in another resource, it SHALL NOT have a security label (inherited)</sch:assert>
-      <sch:assert test="exists(f:text/h:div)">A resource should have narrative for robust management (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>MedicationKnowledge.meta</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:meta">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -69,12 +59,6 @@
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.code</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:code">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -163,12 +147,6 @@
     <sch:rule context="f:MedicationKnowledge/f:doseForm">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.doseForm</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:doseForm">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -364,21 +342,15 @@
     <sch:title>f:MedicationKnowledge/f:ingredient/f:strength</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:ingredient/f:strength">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/BoSS': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/StrengthPattern': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/ConcentrationPresentation': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/UnitOfPresentation': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/BoSS': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/StrengthPattern': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/ConcentrationPresentation': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/UnitOfPresentation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:numerator) &lt;= 1">numerator: maximum cardinality of 'numerator' is 1</sch:assert>
       <sch:assert test="count(f:denominator) &lt;= 1">denominator: maximum cardinality of 'denominator' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.ingredient.strength</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:ingredient/f:strength">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

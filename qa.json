@@ -1,12 +1,12 @@
 {
-  "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/medigree",
-  "name": "Medigree",
+  "url": "http://medigree.net/eu/fhir/medigree/ImplementationGuide/mpd",
+  "name": "MedigreeMPD",
   "package-id": "medigree",
   "ig-ver": "1.0.0",
-  "date": "Thu, 06 Oct, 2022 17:31:26 +0000",
-  "errs": 13,
-  "warnings": 356,
-  "hints": 2007,
+  "date": "Sat, 08 Oct, 2022 08:36:27 +0000",
+  "errs": 90,
+  "warnings": 72,
+  "hints": 15,
   "version": "4.0.1",
   "tool": "5.0.0-ballot (3)"
 }

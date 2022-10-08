@@ -12,17 +12,10 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/medRelation': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/medigree/StructureDefinition/definedMedication': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation']) &lt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/medRelation': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication']) &gt;= 1">extension with URL = 'http://medigree.net/eu/fhir/mpd/StructureDefinition/definedMedication': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>Extension</sch:title>
-    <sch:rule context="f:Extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

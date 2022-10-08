@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="dose-form-ontology-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-dose-form-ontology-cs.html"><code>http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-dose-form-ontology-cs.html"><code>http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs</code></a></li></ul></div>
   </text>
-  <url value="http://medigree.net/eu/fhir/medigree/ValueSet/dose-form-ontology-cs"/>
+  <url value="http://medigree.net/eu/fhir/mpd/ValueSet/dose-form-ontology-cs"/>
   <version value="1.0.0"/>
   <name value="DoseFormOntologyCS"/>
   <title value="Dose Form ontology Value Set"/>
   <status value="active"/>
-  <date value="2022-10-06T17:31:26+00:00"/>
+  <date value="2022-10-08T08:36:27+00:00"/>
   <publisher value="My Organization"/>
   <contact>
     <name value="My Organization"/>
@@ -40,7 +40,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://medigree.net/eu/fhir/medigree/CodeSystem/dose-form-ontology-cs"/>
+      <system value="http://medigree.net/eu/fhir/mpd/CodeSystem/dose-form-ontology-cs"/>
     </include>
   </compose>
 </ValueSet>
