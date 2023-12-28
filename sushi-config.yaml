@@ -131,6 +131,9 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 pages:
   index.md:
     title: Home
+  volume-1.md:
+    title: 1:XX ToDo Volume 1
+    generation: markdown
   architecture.md:
     title: Architecture
   substitution.md:
